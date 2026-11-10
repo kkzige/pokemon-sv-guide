@@ -1,6 +1,12 @@
 // 离线优先，升级兼容：新版本修改 CACHE 版本号，且 HTML 页面在线时总是先尝试获取新版。
-const CACHE='sv-tactical-iphone-v0.3.0';
+const CACHE='sv-tactical-iphone-v0.6.2';
 const ASSETS=['./','./index.html','./icon.svg','./apple-touch-icon.png','./manifest.webmanifest','./version.json'];
+const TERA_NUMBERS=Array.from({length:18},(_,i)=>i+1);
+const TERA_ICON_PATH='sprites/types/generation-ix/scarlet-violet/small/Tera/';
+const TERA_ICON_URLS=TERA_NUMBERS.map(n=>'https://raw.githubusercontent.com/PokeAPI/sprites/master/'+TERA_ICON_PATH+n+'.png');
+const TERA_ICON_FALLBACK_URLS=TERA_NUMBERS.map(n=>'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/'+TERA_ICON_PATH+n+'.png');
+const isTeraIcon=url=>((url.hostname==='raw.githubusercontent.com'&&url.pathname.startsWith('/PokeAPI/sprites/master/'+TERA_ICON_PATH))||(url.hostname==='cdn.jsdelivr.net'&&url.pathname.startsWith('/gh/PokeAPI/sprites@master/'+TERA_ICON_PATH)))&&/\/(?:[1-9]|1[0-8])\.png$/.test(url.pathname);
+
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
 });
@@ -11,6 +17,14 @@ self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const url=new URL(event.request.url);
   const scope=new URL(self.registration.scope);
+  if(isTeraIcon(url)){
+    event.respondWith(caches.match(event.request).then(hit=>hit||fetch(event.request).then(response=>{
+      // The third-party sprite server may return an opaque no-cors response.
+      if(response.ok||response.type==='opaque')caches.open(CACHE).then(cache=>cache.put(event.request,response.clone())).catch(()=>{});
+      return response;
+    })));
+    return;
+  }
   if(url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname))return;
   const navigation=event.request.mode==='navigate';
   const checkVersion=url.pathname.endsWith('/version.json');
@@ -28,4 +42,27 @@ self.addEventListener('fetch',event=>{
     if(response.ok){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy)).catch(()=>{});}
     return response;
   })));
+});
+
+// Called on first online launch so all 18 original symbols are ready for offline reference.
+// This is noncritical: a temporary asset CDN failure must not prevent the app from launching.
+self.addEventListener('message',event=>{
+  if(event.data?.type!=='CACHE_TERA_ICONS')return;
+  event.waitUntil((async()=>{
+    const cache=await caches.open(CACHE);
+    await Promise.allSettled(TERA_NUMBERS.map(async(n,i)=>{
+      for(const u of [TERA_ICON_URLS[i],TERA_ICON_FALLBACK_URLS[i]]){
+        if(await cache.match(u))return;
+        try{
+          const response=await fetch(u,{mode:'no-cors'});
+          if(response.ok||response.type==='opaque'){
+            await cache.put(u,response);
+            return;
+          }
+        }catch{}
+      }
+    }));
+    const cached=(await Promise.all(TERA_NUMBERS.map(async(n,i)=>Boolean((await cache.match(TERA_ICON_URLS[i]))||(await cache.match(TERA_ICON_FALLBACK_URLS[i])))))).filter(Boolean).length;
+    event.source?.postMessage?.({type:'TERA_CACHE_COUNT',count:cached,total:18});
+  })());
 });
