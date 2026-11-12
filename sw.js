@@ -1,10 +1,14 @@
 // 离线优先，升级兼容：新版本修改 CACHE 版本号，且 HTML 页面在线时总是先尝试获取新版。
-const CACHE='sv-tactical-iphone-v0.6.2';
+const CACHE='sv-tactical-iphone-v0.9.0';
 const ASSETS=['./','./index.html','./icon.svg','./apple-touch-icon.png','./manifest.webmanifest','./version.json'];
 const TERA_NUMBERS=Array.from({length:18},(_,i)=>i+1);
 const TERA_ICON_PATH='sprites/types/generation-ix/scarlet-violet/small/Tera/';
 const TERA_ICON_URLS=TERA_NUMBERS.map(n=>'https://raw.githubusercontent.com/PokeAPI/sprites/master/'+TERA_ICON_PATH+n+'.png');
 const TERA_ICON_FALLBACK_URLS=TERA_NUMBERS.map(n=>'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/'+TERA_ICON_PATH+n+'.png');
+const SV_TYPE_PATH='sprites/types/generation-ix/scarlet-violet/small/';
+const SV_TYPE_URLS=TERA_NUMBERS.map(n=>'https://raw.githubusercontent.com/PokeAPI/sprites/master/'+SV_TYPE_PATH+n+'.png');
+const SV_TYPE_FALLBACK_URLS=TERA_NUMBERS.map(n=>'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/'+SV_TYPE_PATH+n+'.png');
+const isSVTypeIcon=url=>((url.hostname==='raw.githubusercontent.com'&&url.pathname.startsWith('/PokeAPI/sprites/master/'+SV_TYPE_PATH))||(url.hostname==='cdn.jsdelivr.net'&&url.pathname.startsWith('/gh/PokeAPI/sprites@master/'+SV_TYPE_PATH)))&&/\/(?:[1-9]|1[0-8])\.png$/.test(url.pathname);
 const isTeraIcon=url=>((url.hostname==='raw.githubusercontent.com'&&url.pathname.startsWith('/PokeAPI/sprites/master/'+TERA_ICON_PATH))||(url.hostname==='cdn.jsdelivr.net'&&url.pathname.startsWith('/gh/PokeAPI/sprites@master/'+TERA_ICON_PATH)))&&/\/(?:[1-9]|1[0-8])\.png$/.test(url.pathname);
 
 self.addEventListener('install',event=>{
@@ -17,7 +21,7 @@ self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const url=new URL(event.request.url);
   const scope=new URL(self.registration.scope);
-  if(isTeraIcon(url)){
+  if(isTeraIcon(url)||isSVTypeIcon(url)){
     event.respondWith(caches.match(event.request).then(hit=>hit||fetch(event.request).then(response=>{
       // The third-party sprite server may return an opaque no-cors response.
       if(response.ok||response.type==='opaque')caches.open(CACHE).then(cache=>cache.put(event.request,response.clone())).catch(()=>{});
@@ -47,11 +51,14 @@ self.addEventListener('fetch',event=>{
 // Called on first online launch so all 18 original symbols are ready for offline reference.
 // This is noncritical: a temporary asset CDN failure must not prevent the app from launching.
 self.addEventListener('message',event=>{
-  if(event.data?.type!=='CACHE_TERA_ICONS')return;
+  if(!['CACHE_TERA_ICONS','CACHE_SV_TYPE_ICONS'].includes(event.data?.type))return;
+  const cacheTera=event.data.type==='CACHE_TERA_ICONS';
+  const primary=cacheTera?TERA_ICON_URLS:SV_TYPE_URLS;
+  const alternative=cacheTera?TERA_ICON_FALLBACK_URLS:SV_TYPE_FALLBACK_URLS;
   event.waitUntil((async()=>{
     const cache=await caches.open(CACHE);
     await Promise.allSettled(TERA_NUMBERS.map(async(n,i)=>{
-      for(const u of [TERA_ICON_URLS[i],TERA_ICON_FALLBACK_URLS[i]]){
+      for(const u of [primary[i],alternative[i]]){
         if(await cache.match(u))return;
         try{
           const response=await fetch(u,{mode:'no-cors'});
@@ -62,7 +69,7 @@ self.addEventListener('message',event=>{
         }catch{}
       }
     }));
-    const cached=(await Promise.all(TERA_NUMBERS.map(async(n,i)=>Boolean((await cache.match(TERA_ICON_URLS[i]))||(await cache.match(TERA_ICON_FALLBACK_URLS[i])))))).filter(Boolean).length;
-    event.source?.postMessage?.({type:'TERA_CACHE_COUNT',count:cached,total:18});
+    const cached=(await Promise.all(TERA_NUMBERS.map(async(n,i)=>Boolean((await cache.match(primary[i]))||(await cache.match(alternative[i])))))).filter(Boolean).length;
+    event.source?.postMessage?.({type:cacheTera?'TERA_CACHE_COUNT':'SV_TYPE_CACHE_COUNT',count:cached,total:18});
   })());
 });
