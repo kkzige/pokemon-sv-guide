@@ -1,6 +1,6 @@
 // 离线优先，升级兼容：新版本修改 CACHE 版本号，且 HTML 页面在线时总是先尝试获取新版。
-const CACHE='sv-tactical-iphone-v1.1.0';
-const ASSETS=['./','./index.html','./icon.svg','./apple-touch-icon.png','./manifest.webmanifest','./version.json'];
+const CACHE='sv-tactical-iphone-v1.2.0';
+const ASSETS=['./','./index.html','./icon.svg','./apple-touch-icon.png','./manifest.webmanifest','./version.json','./sv-data.json','./coverage.json'];
 const TERA_NUMBERS=Array.from({length:18},(_,i)=>i+1);
 const TERA_ICON_PATH='sprites/types/generation-ix/scarlet-violet/small/Tera/';
 const TERA_ICON_URLS=TERA_NUMBERS.map(n=>'https://raw.githubusercontent.com/PokeAPI/sprites/master/'+TERA_ICON_PATH+n+'.png');
