@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="太晶战术图鉴">
   <meta name="description" content="专为《宝可梦 朱／紫》设计的属性克制、太晶、特性、招式和努力值计算工具。">
-  <title>太晶战术图鉴 · 朱／紫 V0.9.0</title>
+  <title>太晶战术图鉴 · 朱／紫 V1.1.0</title>
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
@@ -458,6 +458,90 @@ button:focus-visible, input:focus-visible, select:focus-visible {outline:3px sol
 }
 @media(max-width:375px){.myteam-metrics strong{font-size:24px}.myteam-metrics small{font-size:12px}.item-search-results{gap:7px}.myteam-member{padding:9px}}
 
+/* V1.0 — task-first navigation, accessible category selection and immediate acquisition advice. */
+.subnav-tabs{display:flex;gap:9px;overflow-x:auto;scrollbar-width:thin;max-width:100%;padding:1px 0 13px;margin-bottom:14px;-webkit-overflow-scrolling:touch}
+.subnav-tabs button{border:1px solid #d5deec;background:#f5f8fe;color:#385577;font-weight:750;white-space:nowrap;min-height:45px;padding:10px 15px;border-radius:12px;cursor:pointer;font-size:15px}
+.subnav-tabs button.active{background:#dfeaff;border-color:#a5bff9;color:#204da5}
+.quick-switch{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:19px}
+.quick-switch button{flex:1 1 190px}
+.how-first{background:#f0f7ff;border:1px solid #bed9f4;padding:18px;border-radius:15px;margin:13px 0 20px}
+.how-first .method-tag{display:inline-block;background:#d6e8fc;color:#1a5583;font-size:14px;font-weight:850;border-radius:8px;padding:6px 11px;margin-bottom:11px}
+.how-first h3{font-size:clamp(18px,2.1vw,23px);color:#153d68;margin:0 0 10px;line-height:1.42}
+.how-first p{font-size:16px;color:#385772;line-height:1.7;margin:0}
+.type-quick-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:15px 0 4px}
+.type-quick{min-width:0;min-height:56px;border:1px solid #dce5f2;background:#f8fbfe;border-radius:12px;display:grid;place-items:center;cursor:pointer;padding:7px 5px}
+.type-quick .type{display:flex;align-items:center;gap:4px;border:0;box-shadow:none;background:transparent;min-width:auto;color:#314668!important;font-size:14px;font-weight:800;padding:3px}
+.type-quick .type img{width:22px;height:22px;min-width:22px}
+.type-quick.active{background:#e0edff;border:2px solid #3b6ed0;box-shadow:0 0 0 2px rgba(59,110,208,.08)}
+.rank-context{margin:4px 0 16px;color:#526680;font-size:15px;line-height:1.7}
+.team-input-row{display:flex;gap:7px;align-items:center;min-width:0}
+.team-input-row input{min-width:0;width:100%;flex:1 1 auto;font-size:16px}
+.team-input-row .btn{flex:0 0 auto;white-space:nowrap}
+.myteam-member small{display:block;font-size:13px;color:#637790;line-height:1.45;margin-top:8px}
+.breed-partners{max-height:460px;overflow:auto}
+.breed-partner{min-height:54px}
+@media(max-width:950px){.type-quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){
+ .myteam-grid{grid-template-columns:1fr}
+ .myteam-member{padding:13px}
+ .myteam-member label{font-size:calc(15px + var(--ui-scale))}
+ .team-input-row input{min-height:48px;font-size:calc(16px + var(--ui-scale))}
+ .type-quick-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .type-quick{min-height:60px}
+ .type-quick .type{font-size:calc(14px + var(--ui-scale))}
+ .how-first{padding:16px 14px}
+ .how-first p{font-size:calc(16px + var(--ui-scale))}
+ .subnav-tabs{margin-left:-2px;margin-right:-2px}
+ .subnav-tabs button{font-size:calc(15px + var(--ui-scale));min-height:48px}
+ .quick-switch button{width:100%;flex:1 1 100%}
+ .rank-context{font-size:calc(15px + var(--ui-scale))}
+}
+
+/* V1.0 · reference encyclopedia and explainable combination simulator */
+.reference-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0 12px}
+.reference-option{display:flex;flex-direction:column;gap:5px;align-items:flex-start;min-width:0;min-height:90px;text-align:left;border:1px solid #dce5f0;border-radius:13px;padding:13px 14px;background:#f7f9fd;color:#223a57;cursor:pointer}
+.reference-option.active{border-color:#7fa7e7;background:#eaf3fd;box-shadow:0 0 0 1px #aac7ed inset}
+.reference-option strong{font-size:17px;line-height:1.35;overflow-wrap:anywhere}
+.reference-option small{font-size:13px;color:#536b84;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.reference-option span{font-size:12px;font-weight:650;color:#41658b;margin-top:auto}
+.ref-lead{font-size:18px;line-height:1.65;color:#234564;font-weight:650;margin:14px 0}
+.reference-detail .how-first{margin:12px 0;padding:14px;background:#eff7ee;border-radius:12px}
+.combo-keyline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.combo-keyline>div{display:flex;flex-direction:column;gap:6px;background:#eef5fc;border-radius:12px;padding:14px;min-width:0}
+.combo-keyline b{font-size:14px;color:#45617f;line-height:1.4}
+.combo-keyline strong{font-size:26px;color:#16487a;line-height:1.3}
+.combo-prob{display:grid;gap:8px;margin:14px 0 18px}
+.combo-prob>div{display:grid;grid-template-columns:45px 1fr 60px;align-items:center;gap:10px;font-size:14px;color:#3f5977}
+.combo-prob b{text-align:right;font-variant-numeric:tabular-nums}
+.combo-bar{height:14px;background:#e5edf6;border-radius:20px;overflow:hidden}
+.combo-bar i{height:100%;display:block;background:#3d70cc;border-radius:20px;min-width:0}
+@media(max-width:720px){
+ .reference-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .reference-option{padding:12px;min-height:96px}
+ .reference-option strong{font-size:calc(16px + var(--ui-scale, 0px))}
+ .reference-option small{font-size:calc(14px + var(--ui-scale, 0px))}
+ .ref-lead{font-size:calc(18px + var(--ui-scale, 0px))}
+ .combo-keyline strong{font-size:24px}
+ .combo-prob>div{grid-template-columns:42px 1fr 62px;font-size:14px}
+}
+@media(max-width:360px){
+ .reference-list{grid-template-columns:1fr}
+ .combo-keyline{grid-template-columns:1fr 1fr;gap:6px}
+ .combo-keyline>div{padding:10px}
+}
+
+/* V1.1: readable strategy guide entries and one-column mobile controls */
+.guide-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,325px),1fr));gap:14px;margin:14px 0}
+.guide-entry{min-width:0;border:1px solid var(--line,#d8e0ed);background:#f8fafc;border-radius:15px;padding:16px;line-height:1.6}
+.guide-entry h3{margin:10px 0 8px;font-size:18px;color:#162b4d}
+.guide-entry p{margin:8px 0;font-size:15px;overflow-wrap:anywhere}
+.guide-entry .pillline{display:flex;flex-wrap:wrap;gap:7px}
+.guide-entry .three-btn{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.guide-sub{font-size:16px;padding:8px 0}
+.readable-steps{line-height:1.8;padding-left:24px;font-size:16px}
+.readable-steps li{margin-bottom:10px}
+@media(max-width:700px){.guide-results{grid-template-columns:1fr}.guide-entry{padding:15px}.guide-entry p{font-size:16px}.subnav-tabs{overflow-x:auto;white-space:nowrap;scrollbar-width:thin}}
+
 </style>
 </head>
 <body>
@@ -766,6 +850,38 @@ function csv(text){
 }
 async function getCSV(name){const res=await fetch(`${CSVROOT}/${name}.csv`);if(!res.ok)throw new Error('下载 '+name+' 失败：HTTP '+res.status);return csv(await res.text());}
 async function getJSON(path){const res=await fetch(path.startsWith('http')?path:`${ROOT}/${path}`);if(!res.ok)throw new Error('查询失败：HTTP '+res.status);return await res.json();}
+// Optional opt-in catalog: generation IX SV regional Pokédex entries 31/32/33,
+// species egg groups and gender ratios. Entries outside these dexes are NOT
+// automatically labeled unavailable: HOME transfers and special forms exist.
+const EGG_IDS={1:'monster',2:'water1',3:'bug',4:'flying',5:'field',6:'fairy',7:'grass',8:'humanlike',9:'water3',10:'mineral',11:'amorphous',12:'water2',13:'ditto',14:'dragon',15:'undiscovered'};
+const SV_DEX={31:'帕底亚',32:'北上乡',33:'蓝莓'};
+function getBreedingCatalog(){return Array.isArray(cache.eggIndex)?cache.eggIndex:null;}
+async function loadBreedingCatalog(){
+ if(Array.isArray(cache.eggIndex))return {count:cache.eggIndex.length,svCount:cache.eggIndex.filter(x=>x.svDex.length).length,cached:true};
+ if(!cache.dir)await loadDirectory();
+ const [species,groups,dex]=await Promise.all([getCSV('pokemon_species'),getCSV('pokemon_egg_groups'),getCSV('pokemon_dex_numbers')]);
+ const byID=new Map(),groupByID=new Map(),dexByID=new Map();
+ for(const r of groups.slice(1)){
+  const id=Number(r[0]),group=EGG_IDS[Number(r[1])];
+  if(group){if(!groupByID.has(id))groupByID.set(id,[]);groupByID.get(id).push(group);}
+ }
+ for(const r of dex.slice(1)){
+  const id=Number(r[0]),area=SV_DEX[Number(r[1])];
+  if(area){if(!dexByID.has(id))dexByID.set(id,[]);if(!dexByID.get(id).includes(area))dexByID.get(id).push(area);}
+ }
+ for(const r of species.slice(1)){
+  const id=Number(r[0]);if(id<1||id>1025)continue;
+  byID.set(id,{id,en:r[1],parentId:Number(r[3])||0,genderRate:Number(r[8])});
+ }
+ const byName=new Map((cache.dir||[]).map(p=>[p.id,p]));
+ function baseOf(id){let p=byID.get(id);const seen=new Set();while(p?.parentId&&!seen.has(p.id)){seen.add(p.id);p=byID.get(p.parentId)||p;}return p||byID.get(id);}
+ cache.eggIndex=[...byID.values()].map(p=>{
+  const base=baseOf(p.id),n=byName.get(p.id),root=byName.get(base.id);
+  return {id:p.id,en:p.en,zh:n?.zh||p.en,eggGroups:groupByID.get(p.id)||[],genderRate:p.genderRate,
+   svDex:dexByID.get(p.id)||[],baseEn:base.en,baseZh:root?.zh||base.en,source:'pokeapi-csv'};
+ });
+ save();return {count:cache.eggIndex.length,svCount:cache.eggIndex.filter(x=>x.svDex.length).length,cached:false};
+}
 function getDirectory(){return cache.dir;}
 function getMoveCatalog(){return cache.meta;}
 async function loadDirectory(){
@@ -873,6 +989,45 @@ function metadataForMoves(poke){
   return (poke.moves||[]).map(k=>({id:k,...(cache.meta?.[k]||COMMON_MOVES[k]||{})})).filter(m=>m.type);
 }
 
+// Cross-generation PokéAPI reference index. Names are searchable in Chinese;
+// index membership does not prove availability or acquisition in Scarlet/Violet.
+const REF_FILES={abilities:['abilities','ability_names'],items:['items','item_names']};
+function getReferenceIndex(kind){return cache.refIndex?.[kind]||null;}
+async function loadReferenceIndex(kind){
+ if(kind==='moves'){
+  if(!getMoveCatalog())await loadMoveCatalog();
+  const out=Object.entries(getMoveCatalog()||{}).map(([id,m])=>({id,zh:m.zh||id,type:m.type,power:m.power,accuracy:m.accuracy,kind:m.category}));
+  return {count:out.length,records:out,cached:!!cache.refIndex?.moves};
+ }
+ if(!REF_FILES[kind])throw new Error('不支持的索引分类');
+ if(cache.refIndex?.[kind])return {count:cache.refIndex[kind].length,records:cache.refIndex[kind],cached:true};
+ const [base,names]=await Promise.all(REF_FILES[kind].map(getCSV));
+ const translated=new Map(names.slice(1).filter(r=>r[1]==='12').map(r=>[Number(r[0]),r[2]]));
+ const records=base.slice(1).filter(r=>kind!=='abilities'||r[3]==='1').map(r=>({id:r[1],zh:translated.get(Number(r[0]))||r[1],remote:true}));
+ cache.refIndex=cache.refIndex||{};cache.refIndex[kind]=records;save();return {count:records.length,records,cached:false};
+}
+function getCachedReferenceDetail(kind,id){return cache.refDetails?.[kind+':'+id]||null;}
+async function lookupReferenceDetail(kind,id){
+ const key=kind+':'+id;cache.refDetails=cache.refDetails||{};
+ if(cache.refDetails[key])return cache.refDetails[key];
+ const endpoint={abilities:'ability',items:'item',moves:'move'}[kind];
+ if(!endpoint)throw new Error('未知查询类别');
+ const data=await getJSON(endpoint+'/'+encodeURIComponent(id));
+ const choose=arr=>arr?.find(x=>x.language?.name==='zh-Hans')||arr?.find(x=>x.language?.name==='en');
+ const obj={id,zh:choose(data.names)?.name||id,source:`https://pokeapi.co/api/v2/${endpoint}/${encodeURIComponent(id)}`,remote:true};
+ const gameText=(data.flavor_text_entries||[]).filter(x=>x.version_group?.name==='scarlet-violet'||x.version?.name==='scarlet'||x.version?.name==='violet');
+ const short=choose(gameText)||choose(data.flavor_text_entries);
+ const effect=choose(data.effect_entries);
+ obj.summary=short?.flavor_text?.replace(/\s+/g,' ')||effect?.short_effect?.replace(/\s+/g,' ')||'当前接口没有可用的中文效果说明。';
+ obj.detail=effect?.effect?.replace(/\s+/g,' ')||obj.summary;
+ obj.language=(short?.language?.name||effect?.language?.name||'unknown');
+ if(kind==='moves'){
+  obj.type=data.type?.name;obj.kind=data.damage_class?.name;obj.power=data.power;obj.accuracy=data.accuracy;
+ }
+ obj.availability='跨世代参考数据；尚未核实《朱／紫》形态及获取条件';
+ cache.refDetails[key]=obj;save();return obj;
+}
+
 // ------- evolution.js -------
 /**
  * V0.4 curated Scarlet/Violet evolution paths.
@@ -968,6 +1123,8 @@ function baseRating(stats,abilities=[]){
 
 const EGG_GROUP_NAMES={monster:'怪兽',water1:'水中1',water2:'水中2',water3:'水中3',bug:'虫',flying:'飞行',field:'陆上',fairy:'妖精',grass:'植物',humanlike:'人形',mineral:'矿物',amorphous:'不定形',dragon:'龙',ditto:'百变怪',undiscovered:'未发现'};
 const NONE=['undiscovered'];
+let EXTENDED_CATALOG=new Map();
+function setBreedingCatalog(records){EXTENDED_CATALOG=new Map((records||[]).map(p=>[p.en,p]));}
 const GROUP_ALIAS={'ground':'field','plant':'grass','humanshape':'humanlike','indeterminate':'amorphous','no-eggs':'undiscovered'};
 const normalizeGroup=g=>GROUP_ALIAS[g]||g;
 const GROUPS={
@@ -995,9 +1152,10 @@ function breedMeta(p){
  if(!p)return null;
  const name=String(p.en||'').toLowerCase();
  // API species data wins; curated offline groups are used when no API record exists.
- const groups=Array.isArray(p.eggGroups)&&p.eggGroups.length?p.eggGroups.map(normalizeGroup):GROUPS[name]||null;
- const genderRate=Number.isFinite(p.genderRate)?p.genderRate:null;
- return {name,groups,source:Array.isArray(p.eggGroups)&&p.eggGroups.length?'pokeapi':GROUPS[name]?'offline':'unknown',
+ const indexed=EXTENDED_CATALOG.get(name);
+ const groups=Array.isArray(indexed?.eggGroups)&&indexed.eggGroups.length?indexed.eggGroups.map(normalizeGroup):Array.isArray(p.eggGroups)&&p.eggGroups.length?p.eggGroups.map(normalizeGroup):GROUPS[name]||null;
+ const genderRate=Number.isFinite(indexed?.genderRate)?indexed.genderRate:Number.isFinite(p.genderRate)?p.genderRate:null;
+ return {name,groups,source:indexed?.eggGroups?.length?'catalog':Array.isArray(p.eggGroups)&&p.eggGroups.length?'pokeapi':GROUPS[name]?'offline':'unknown',
    gender:genderRate===-1?'genderless':genderRate===0?'male':genderRate===8?'female':PERMANENT_GENDERLESS.has(name)?'genderless':FEMALE_ONLY.has(name)?'female':'both'};
 }
 function sexAllowed(p,sex){
@@ -1047,6 +1205,8 @@ function offspring(parent){
   return {en:'wooper-paldea',zh:'乌波（帕底亚形态）',source:'regional-default'};
  const evo=evolutionFor(parent);
  if(evo?.paths?.length){const first=evo.paths[0][0];return {en:first.en,zh:first.zh,source:'curated'};}
+ const indexed=EXTENDED_CATALOG.get(String(parent.en||'').toLowerCase());
+ if(indexed?.baseEn&&indexed?.baseZh)return {en:indexed.baseEn,zh:indexed.baseZh,source:'catalog',note:'通用进化家族；地区形态和特殊孵化仍需核对'};
  // Species-level evolution data is insufficient to safely infer first stage of a remote final evolution.
  if(parent.evolvesFrom)return {en:null,zh:null,source:'unknown'};
  return {en:parent.en,zh:parent.zh,source:'basic'};
@@ -1065,7 +1225,7 @@ function inheritance(pair,opts={}){
  const ball='一般随母方精灵球；若与百变怪配对，通常随非百变怪一方。两只同种宝可梦的特殊同种配对可以在双亲精灵球之间随机选择。大师球、贵重球不能照常遗传。';
  return {iv:`${holds} 项个体值由双亲继承，其余 ${6-holds} 项随机生成。`,nature,ha,ball,details:detail};
 }
-function suggestedPartners(target,all){
+function suggestedPartners(target,all,limit=2000){
  const meta=breedMeta(target);
  if(!meta?.groups||meta.groups.includes('undiscovered')||meta.name==='ditto')return [];
  const ditto=all.find(p=>p.en==='ditto');
@@ -1074,7 +1234,7 @@ function suggestedPartners(target,all){
    && m.gender!=='genderless' && (meta.gender!=='female'||m.gender!=='female')
    && (meta.gender!=='male'||m.gender!=='male'))
   .map(({p,m})=>({p,common:meta.groups.filter(g=>m.groups.includes(g))}));
- return [...(ditto?[{p:ditto,common:['ditto']}]:[]),...ordinary].slice(0,14);
+ return [...(ditto?[{p:ditto,common:['ditto']}]:[]),...ordinary].slice(0,limit);
 }
 
 // ------- ev_training.js -------
@@ -1185,6 +1345,10 @@ function provenance(p){
 // Keep Pokémon drops, game-version locations and TM recipes separate, so missing
 // entries cannot be mistaken for an absence of a material in the actual game.
 const MATERIALS = [
+ // V1.0: evolution-exchange materials, kept distinct from the exchanged item itself.
+ {id:'bronzor-fragment',name:'铜镜怪的碎片',en:'Bronzor Fragment',producers:['铜镜怪','青铜钟'],area:'帕底亚',locations:['南第2区 · 圆模镇北侧遗迹','南第3区 · 遗迹周边'],locationNote:'在遗迹寻找铜镜怪。收集10个后，朱版可到穴扎镇的NPC处兑换庆祝之铠。',source:'https://www.nintendolife.com/guides/pokemon-scarlet-and-violet-bronzor-location-and-how-to-get-bronzor-fragments1',tradeFor:{itemId:'auspicious-armor',name:'庆祝之铠',quantity:10,version:'朱限定',location:'穴扎镇 · 喷泉附近NPC'}},
+ {id:'sinistea-chip',name:'来悲茶的碎片',en:'Sinistea Chip',producers:['来悲茶','怖思壶'],area:'帕底亚',locations:['东第3区 · 穴扎镇周边','南第6区 · 焙固镇外'],locationNote:'来悲茶体型很小，留意城镇外的草地与遗迹。集齐10个后，紫版在穴扎镇向NPC兑换咒术之铠。',source:'https://www.nintendolife.com/guides/pokemon-scarlet-and-violet-how-to-get-sinistea-and-sinistea-chips',tradeFor:{itemId:'malicious-armor',name:'咒术之铠',quantity:10,version:'紫限定',location:'穴扎镇 · 喷泉附近NPC'}},
+
  {id:'teddiursa-claw',name:'熊宝宝的爪子',en:'Teddiursa Claw',producers:['熊宝宝','圈圈熊','月月熊'],area:'帕底亚',locations:['东第1区（树木附近）','北第2区（森林区域）'],locationNote:'优先寻找熊宝宝；也可通过圈圈熊获取。野生出现会受到地形与刷新影响。',source:'https://www.serebii.net/itemdex/teddiursaclaw.shtml',tip:'如只需少量，推荐先找熊宝宝；若需反复刷材料，靠近熊宝宝群落使用自主对战。'},
  {id:'azurill-fur',name:'露力丽的毛',en:'Azurill Fur',producers:['露力丽','玛力露','玛力露丽'],area:'帕底亚',locations:['南第1区（水边）','南第2区（水边）'],locationNote:'沿河岸和池塘寻找露力丽或其进化型。',source:'https://www.pokeos.com/zh/itemdex/azurill-fur'},
  {id:'bonsly-tears',name:'盆才怪的眼泪',en:'Bonsly Tears',producers:['盆才怪','树才怪'],area:'帕底亚',locations:['西第3区','大锅湖一带'],locationNote:'盆才怪和树才怪会与地形融为一体，注意路边小树状宝可梦。',source:'https://sv.xzonn.top/wiki/%E6%8B%9B%E5%BC%8F%E5%AD%A6%E4%B9%A0%E5%99%A8%E4%B8%80%E8%A7%88'},
@@ -1342,6 +1506,11 @@ function validateRecommendedData(){const issues=[];for(const b of CURATED_BUILDS
 
 
 const TEAM_BY_NAME=new Map(BUILTIN.map(p=>[p.zh,p]));
+function registerTeamPokemon(p){
+ if(p?.zh&&Array.isArray(p.types)&&p.types.length&&Array.isArray(p.stats)&&p.stats.length===6){TEAM_BY_NAME.set(p.zh,p);return true;}return false;
+}
+const hasTeamPokemon=name=>TEAM_BY_NAME.has(name);
+
 const unique=xs=>[...new Set(xs)];
 const scoreChoice=tier=>({S:3,A:2,B:1})[tier]||0;
 const SAMPLE_TEAM=['骨纹巨声鳄','玛力露丽','电肚蛙','烈咬陆鲨','巨锻匠','土王'];
@@ -1411,12 +1580,22 @@ const src={
  armor:'https://bulbapedia.bulbagarden.net/wiki/Auspicious_Armor',
  teacup:'https://www.nintendolife.com/guides/pokemon-scarlet-and-violet-how-to-evolve-poltchageist-into-sinistcha-where-to-find-unremarkable-and-masterpiece-teacups',
  tera:'https://wiki.52poke.com/zh/%E5%AE%9D%E9%A3%9F%E5%A0%82',
- scale:'https://bulbapedia.bulbagarden.net/wiki/Prism_Scale'
+ scale:'https://bulbapedia.bulbagarden.net/wiki/Prism_Scale',
+ wide:'https://bulbapedia.bulbagarden.net/wiki/Wide_Lens',
+ dice:'https://wiki.52poke.com/zh/%E6%9C%BA%E5%8F%98%E9%AA%B0%E5%AD%90%EF%BC%88%E9%81%93%E5%85%B7%EF%BC%89',
+ dawn:'https://bulbapedia.bulbagarden.net/wiki/Dawn_Stone',
+ coat:'https://bulbapedia.bulbagarden.net/wiki/Metal_Coat',
+ kings:'https://bulbapedia.bulbagarden.net/wiki/King%27s_Rock'
 };
 // way(place, how, condition)；注意购买地点表示指定商店分店，不代表所有城市同名商店都卖该道具。
 const row=(id,name,en,category,region,uses,ways,source,aliases=[])=>({id,name,en,category,region,uses,ways,source:src[source],aliases});
 const shop=(place,how,condition='无需特殊剧情限制')=>({place,how,condition});
 const ITEM_GUIDES=[
+ row('dawn-stone','觉醒之石','Dawn Stone','进化','本篇','限定性别进化：雄性奇鲁莉安变艾路雷朵；雌性雪童子变雪妖女。',[shop('东第3区／西第3区','固定地图精灵球拾取；西第3区可到废墟寻找'),shop('渍沁镇 · 拍卖市场','有对应拍卖品时竞拍，出现随机')],'dawn',['奇鲁莉安','艾路雷朵','雪童子','雪妖女']),
+ row('metal-coat','金属膜','Metal Coat','进化','本篇','飞天螳螂携带后通信交换，可进化为巨钳螳螂；作为对战道具也可强化钢属性招式。',[shop('酿光市 · 信使鸟包包','购买（3,000 ₽）')],'coat',['飞天螳螂','巨钳螳螂','钢']),
+ row('kings-rock','王者之证',"King's Rock",'进化','本篇','普通呆呆兽携带后通信交换，进化为呆呆王。',[shop('桌台市 · 信使鸟包包','购买（10,000 ₽）')],'kings',['呆呆王','呆呆兽']),
+ row('wide-lens','广角镜','Wide Lens','对战','本篇','将使用者招式命中率提高至原来的1.1倍，鼠数儿可以从每击90%提高到99%。',[shop('酿光市 · 信使鸟包包','购买（20,000 ₽）')],'wide',['鼠数儿','一家鼠','命中']),
+ row('loaded-dice','机变骰子','Loaded Dice','对战','本篇','连续招式通常更容易打出4～5次；对鼠数儿只需一次命中判定，命中后4～10击等概率。',[shop('酿光市 · 信使鸟包包','购买（20,000 ₽）'),shop('东第1区 · 宝可梦中心附近联盟代表','击败指定数量的训练家后领取奖励')],'dice',['老千骰子','鼠数儿','连击']),
  row('mirror-herb','模仿香草','Mirror Herb','繁殖','本篇','野餐时可让符合条件的宝可梦学习蛋招式；战斗中另有模仿能力提升的效果。',[shop('玻瓶市 · 信使鸟包包','购买（30,000 ₽）')],'shop',['蛋招式','野餐']),
  row('destiny-knot','红线','Destiny Knot','繁殖','本篇','孵蛋时双亲合计遗传5项个体值（非保证5V）。',[shop('桌台市 · 信使鸟包包','购买（20,000 ₽）','获得4枚道馆徽章后上架')],'shop',['5V','孵蛋']),
  row('everstone','不变之石','Everstone','繁殖','本篇','携带时防止进化；繁殖时可传递性格，部分地区形态繁殖需使用。',[shop('桌台市／酿光市／玻瓶市 · 信使鸟包包','综合杂货购买（3,000 ₽）')],'shop',['性格','地区形态']),
@@ -1458,7 +1637,231 @@ function searchItemGuides(query='',category='全部',region='全部'){
 }
 const getItemGuide=id=>ITEM_GUIDES.find(x=>x.id===id)||null;
 
+// ------- reference_data.js -------
+// Curated SV references: accurate local explanations. Community data, non-official app.
+// An optional online cross-generation index is NOT a claim every entry is available in SV.
+const A=(id,zh,summary,detail,source)=>({id,zh,summary,detail,source});
+const I=(id,zh,summary,detail,where,source,aliases=[])=>({id,zh,summary,detail,where,source,aliases});
+const M=(id,zh,type,kind,power,accuracy,summary,detail,source)=>({id,zh,type,kind,power,accuracy,summary,detail,source});
+const REF_ABILITIES=[
+ A('technician','技术高手','威力不超过60的攻击招式提升50%。','鼠数儿每击威力20→30。只对招式威力满足条件的攻击生效；连续攻击按每击基础威力判断。','https://bulbapedia.bulbagarden.net/wiki/Technician_(Ability)'),
+ A('huge-power','大力士','物理攻击的攻击能力翻倍。','作用于物理伤害计算中的攻击能力；不是把招式基础威力直接翻倍。玛力露丽常用。','https://bulbapedia.bulbagarden.net/wiki/Huge_Power_(Ability)'),
+ A('water-absorb','储水','受到多数水属性招式时免疫并恢复HP。','通常水属性攻击不会造成伤害，恢复最大HP的1/4，特殊招式和效果存在例外。','https://bulbapedia.bulbagarden.net/wiki/Water_Absorb_(Ability)'),
+ A('levitate','飘浮','通常免疫地面属性攻击。','重力、击落、特性无效化等特殊条件可以改变结果；不是绝对所有地面招式都免疫。','https://bulbapedia.bulbagarden.net/wiki/Levitate_(Ability)'),
+ A('intimidate','威吓','出场时通常使对方攻击下降一级。','受到一些特性与战斗机制限制。','https://bulbapedia.bulbagarden.net/wiki/Intimidate_(Ability)'),
+ A('unaware','纯朴','计算伤害时忽略目标或攻击方的部分能力等级变化。','作为防守方通常忽略攻击方强化过的攻击等级；并非忽略所有状态效果。','https://bulbapedia.bulbagarden.net/wiki/Unaware_(Ability)'),
+ A('friend-guard','友情防守','在双打等场景保护同伴，减少受到的伤害。','不会给使用者自己提供同等的减伤。','https://bulbapedia.bulbagarden.net/wiki/Friend_Guard_(Ability)'),
+ A('cheek-pouch','颊囊','吃掉树果时额外恢复HP。','即使树果原本效果不是回复，也可触发额外恢复。','https://bulbapedia.bulbagarden.net/wiki/Cheek_Pouch_(Ability)'),
+ A('sap-sipper','食草','通常免疫草属性招式并提高攻击。','部分特殊招式效果存在例外。','https://bulbapedia.bulbagarden.net/wiki/Sap_Sipper_(Ability)'),
+ A('thick-fat','厚脂肪','受到火属性和冰属性招式的伤害减半。','改变实际伤害但不改变属性相克表。','https://bulbapedia.bulbagarden.net/wiki/Thick_Fat_(Ability)'),
+ A('guts','毅力','处于异常状态时物理攻击提升。','通常提高攻击50%，并让灼伤的通常物理攻击减半效果不生效；适合火焰宝珠。','https://bulbapedia.bulbagarden.net/wiki/Guts_(Ability)'),
+ A('skill-link','连续攻击','常见连续攻击招式攻击次数固定最大值。','鼠数儿相关机制较特殊；需先确认该宝可梦是否真的能拥有连续攻击特性和学会该招式。','https://bulbapedia.bulbagarden.net/wiki/Skill_Link_(Ability)'),
+ A('flash-fire','引火','通常免疫火属性攻击，并强化自己的火招。','具有特殊状态或攻击例外，不能仅凭属性判断。','https://bulbapedia.bulbagarden.net/wiki/Flash_Fire_(Ability)'),
+ A('protosynthesis','古代活性','晴天或携带驱劲能量时提高最高的合格能力。','能力增加类型和条件由实际能力值决定。','https://bulbapedia.bulbagarden.net/wiki/Protosynthesis_(Ability)'),
+ A('quark-drive','夸克充能','电气场地或携带驱劲能量时提高最高的合格能力。','能力变化依实际数值判断；不等同于固定提高攻击。','https://bulbapedia.bulbagarden.net/wiki/Quark_Drive_(Ability)')
+];
+const REF_ITEMS=[
+ I('wide-lens','广角镜','命中率×1.1。','鼠数儿每击从90%提升至99%，使十击全中概率显著提高。','酿光市的信使鸟包包购买，20,000宝可币。','https://bulbapedia.bulbagarden.net/wiki/Wide_Lens'),
+ I('loaded-dice','机变骰子','让普通2～5连击招式至少攻击4次。','对鼠数儿，只需一次命中判定，命中后4～10击等概率。与广角镜是不同的道具，不能同时携带。','酿光市信使鸟包包购买；东第1区击败指定训练家后还可领取奖励。','https://wiki.52poke.com/zh/%E6%9C%BA%E5%8F%98%E9%AA%B0%E5%AD%90%EF%BC%88%E9%81%93%E5%85%B7%EF%BC%89',['老千骰子']),
+ I('ability-patch','特性膏药','可在普通特性与隐藏特性之间转换。','用于解锁或切换隐藏特性，具体还需确认宝可梦可拥有的特性。','《朱／紫》6星、7星太晶团体战有概率获得；《蓝之圆盘》道具打印机等。','https://wiki.52poke.com/wiki/%E7%89%B9%E6%80%A7%E8%86%8F%E8%8D%AF%EF%BC%88%E9%81%93%E5%85%B7%EF%BC%89'),
+ I('ability-capsule','特性胶囊','切换两种普通特性。','不能用于直接获得隐藏特性。','后期可在吉利蛋蛋白药店购买，或部分团体战奖励。','https://bulbapedia.bulbagarden.net/wiki/Ability_Capsule'),
+ I('life-orb','生命宝珠','多数攻击伤害提高约30%，命中后会有反伤。','通常命中后失去最大HP的1/10；连续攻击通常是每次使用招式触发一次。','信使鸟包包等来源；具体分店及剧情解锁请按道具详情核对。','https://bulbapedia.bulbagarden.net/wiki/Life_Orb'),
+ I('rocky-helmet','凸凸头盔','对接触它的攻击方造成反伤。','通常每次接触扣攻击方最大HP的1/6；鼠数儿会多次触发，非常克制一家鼠。','可从游戏内对战道具渠道获得；具体地点以游戏图鉴和商店为准。','https://bulbapedia.bulbagarden.net/wiki/Rocky_Helmet'),
+ I('protective-pads','部位护具','让自己的接触类攻击不触发接触效果。','可避免部分凸凸头盔和粗糙皮肤一类的接触惩罚，但不会提高鼠数儿的命中率。','具体获取方式未完成本版核实。','https://bulbapedia.bulbagarden.net/wiki/Protective_Pads'),
+ I('mirror-herb','模仿香草','战斗模仿能力提升，也可用于野餐传授蛋招式。','用于蛋招式时需要符合学习条件、保留空招式格等。','玻瓶市的信使鸟包包购买。','https://bulbapedia.bulbagarden.net/wiki/Mirror_Herb'),
+ I('destiny-knot','红线','孵蛋时从双亲的个体值中合计遗传5项。','并不保证孵出5V；遗传的五项来源仍有随机性。','桌台市信使鸟包包，达到对应道馆进度后购买。','https://bulbapedia.bulbagarden.net/wiki/Destiny_Knot'),
+ I('everstone','不变之石','阻止进化；繁殖时可以传递性格。','部分地区形态繁殖也需要携带，以保留地区形态。','信使鸟包包购买。','https://bulbapedia.bulbagarden.net/wiki/Everstone'),
+ I('focus-sash','气势披带','满HP时受到本该一击击倒的伤害，通常会剩余1HP。','对连续攻击不一定能保命：第一击触发后剩余攻击仍会继续。','信使鸟包包等对战道具来源。','https://bulbapedia.bulbagarden.net/wiki/Focus_Sash'),
+ I('choice-band','讲究头带','物理攻击能力提高50%，但锁定首次选择的招式。','在更换上场或道具状态改变前通常不能自由切换招式。','信使鸟包包对战道具渠道。','https://bulbapedia.bulbagarden.net/wiki/Choice_Band')
+];
+const REF_MOVES=[
+ M('population-bomb','鼠数儿','normal','physical',20,90,'最多连续攻击10次，每击独立命中判定。','只要任何一击落空便结束。与广角镜、技术高手、机变骰子形成不同组合。','https://bulbapedia.bulbagarden.net/wiki/Population_Bomb_(move)'),
+ M('bullet-seed','种子机关枪','grass','physical',25,100,'通常攻击2～5次。','机变骰子可令命中后的次数变成4或5；技术高手按每击威力强化。','https://bulbapedia.bulbagarden.net/wiki/Bullet_Seed_(move)'),
+ M('play-rough','嬉闹','fairy','physical',90,90,'妖精物理招式，可能降低对方攻击。','妖精克制格斗、龙和恶；对火、毒、钢效果不好。','https://bulbapedia.bulbagarden.net/wiki/Play_Rough_(move)'),
+ M('tera-blast','太晶爆发','normal','special',80,100,'太晶化后，招式属性通常与太晶属性一致。','通常根据使用者较高的攻击或特攻能力值来选择物理或特殊方式；星晶太晶为例外。','https://bulbapedia.bulbagarden.net/wiki/Tera_Blast_(move)'),
+ M('tidy-up','大扫除','normal','status',0,100,'清除场地部分陷阱／替身，并提高攻击和速度。','适合一家鼠强化与清理场地；属于变化招式，不直接造成伤害。','https://bulbapedia.bulbagarden.net/wiki/Tidy_Up_(move)'),
+ M('belly-drum','腹鼓','normal','status',0,100,'消耗最多HP的一半，让攻击等级升至+6。','团体战使用时需要确保续航与生存，不能盲目在所有首领面前使用。','https://bulbapedia.bulbagarden.net/wiki/Belly_Drum_(move)'),
+ M('drain-punch','吸取拳','fighting','physical',75,100,'造成伤害并恢复部分HP。','输出和回复兼顾，在团体战常用。','https://bulbapedia.bulbagarden.net/wiki/Drain_Punch_(move)'),
+ M('earthquake','地震','ground','physical',100,100,'地面群体物理攻击。','对飞行属性通常无效，可能受到飘浮等特性影响。','https://bulbapedia.bulbagarden.net/wiki/Earthquake_(move)'),
+ M('dragon-pulse','龙之波动','dragon','special',85,100,'龙属性特殊攻击。','对妖精属性通常无效。','https://bulbapedia.bulbagarden.net/wiki/Dragon_Pulse_(move)'),
+ M('thunderbolt','十万伏特','electric','special',90,100,'电属性特殊攻击，有概率麻痹对手。','对地面属性通常无效。','https://bulbapedia.bulbagarden.net/wiki/Thunderbolt_(move)'),
+ M('waterfall','攀瀑','water','physical',80,100,'水属性物理攻击，可能让目标畏缩。','水克制火、地面和岩石；储水等特性会使伤害无效。','https://bulbapedia.bulbagarden.net/wiki/Waterfall_(move)'),
+ M('flamethrower','喷射火焰','fire','special',90,100,'火属性特殊攻击，可能使目标灼伤。','火克制草、冰、虫和钢。','https://bulbapedia.bulbagarden.net/wiki/Flamethrower_(move)')
+];
+const REFERENCE_GROUPS={abilities:REF_ABILITIES,items:REF_ITEMS,moves:REF_MOVES};
+function referenceSearch(kind,q='',remote=[]){
+ const local=REFERENCE_GROUPS[kind]||[];
+ const search=String(q||'').trim().toLowerCase();
+ const byId=new Set(local.map(x=>x.id));
+ const merged=[...local,...remote.filter(x=>!byId.has(x.id)).map(x=>({...x,summary:'需联网查看说明；尚未核对《朱／紫》版本适用性。',source:'https://pokeapi.co/docs/v2',remote:true}))];
+ return merged.filter(x=>!search||[x.id,x.zh,x.summary,...(x.aliases||[])].some(y=>String(y).toLowerCase().includes(search)));
+}
+const referenceById=(kind,id,remote=[])=>referenceSearch(kind,'',remote).find(x=>x.id===id);
+
+// ------- combo_sim.js -------
+
+
+// Verified, deliberately limited interaction calculator, not a full damage engine.
+// Expected power index aggregates per-strike BP and damage modifiers. It is NOT HP damage.
+const COMBO_PRESETS=[
+ {id:'maushold-wide',name:'一家鼠 · 广角镜＋鼠数儿＋技术高手',pokemon:'maushold',move:'population-bomb',ability:'technician',item:'wide-lens',tera:'none',target:'normal'},
+ {id:'maushold-dice',name:'一家鼠 · 机变骰子＋鼠数儿',pokemon:'maushold',move:'population-bomb',ability:'technician',item:'loaded-dice',tera:'none',target:'normal'},
+ {id:'maushold-seed',name:'一家鼠 · 机变骰子＋种子机关枪',pokemon:'maushold',move:'bullet-seed',ability:'technician',item:'loaded-dice',tera:'none',target:'water'},
+ {id:'azumarill-fairy',name:'玛力露丽 · 大力士＋嬉闹＋生命宝珠',pokemon:'azumarill',move:'play-rough',ability:'huge-power',item:'life-orb',tera:'none',target:'dragon'}
+];
+const SIM_POKEMON=[
+ {id:'maushold',name:'一家鼠',types:['normal'],moves:['population-bomb','bullet-seed','play-rough'],abilities:['technician','cheek-pouch','friend-guard']},
+ {id:'azumarill',name:'玛力露丽',types:['water','fairy'],moves:['play-rough'],abilities:['huge-power','thick-fat','sap-sipper']}
+];
+const SIM_MOVES=[
+ {id:'population-bomb',name:'鼠数儿',type:'normal',category:'physical',bp:20,accuracy:.9,maxHits:10,kind:'sequential',contact:true,description:'最多10次，每击单独命中判定；一次落空即停止。'},
+ {id:'bullet-seed',name:'种子机关枪',type:'grass',category:'physical',bp:25,accuracy:1,maxHits:5,kind:'standard-multihit',contact:false,description:'命中后通常攻击2～5次。'},
+ {id:'play-rough',name:'嬉闹',type:'fairy',category:'physical',bp:90,accuracy:.9,maxHits:1,kind:'single',contact:true,description:'普通单次物理攻击。'}
+];
+const SIM_ABILITIES=[{id:'none',name:'不计算特性'},{id:'technician',name:'技术高手'},{id:'huge-power',name:'大力士'},{id:'cheek-pouch',name:'颊囊'},{id:'friend-guard',name:'友情防守'},{id:'thick-fat',name:'厚脂肪'},{id:'sap-sipper',name:'食草'}];
+const SIM_ITEMS=[{id:'none',name:'不携带'},{id:'wide-lens',name:'广角镜'},{id:'loaded-dice',name:'机变骰子／老千骰子'},{id:'life-orb',name:'生命宝珠'},{id:'protective-pads',name:'部位护具'}];
+const SIM_TARGETS=[['normal','一般'],['ghost','幽灵'],['rock','岩石'],['steel','钢'],['dragon','龙'],['water','水'],['ground','地面'],['fairy','妖精'],['fighting','格斗']];
+const round=n=>Math.round(n*1000)/1000;
+function simulateCombo({pokemon='maushold',move='population-bomb',ability='technician',item='wide-lens',tera='none',target='normal'}={}){
+ const owner=SIM_POKEMON.find(p=>p.id===pokemon), m=SIM_MOVES.find(x=>x.id===move);
+ if(!owner||!m)return {supported:false,reason:'组合中的宝可梦或招式尚未纳入已核实的规则模拟。'};
+ const legal=owner.moves.includes(m.id)&&(ability==='none'||owner.abilities.includes(ability));
+ const warnings=[];
+ if(!owner.moves.includes(m.id))warnings.push(`${owner.name}未收录可学习招式「${m.name}」，不可视作合法配招。`);
+ if(ability!=='none'&&!owner.abilities.includes(ability))warnings.push(`${owner.name}不具备所选特性；下方仅为假设性公式结果。`);
+ const tech=(ability==='technician'&&m.bp<=60)?1.5:1;
+ const hugePower=ability==='huge-power'?2:1; // physical attack multiplier, not move base power
+ const lifeOrb=item==='life-orb'?1.3:1;
+ const perHit=m.bp*tech;
+ const accuracy=Math.min(1,m.accuracy*(item==='wide-lens'?1.1:1));
+ let dist=[],note='';
+ if(m.kind==='sequential'&&item==='loaded-dice'){
+  dist=[{hits:0,p:1-accuracy},...[4,5,6,7,8,9,10].map(n=>({hits:n,p:accuracy/7}))];
+  note='机变骰子对鼠数儿仅作一次命中判定；命中后4～10击等概率（每个1/7）。';
+ }else if(m.kind==='sequential'){
+  dist=[{hits:0,p:1-accuracy}];
+  for(let n=1;n<10;n++)dist.push({hits:n,p:Math.pow(accuracy,n)*(1-accuracy)});
+  dist.push({hits:10,p:Math.pow(accuracy,10)});
+  note='每击独立判定；连续一旦落空就停止。';
+ }else if(m.kind==='standard-multihit'){
+  const probs=item==='loaded-dice'?[[4,.5],[5,.5]]:[[2,.35],[3,.35],[4,.15],[5,.15]];
+  dist=[{hits:0,p:1-accuracy},...probs.map(([hits,p])=>({hits,p:p*accuracy}))];
+  note=item==='loaded-dice'?'机变骰子使普通2～5连击招式命中后只出现4或5击，各50%。':'普通2～5连击招式先判定命中，随后按35%／35%／15%／15%决定2／3／4／5击。';
+ }else{
+  dist=[{hits:0,p:1-accuracy},{hits:1,p:accuracy}];note='普通单击招式，成功命中后攻击一次。';
+ }
+ const expectedHits=dist.reduce((a,x)=>a+x.hits*x.p,0);
+ const maxHits=Math.max(...dist.map(x=>x.hits));
+ const maxProbability=dist.find(x=>x.hits===maxHits)?.p||0;
+ const modifier=stab(m.type,owner.types,tera);
+ const typeMultiplier=typeFactor(m.type,[target]);
+ const expectedIndex=expectedHits*perHit*modifier*typeMultiplier*hugePower*lifeOrb;
+ if(typeMultiplier===0)warnings.push(`对${TYPE_NAME[target]||target}属性目标，${TYPE_NAME[m.type]}属性攻击通常免疫，伤害为0。`);
+ if(m.contact)warnings.push('这是接触攻击：对手的凸凸头盔、粗糙皮肤等可能按命中次数反复触发；本模型不模拟反伤后提前倒下。');
+ if(item==='life-orb')warnings.push('生命宝珠通常造成攻击成功后最大HP的1/10反伤；连续攻击是一次招式，不是每击都扣一次。');
+ if(item==='protective-pads')warnings.push('部位护具可以防止招式的接触效果，但不能提高命中率。');
+ if(tera==='stellar')warnings.push('暂不支持星晶太晶完整伤害规则，此处只显示简化指标。');
+ return {supported:true,legal,owner:owner.name,move:m.name,moveType:m.type,category:m.category,perHitOriginal:m.bp,perHitAfterAbility:perHit,techMultiplier:tech,
+  accuracyPerCheck:round(accuracy),expectedHits:round(expectedHits),maxHits,probabilityMax:round(maxProbability),dist:dist.map(x=>({hits:x.hits,p:round(x.p)})),
+  stab:modifier,typeMultiplier,otherMultiplier:hugePower*lifeOrb,index:round(expectedIndex),note,warnings,
+  method:'威力指标 = 每击基础威力×特性威力修正×期望命中次数×本系加成×属性克制×其他伤害修正；不等于真实HP伤害。'};
+}
+
+// ------- special_evolutions.js -------
+// Curated Scarlet/Violet special evolutions. These are independently reviewed
+// rules, not an inference from the general evolution chain.
+const SPECIAL_EVOLUTIONS = [
+ {from:'奇鲁莉安',to:'艾路雷朵',kind:'性别＋进化石',condition:'雄性奇鲁莉安使用觉醒之石',steps:'先确认奇鲁莉安是雄性，在背包使用觉醒之石；雌性奇鲁莉安不能以此方式进化。',scope:'本篇',item:'觉醒之石'},
+ {from:'雪童子',to:'雪妖女',kind:'性别＋进化石',condition:'雌性雪童子使用觉醒之石',steps:'确认雪童子是雌性，对它使用觉醒之石。',scope:'本篇',item:'觉醒之石'},
+ {from:'火暴猴',to:'弃世猴',kind:'使用招式',condition:'累计使用「愤怒之拳」20次后再升级',steps:'让火暴猴在普通战斗中累计使用愤怒之拳至少20次，再提升一级。只学会招式不够。',scope:'本篇',item:''},
+ {from:'飞天螳螂',to:'巨钳螳螂',kind:'交换携带道具',condition:'携带金属膜进行交换',steps:'让飞天螳螂携带金属膜，与其他玩家交换触发进化；单纯升级或直接使用金属膜不行。',scope:'本篇',item:'金属膜'},
+ {from:'呆呆兽',to:'呆呆王',kind:'交换携带道具',condition:'携带王者之证进行交换',steps:'普通呆呆兽携带王者之证，与其他玩家交换。',scope:'本篇',item:'王者之证'},
+ {from:'布土拨',to:'巴布土拨',kind:'随行步数',condition:'Let’s Go 随行约1000步后升级',steps:'用 R 键放出布土拨随行，连续走够所需步数，再通过正常战斗或经验道具升级；自动战斗本身不等于步数。',scope:'本篇',item:''},
+ {from:'虫滚泥',to:'虫甲圣',kind:'随行步数',condition:'Let’s Go 随行约1000步后升级',steps:'让虫滚泥在球外随行满足步数，再升级。',scope:'本篇',item:''},
+ {from:'纳噬草',to:'怖纳噬草',kind:'随行步数',condition:'Let’s Go 随行约1000步后升级',steps:'让纳噬草在球外随行满足步数，再升级。',scope:'本篇',item:''},
+ {from:'波普海豚',to:'海豚侠',kind:'联机升级',condition:'至少38级，在联盟集友圈联机状态下升级',steps:'进入其他玩家参与的联盟集友圈，波普海豚达到至少38级后提升等级。无需交换给别人。',scope:'本篇',item:''},
+ {from:'劈斩司令',to:'仆刀将军',kind:'击败指定目标',condition:'击败3只持有头领凭证的野生劈斩司令后升级',steps:'找到被驹刀小兵簇拥的野生劈斩司令，用要进化的劈斩司令击败3只符合条件的个体，再升级。自己的劈斩司令不必持有头领凭证。',scope:'本篇',item:''},
+ {from:'索财灵',to:'赛富豪',kind:'收集资源',condition:'持有999枚索财灵硬币后升级',steps:'累计获得999枚索财灵硬币，再让索财灵升级；进化时会消耗所需硬币。',scope:'本篇',item:'索财灵硬币'},
+ {from:'炭小侍',to:'红莲铠骑',kind:'使用道具',condition:'使用庆祝之铠',steps:'朱版可通过穴扎镇 NPC 以铜镜怪的碎片兑换；紫版可交换获得铠甲后使用。',scope:'朱版为主',item:'庆祝之铠'},
+ {from:'炭小侍',to:'苍炎刃鬼',kind:'使用道具',condition:'使用咒术之铠',steps:'紫版可通过穴扎镇 NPC 以来悲茶的碎片兑换；朱版可交换获得铠甲后使用。',scope:'紫版为主',item:'咒术之铠'},
+ {from:'啃果虫',to:'裹蜜虫',kind:'DLC道具',condition:'使用蜜汁苹果',steps:'在《碧之假面》北上乡取得蜜汁苹果，直接给啃果虫使用。',scope:'碧之假面',item:'蜜汁苹果'},
+ {from:'裹蜜虫',to:'蜜集大蛇',kind:'学会招式后升级',condition:'学会「龙声鼓舞」后升级',steps:'在《蓝之圆盘》获得相关招式学习器，让裹蜜虫学会龙声鼓舞，随后升级。只持有学习器不够。',scope:'蓝之圆盘',item:'龙声鼓舞'},
+ {from:'铝钢龙',to:'铝钢桥龙',kind:'DLC道具',condition:'使用复合金属',steps:'在《蓝之圆盘》获取复合金属后，对铝钢龙直接使用。',scope:'蓝之圆盘',item:'复合金属'},
+ {from:'麒麟奇',to:'奇麒麟',kind:'学会招式后升级',condition:'学会「双光束」后升级',steps:'让麒麟奇处于已经学会双光束的状态，再升级。',scope:'本篇',item:''},
+ {from:'土龙弟弟',to:'土龙节节',kind:'学会招式后升级',condition:'学会「强力钻」后升级',steps:'让土龙弟弟学会强力钻，再升级。二节与三节形态并非不同进化条件。',scope:'本篇',item:''},
+];
+const SPECIAL_EVOLUTION_SOURCE='https://www.serebii.net/scarletviolet/evolution.shtml';
+function searchSpecialEvolutions(query='',kind='全部') {
+ const q=String(query).trim().toLowerCase();
+ return SPECIAL_EVOLUTIONS.filter(x=>(kind==='全部'||x.kind===kind)&&(!q||[x.from,x.to,x.kind,x.condition,x.item,x.scope].some(v=>String(v).toLowerCase().includes(q))));
+}
+const SPECIAL_EVOLUTION_KINDS=['全部',...new Set(SPECIAL_EVOLUTIONS.map(x=>x.kind))];
+
+// ------- raid_advisor.js -------
+// Regular, non-event 5-star Tera Raid excerpts checked against Serebii's SV
+// listings. For all other stars/species, do NOT invent a fixed boss moveset.
+
+
+
+const attack=(zh,type)=>({zh,type,category:'attack'});
+const status=(zh)=>({zh,type:null,category:'status'});
+const VERIFIED_FIVE_STAR_BOSSES={
+ 'slowbro':{en:'slowbro',types:['water','psychic'],zh:'呆壳兽',moves:[attack('意念头锤','psychic'),attack('水流裂破','water'),status('哈欠'),attack('水之波动','water')],extras:[status('诅咒')],note:'常规五星首领资料；可能通过哈欠干扰，并在特定阶段使用诅咒。'},
+ 'gengar':{en:'gengar',types:['ghost','poison'],zh:'耿鬼',moves:[attack('暗影球','ghost'),attack('污泥炸弹','poison'),status('奇异之光'),status('怨恨')],extras:[status('催眠术')],note:'幽灵＋毒攻击和催眠／混乱干扰；需重视异常状态。'},
+ 'tinkaton':{en:'tinkaton',types:['fairy','steel'],zh:'巨锻匠',moves:[attack('巨力锤','steel'),attack('嬉闹','fairy'),attack('狂舞挥打','dark'),attack('碎岩','fighting')],extras:[status('薄雾场地'),status('电磁波'),status('撒娇')],note:'攻击属性较杂，需要同时防范钢、妖精、恶与格斗。'},
+ 'cloyster':{en:'cloyster',types:['water','ice'],zh:'刺甲贝',moves:[attack('冰锥','ice'),attack('水炮','water'),attack('冰砾','ice'),status('超音波')],extras:[status('破壳')],note:'破壳可能提高输出；水、冰攻击均需考虑。'},
+ 'arcanine':{en:'arcanine',types:['fire'],zh:'风速狗',moves:[attack('喷射火焰','fire'),attack('咬碎','dark'),attack('神速','normal'),attack('火焰牙','fire')],extras:[status('大晴天'),status('瞪眼')],note:'大晴天会提高火属性攻击威力。'},
+ 'raichu':{en:'raichu',types:['electric'],zh:'雷丘',moves:[attack('放电','electric'),attack('铁尾','steel'),status('撒娇'),status('蹭蹭脸颊')],extras:[status('电气场地'),status('电磁波')],note:'电系伤害与麻痹干扰，不能只按电属性防御克制判断。'},
+ 'kingambit':{en:'kingambit',types:['dark','steel'],zh:'仆刀将军',moves:[attack('铁头','steel'),attack('暗袭要害','dark'),status('无理取闹'),attack('劈开','normal')],extras:[status('挑衅'),attack('金属爆炸','steel')],note:'挑衅可能限制强化／回复变化招式；注意可能拥有不服输等特性。'},
+ 'annihilape':{en:'annihilape',types:['fighting','ghost'],zh:'弃世猴',moves:[attack('暗影爪','ghost'),attack('近身战','fighting'),attack('逆鳞','dragon'),status('瞪眼')],extras:[status('挑衅'),status('健美')],note:'高物理压力与挑衅／健美，爆发强化前需要考虑生存。'},
+ 'breloom':{en:'breloom',types:['grass','fighting'],zh:'斗笠菇',moves:[attack('种子炸弹','grass'),attack('音速拳','fighting'),status('烦恼种子'),attack('头锤','normal')],extras:[status('蘑菇孢子'),status('青草场地')],note:'蘑菇孢子睡眠与格斗／草招式要重点防范。'},
+};
+const FIVE_STAR_RAID_SOURCE='https://www.serebii.net/scarletviolet/teraraidbattles/5star.shtml';
+const scoreRisk=(candidate,boss)=>{
+ if(!boss)return {max:null,weakMoves:[],unknown:true};
+ const checks=boss.moves.filter(x=>x.type).map(m=>({name:m.zh,value:effectiveness(m.type,candidate.types,'none','').value}));
+ const weakMoves=checks.filter(x=>x.value>=2).map(x=>`${x.name} ×${x.value}`);
+ return {max:Math.max(...checks.map(x=>x.value),0),weakMoves,unknown:false};
+};
+function analyzeFiveStar({boss,tera='grass',ability='',stars=5,mode='solo',candidates=[],candidateLookup}={}){
+ const verified=Number(stars)===5?VERIFIED_FIVE_STAR_BOSSES[boss?.en]:null;
+ const naturalTypes=boss?.types||[];
+ if(!naturalTypes.length||!tera||tera==='none'||tera==='stellar')return {error:'请先选择首领宝可梦及18种普通太晶属性。星晶太晶不能直接套用本模式。'};
+ const attackTypes=['normal','fire','water','electric','grass','ice','fighting','poison','ground','flying','psychic','bug','rock','ghost','dragon','dark','steel','fairy'];
+ const offensive=attackTypes.map(t=>({type:t,name:TYPE_NAME[t],...effectiveness(t,naturalTypes,tera,ability)}));
+ const bestTypes=offensive.filter(x=>x.value>=2).sort((a,b)=>b.value-a.value);
+ const nullTypes=offensive.filter(x=>x.value===0);
+ // Cautious candidate ranking, not actual HP, win-rate, or precise Tera boss AI simulation.
+ const result=[];
+ for(const build of candidates.filter(x=>x.mode==='raid')){
+  const p=candidateLookup(build.pokemon);if(!p)continue;
+  const moveOptions=build.moves.map(id=>COMMON_MOVES[id]).filter(m=>m&&m.power&&m.category!=='status');
+  const usable=moveOptions.map(m=>({zh:m.zh||m.name||m.id,type:m.type,id:m.id,match:effectiveness(m.type,naturalTypes,tera,ability).value})).filter(m=>m.match>0).sort((a,b)=>b.match-a.match);
+  if(!usable.length)continue;
+  const best=usable[0];const risk=scoreRisk(p,verified);
+  const offensiveBonus=best.match>=2?3:best.match===1?0:-3;
+  const riskPenalty=risk.max>=4?7:risk.max>=2?3:0;
+  const sustainability=build.roles?.includes('持续回复')?1:0;
+  const score=offensiveBonus-riskPenalty+sustainability;
+  const comments=[];
+  if(best.match>=2)comments.push(`${TYPE_NAME[best.type]}招式对${TYPE_NAME[tera]}太晶有${best.match}倍属性效果`);
+  else comments.push(`已列招式对${TYPE_NAME[tera]}太晶仅${best.match}倍，建议核对其他可学招式`);
+  if(risk.weakMoves.length)comments.push(`首领已核实的招式中，${risk.weakMoves.join('、')}会克制它`);
+  if(!verified)comments.push('未核实这一首领的五星固定招式，无法确认防守安全性');
+  result.push({build,p,score,best,risk,comments});
+ }
+ result.sort((a,b)=>b.score-a.score||a.build.pokemon.localeCompare(b.build.pokemon,'zh-CN'));
+ return {verified,offensive,bestTypes,nullTypes,candidates:result.slice(0,6),mode,stars,ability,
+  confidence:verified?'仅对已核实的普通五星首领招式做风险初筛；特性与动态机制尚需实战确认':'仅属性初筛：当前没有这只首领的已核实普通五星招式资料。',
+  warning:'不是胜率预测或精确伤害模拟。没有计算等级、PP、具体能力值、AI行动、护盾伤害修正、状态效果、特殊特性与多人配合。'};
+}
+
 // ------- app.js -------
+
+
+
+
+
 
 
 
@@ -1493,7 +1896,8 @@ const typeText=(arr)=>arr?.map(t=>badgeType(t)).join(' ')||'<span class="muted">
 const valFormat=n=>n===0?'×0':n===.25?'×¼':n===.5?'×½':n===1?'×1':n===2?'×2':n===4?'×4':`×${Number(n.toFixed(2))}`;
 const valColor=n=>n===0?'#8894a2':n>=2?'#08745b':n<1?'#c3744c':'#5f6f89';
 const state={
- tab:'counter',myTeamSlots:[...SAMPLE_TEAM],myTeamMode:'story',itemQuery:'',itemCategory:'全部',itemRegion:'全部',itemSelected:'mirror-herb',itemShowAll:false,recMode:'story',recType:'all',recRole:'all',recShowAll:false,recTarget:'',recTeam:'story-balance',focusType:'fairy',materialQuery:'熊宝宝的爪子',selectedMaterial:'teddiursa-claw',materialOwned:0,materialTarget:3,crystalType:'fire',foe:localPokemon('土王'),own:localPokemon('玛力露丽'),dexPoke:localPokemon('暴鲤龙'),
+ raidStars:'5',raidBossKey:'slowbro',raidBossQuery:'呆壳兽',raidBossCustom:null,raidTera:'grass',raidAbility:'',raidMode:'solo',evoQuery:'',evoKind:'全部',evoMore:false,
+ tab:'counter',refKind:'moves',refQuery:'',refSelected:'population-bomb',refExpanded:false,comboPokemon:'maushold',comboMove:'population-bomb',comboAbility:'technician',comboItem:'wide-lens',comboTera:'none',comboTarget:'normal',myTeamSlots:[...SAMPLE_TEAM],myTeamProfiles:{},myTeamMode:'story',breedPartnerFilter:'',itemQuery:'',itemCategory:'全部',itemRegion:'全部',itemSelected:'mirror-herb',itemShowAll:false,recMode:'story',recType:'all',recRole:'all',recShowAll:false,recTarget:'',recTeam:'story-balance',focusType:'fairy',materialQuery:'熊宝宝的爪子',selectedMaterial:'teddiursa-claw',materialOwned:0,materialTarget:3,crystalType:'fire',foe:localPokemon('土王'),own:localPokemon('玛力露丽'),dexPoke:localPokemon('暴鲤龙'),
  foeQuery:'土王',ownQuery:'玛力露丽',dexQuery:'暴鲤龙',
  foeTera:'none',foeAbility:'water-absorb',foeItem:'',ignoreAbility:false,selectedAttackType:'water',selectedMove:'play-rough',
  manual:false,manualType1:'water',manualType2:'fairy',ownTera:'none',mode:'raid',
@@ -1504,14 +1908,17 @@ const state={
 };
 try{
  const saved=JSON.parse(localStorage.getItem('sv-guide-settings-v1')||'{}');
- for(const k of ['tab','recMode','recType','recRole','recTeam','myTeamSlots','myTeamMode','itemQuery','itemCategory','itemRegion','itemSelected','focusType','materialQuery','selectedMaterial','materialOwned','materialTarget','crystalType','foeTera','foeAbility','foeItem','ignoreAbility','selectedAttackType','selectedMove','manual','manualType1','manualType2','ownTera','mode','level','nature','iv','ev','moveQuery','selectedMove','fontLarge','breedSexA','breedSexB','breedItemA','breedItemB','breedHADonor','trainStat','trainTarget','trainMethod','trainLog','trainCounts','ownEn','ownQuery']){
+ for(const k of ['tab','raidStars','raidRegion','raidBossKey','raidBossQuery','raidTera','raidAbility','raidMode','raidBossCustom','evoQuery','evoKind','refKind','refQuery','refSelected','comboPokemon','comboMove','comboAbility','comboItem','comboTera','comboTarget','recMode','recType','recRole','recTeam','myTeamSlots','myTeamProfiles','myTeamMode','breedPartnerFilter','itemQuery','itemCategory','itemRegion','itemSelected','focusType','materialQuery','selectedMaterial','materialOwned','materialTarget','crystalType','foeTera','foeAbility','foeItem','ignoreAbility','selectedAttackType','selectedMove','manual','manualType1','manualType2','ownTera','mode','level','nature','iv','ev','moveQuery','selectedMove','fontLarge','breedSexA','breedSexB','breedItemA','breedItemB','breedHADonor','trainStat','trainTarget','trainMethod','trainLog','trainCounts','ownEn','ownQuery']){
   if(k==='ownEn'){if(saved.ownEn){const found=localPokemon(saved.ownEn);if(found){state.own=found;state.ownQuery=found.zh;}}}else if(saved[k]!==undefined)state[k]=saved[k];
  }
 }catch{}
 if(!Array.isArray(state.myTeamSlots))state.myTeamSlots=[...SAMPLE_TEAM];
 state.myTeamSlots=Array.from({length:6},(_,i)=>String(state.myTeamSlots[i]||''));
+if(!state.myTeamProfiles||typeof state.myTeamProfiles!=='object')state.myTeamProfiles={};
+Object.values(state.myTeamProfiles).forEach(registerTeamPokemon);
+setBreedingCatalog(getBreedingCatalog());
 if(!['story','raid'].includes(state.myTeamMode))state.myTeamMode='story';
-function persist(){try{const o={};for(const k of ['tab','recMode','recType','recRole','recTeam','myTeamSlots','myTeamMode','itemQuery','itemCategory','itemRegion','itemSelected','focusType','materialQuery','selectedMaterial','materialOwned','materialTarget','crystalType','foeTera','foeAbility','foeItem','ignoreAbility','selectedAttackType','selectedMove','manual','manualType1','manualType2','ownTera','mode','level','nature','iv','ev','moveQuery','selectedMove','fontLarge','breedSexA','breedSexB','breedItemA','breedItemB','breedHADonor','trainStat','trainTarget','trainMethod','trainLog','trainCounts'])o[k]=state[k];o.ownEn=state.own?.en;o.ownQuery=state.ownQuery;localStorage.setItem('sv-guide-settings-v1',JSON.stringify(o));}catch{}}
+function persist(){try{const o={};for(const k of ['tab','raidStars','raidRegion','raidBossKey','raidBossQuery','raidTera','raidAbility','raidMode','raidBossCustom','evoQuery','evoKind','refKind','refQuery','refSelected','comboPokemon','comboMove','comboAbility','comboItem','comboTera','comboTarget','recMode','recType','recRole','recTeam','myTeamSlots','myTeamProfiles','myTeamMode','breedPartnerFilter','itemQuery','itemCategory','itemRegion','itemSelected','focusType','materialQuery','selectedMaterial','materialOwned','materialTarget','crystalType','foeTera','foeAbility','foeItem','ignoreAbility','selectedAttackType','selectedMove','manual','manualType1','manualType2','ownTera','mode','level','nature','iv','ev','moveQuery','selectedMove','fontLarge','breedSexA','breedSexB','breedItemA','breedItemB','breedHADonor','trainStat','trainTarget','trainMethod','trainLog','trainCounts'])o[k]=state[k];o.ownEn=state.own?.en;o.ownQuery=state.ownQuery;localStorage.setItem('sv-guide-settings-v1',JSON.stringify(o));}catch{}}
 function pTitle(name,desc,kicker='POKÉMON SCARLET / VIOLET'){
  return `<div class="pagehead"><div class="eyebrow">${kicker}</div><h1>${name}</h1><p>${desc}</p></div>`;
 }
@@ -1562,7 +1969,7 @@ function renderTypeGuide(){
  <div class="type-section type-offense"><h3>我使用${escapeHTML(TYPE_NAME[focus])}招式攻击对方</h3><div class="type-subtitle positive">×2 · 效果绝佳</div>${list(data.attack.strong)}<div class="type-subtitle caution">×½ · 对方抵抗</div>${list(data.attack.weak)}<div class="type-subtitle zero">×0 · 完全无效</div>${list(data.attack.immune,'没有被完全免疫的常规属性')}</div>
  <div class="type-section type-defense"><h3>我方是${escapeHTML(TYPE_NAME[focus])}单属性时，受到哪些攻击？</h3><div class="type-subtitle negative">×2 · 我的弱点</div>${list(data.defend.strong)}<div class="type-subtitle positive">×½ · 我有抗性</div>${list(data.defend.weak)}<div class="type-subtitle zero">×0 · 我免疫</div>${list(data.defend.immune,'没有单属性免疫')}</div>
  <div class="type-tip">未列出的属性按×1计算。双属性防御需要两种倍率相乘；普通太晶化后，防御通常只看太晶属性。储水、引火等特性、特殊招式及道具可能改变结果。</div>
- <div class="type-actions"><button class="btn" data-action="type-guide-to-counter">用${escapeHTML(TYPE_NAME[focus])}招式分析具体对手 →</button><button class="btn subtle" data-action="type-guide-to-crystal">查看${escapeHTML(TYPE_NAME[focus])}太晶矿图标 →</button></div></div>
+ <div class="type-actions"><button class="btn" data-action="type-guide-to-counter">用${escapeHTML(TYPE_NAME[focus])}招式分析具体对手 →</button><button class="btn subtle" data-action="type-guide-to-crystal">查看${escapeHTML(TYPE_NAME[focus])}太晶矿图标 →</button><button class="btn" data-action="type-guide-to-recommend">查看${escapeHTML(TYPE_NAME[focus])}属性培养推荐 →</button></div></div>
  <div class="panel"><div class="paneltop"><h2>03 / 招式分类不要混淆</h2></div><div class="ref-grid"><div><b>属性：18种</b><span>例如“嬉闹”是妖精属性，决定它克制龙、恶、格斗；属性图标就在招式名旁。</span></div><div><b>分类：3类</b><span>物理：主要用攻击对防御；特殊：主要用特攻对特防；变化：通常不按普通伤害倍率攻击。</span></div></div><div class="three-btn"><button class="btn subtle" data-action="back-counter">返回战斗速查</button><button class="btn subtle" data-action="show-reference">常用规则备查</button></div></div>`;
 }
 function renderCrystalGuide(){
@@ -1600,7 +2007,7 @@ function renderCounter(){
  const notModelled=state.foeAbility && !abilityModelled.has(state.foeAbility);
  const orig=typeFactor(state.selectedAttackType,foe.types);
  const raidWarn=state.foeTera!=='none'?'团体战首领的防守使用太晶属性计算，但它仍可使用原属性招式。':'野外双属性时，效果要把两种防御属性的倍率相乘。';
- return pTitle('遇到它，怎么打？','输入对手宝可梦、太晶属性和特性，即时查看18种攻击属性的效果，并比较招式。')+displayStatus()+`<div class="panel crystal-entry"><b>野外发现太晶矿？</b><p>先查地图颜色与图标，再根据太晶属性选攻击方式。</p><button class="btn" data-action="show-crystal">打开18种太晶矿速查 →</button><button class="btn subtle" data-action="show-type-guide">18种招式属性与克制图标 →</button><button class="btn subtle" data-action="show-recommend">各属性强势宝可梦及配招 →</button><button class="btn subtle" data-action="show-items">常用道具与功能地点 →</button></div>`+
+ return pTitle('遇到它，怎么打？','输入对手宝可梦、太晶属性和特性，即时查看18种攻击属性的效果，并比较招式。')+displayStatus()+`<div class="panel crystal-entry"><b>野外发现太晶矿？</b><p>先查地图颜色与图标，再根据太晶属性选攻击方式。</p><button class="btn" data-action="show-crystal">打开18种太晶矿速查 →</button><button class="btn" data-action="show-raid-advisor">五星太晶智能打法 →</button><button class="btn subtle" data-action="show-type-guide">18种招式属性与克制图标 →</button><button class="btn subtle" data-action="show-recommend">各属性强势宝可梦及配招 →</button><button class="btn subtle" data-action="show-items">常用道具与功能地点 →</button></div>`+
  `<div class="panel"><div class="paneltop"><h2>01 / 对手信息</h2><div class="tag info">支持组合查询</div></div>
  <div class="fields">${field('对手宝可梦',searchBox('foe',state.foeQuery),'先从下方常见例子开始，也能在线扩展中文图鉴。',true)}
  <div class="field full"><div class="examples"><button class="exbtn" data-action="preset" data-example="clodsire">储水土王</button><button class="exbtn" data-action="preset" data-example="azumarill">迷你龙打玛力露丽</button><button class="exbtn" data-action="preset" data-example="gyarados">暴鲤龙遇电招</button><button class="exbtn" data-action="preset" data-example="tera-fire">火太晶土王</button></div></div>
@@ -1738,7 +2145,7 @@ const BREED_ITEMS=[['','不携带特殊遗传道具'],['everstone','不变之石
 function breedMetaText(p){
  const m=breedMeta(p);
  if(!m)return '未选择';
- return (m.groups?.length?m.groups.map(x=>EGG_GROUP_NAMES[x]||x).join('＋'):'蛋群数据待补全')+' · '+(m.source==='pokeapi'?'在线资料':m.source==='offline'?'精选离线资料':'待核对');
+ return (m.groups?.length?m.groups.map(x=>EGG_GROUP_NAMES[x]||x).join('＋'):'蛋群数据待补全')+' · '+(m.source==='pokeapi'?'在线资料':m.source==='catalog'?'已同步索引':m.source==='offline'?'精选离线资料':'待核对');
 }
 function breedBabyText(result){
  if(!result.baby?.zh)return '后代种类尚未可靠识别，请联网补全完整进化家族。';
@@ -1764,7 +2171,12 @@ function renderBreeding(){
  state.breedSexB=legalSex(mB,state.breedSexB,'male');
  const result=compatible(a,b,state.breedSexA,state.breedSexB);
  const inh=inheritance(result,{itemA:state.breedItemA,itemB:state.breedItemB,haDonor:state.breedHADonor});
- const list=suggestedPartners(a,BUILTIN).slice(0,10);
+ const index=getBreedingCatalog();
+ const names=new Set(BUILTIN.map(x=>x.en));
+ const pool=[...BUILTIN,...(index||[]).filter(x=>x.svDex.length&&!names.has(x.en))];
+ const allPartners=suggestedPartners(a,pool);
+ const filter=state.breedPartnerFilter.trim().toLowerCase();
+ const list=allPartners.filter(({p})=>!filter||p.zh.toLowerCase().includes(filter)||p.en.toLowerCase().includes(filter)).slice(0,24);
  const badge=result.status==='yes'?'<span class="tag success">可以配对</span>':result.status==='no'?'<span class="tag warn">无法配对</span>':'<span class="tag info">资料不足</span>';
  return pTitle('繁殖与遗传','选两只宝可梦，检查蛋群、性别和后代种类，再查看性格、特性与个体值的遗传方式。')+displayStatus()+
  `<div class="panel"><div class="paneltop"><h2>01 / 配对组合</h2><span class="tag info">朱／紫野餐孵蛋</span></div>
@@ -1785,8 +2197,8 @@ function renderBreeding(){
  ${field('携带道具',choice('breedItemB',BREED_ITEMS,state.breedItemB))}
  </div></div>
  <div class="three-btn" style="margin-top:13px"><button class="btn subtle" data-action="breed-swap">交换两只的位置</button>
- <button class="btn subtle" data-action="breed-online" ${state.busy?'disabled':''}>联网补全两只的蛋群资料</button></div>
- <p class="help">蛋群不是属性。当前离线库仅收录精选宝可梦，并非《朱／紫》＋DLC 全部可用物种；可联网补全具体双亲的蛋群与性别。未知蛋群不应判定为不能繁殖。</p></div>
+ <button class="btn subtle" data-action="breed-online" ${state.busy?'disabled':''}>更新双亲蛋群资料</button><button class="btn" data-action="breed-sync-catalog" ${state.busy?'disabled':''}>${index?'已同步蛋群目录 · 重新核对':'联网补全本篇＋DLC蛋群目录'}</button></div>
+ <p class="help">蛋群不是属性。${index?`已缓存 ${index.length} 条跨世代物种的蛋群／性别资料，其中 ${index.filter(x=>x.svDex.length).length} 条列入帕底亚／北上乡／蓝莓图鉴（并非所有HOME可用物种）。`:'未同步时只显示精选离线物种；建议点击“联网补全本篇＋DLC蛋群目录”。'} 未收录不等于不能繁殖；形态、性别限制与特殊孵化仍需核对。</p></div>
  <div class="panel"><div class="paneltop"><h2>02 / 结果预测</h2>${badge}</div>
  <div class="breed-result ${result.status}"><div class="breed-result-title">${result.status==='yes'?'可能获得宝可梦蛋':result.status==='no'?'本组合不会产蛋':'不能确定是否能产蛋'}</div>
  <div class="breed-result-name">${result.status==='yes'?escapeHTML(breedBabyText(result)):result.status==='no'?'无法孵蛋':'请补全资料'}</div>
@@ -1801,9 +2213,10 @@ function renderBreeding(){
  ${inh.details.map(t=>`<p class="help">· ${escapeHTML(t)}</p>`).join('')}
  `:'<p class="help">只有确认组合可以繁殖后，才会出现遗传方案。即使不能配对，也可以阅读下方的机制解释。</p>'}
  <div class="tip-block">常见策略：一方携带不变之石保留原始性格，另一方携带红线，让后代从双亲继承5项个体值。通过薄荷改变的能力修正通常不会作为新的原始性格遗传；极限特训提高的实际能力也不会直接成为可遗传的31 IV。</div></div>
- <div class="panel"><div class="paneltop"><h2>04 / 它还能和谁配？</h2><span class="tag info">精选离线示例</span></div>
- <p class="help">以下是精选离线库中与亲代 A 共享蛋群、且性别规则允许存在配对的部分物种；仍需选择正确性别。点击即可放到亲代 B 进行检查。</p>
- <div class="breed-partners">${list.length?list.map(({p,common})=>`<button class="breed-partner" data-action="breed-partner" data-name="${escapeHTML(p.zh)}"><b>${escapeHTML(p.zh)}</b><small>${escapeHTML(common.map(g=>EGG_GROUP_NAMES[g]||g).join('、'))}</small></button>`).join(''):'<p class="help">无可显示的离线配对候选，或该物种不能繁殖。可尝试百变怪／联网查询更多物种。</p>'}</div>
+ <div class="panel"><div class="paneltop"><h2>04 / 它还能和谁配？</h2><span class="tag info">${index?'已同步本篇＋DLC索引':'精选离线示例'}</span></div>
+ <p class="help">已匹配${allPartners.length}个候选（筛选后显示前24项），点击可以放入亲代B。同步后默认优先筛选《朱／紫》三本地区图鉴的物种；不包含所有HOME转入的例外。</p>
+ <div class="search-row" style="margin:10px 0"><input type="search" id="breed-partner-filter" value="${escapeHTML(state.breedPartnerFilter)}" placeholder="在候选中搜索宝可梦名字"><button class="btn subtle" data-action="breed-filter">筛选</button></div>
+ <div class="breed-partners">${list.length?list.map(({p,common})=>`<button class="breed-partner" data-action="breed-partner" data-name="${escapeHTML(p.zh)}"><b>${escapeHTML(p.zh)}</b><small>${escapeHTML(common.map(g=>EGG_GROUP_NAMES[g]||g).join('、'))}</small></button>`).join(''):'<p class="help">没有符合当前筛选的候选；可尝试清空筛选或联网同步目录。</p>'}</div>
  </div>
  <div class="panel"><div class="paneltop"><h2>05 / 在《朱／紫》怎么孵蛋？</h2></div>
  <div class="breed-step"><b>1</b><div>将能配对的宝可梦放入同行队伍，避免其他可能繁殖的组合干扰结果。</div></div>
@@ -1820,6 +2233,7 @@ function renderDex(){
  return pTitle('图鉴与能力查询','查看属性图标、进化路线、种族值、精选野外分布与掉落材料。未核实资料明确提示；图片首次显示需要网络。')+displayStatus()+
  `<div class="panel"><div class="paneltop"><h2>搜索宝可梦</h2><span class="tag info">中英双语</span></div>${searchBox('dex',state.dexQuery)}<div class="examples" style="margin-top:12px"><button class="exbtn" data-action="quick-dex" data-name="迷你龙">迷你龙</button><button class="exbtn" data-action="quick-dex" data-name="伊布">伊布</button><button class="exbtn" data-action="quick-dex" data-name="巴布土拨">巴布土拨</button><button class="exbtn" data-action="quick-dex" data-name="海豚侠">海豚侠</button><button class="exbtn" data-action="quick-dex" data-name="苍炎刃鬼">苍炎刃鬼</button><button class="exbtn" data-action="quick-dex" data-name="厄诡椪">DLC：厄诡椪</button></div></div>
  <div class="panel">${specSummary(p)}<div class="picture-help">宝可梦外观参考图从公共图片服务器联网加载，非游戏官方授权图库；离线时自动显示编号占位。不会将第三方形象图打包进公开仓库。</div><div class="divider"></div><dl class="kv"><dt>属性</dt><dd>${p.types.map(t=>typePick(t)).join(' ')}</dd><dt>可拥有特性</dt><dd>${(p.abilities||[]).map(a=>`<span class="chip">${escapeHTML(abilityZh(a))}</span>`).join('')}</dd></dl></div>
+ <div class="panel"><div class="paneltop"><h2>特殊进化条件</h2></div><p class="help">觉醒之石限定性别、交换进化、累计使用招式、随行1000步等，可直接查看核实步骤。</p><button class="btn" data-action="show-special-evo">打开特殊进化速查 →</button></div>
  ${renderEvolutionPanel(p)}${renderRatingPanel(p)}${renderDexHabitatPanel(p)}
  <div class="panel"><div class="paneltop"><h2>弱点与免疫</h2><span class="tag">按原本防御属性计算</span></div><div class="facts"><span>弱点 <b>${weakness.map(x=>`${TYPE_NAME[x.id]} ${valFormat(x.value)}`).join('、')||'无'}</b></span><span>免疫 <b>${immunity.map(x=>TYPE_NAME[x.id]).join('、')||'无'}</b></span></div><div class="results" style="margin-top:14px">${offenseList(p).map(renderMatchCard).join('')}</div><div class="help" style="margin-top:12px">以上是纯属性相克，未计入特性。点击“怎么打它”可选择太晶属性、特性与具体招式。</div><div class="three-btn" style="margin-top:14px"><button class="btn small" data-action="to-counter">分析如何打败 ${escapeHTML(p.zh)}</button><button class="btn subtle small" data-action="to-training">培养这只宝可梦</button><button class="btn subtle small" data-action="to-breed">分析繁殖遗传</button><button class="btn subtle small" data-action="material-from-dex">查询对应掉落材料</button><button class="btn small" data-action="rec-from-dex">查看这只的培养推荐</button></div></div>`;
 }
@@ -1925,7 +2339,7 @@ function renderGenericTrainingMoves(){
  <div class="help" style="margin-top:13px">${p.origin==='remote'?'使用了《朱／紫》可学习招式表进行筛选（仍需核对具体学习条件）。':'离线条目仅包含常用招式示例，不能代表完整可学招式表。'} 未计算战斗中特性、道具、天气或团体战专有战术。</div>
  <button class="btn small subtle" style="margin-top:12px" data-action="sync-moves">联网同步完整招式资料</button>`;
 }
-const APP_VERSION='0.9.0';
+const APP_VERSION='1.1.0';
 function materialCard(m){
  const current=state.selectedMaterial===m.id;
  const tms=recipesUsing(m.id);
@@ -1939,11 +2353,13 @@ function renderMaterials(){
  const rows=searched.materials.map(materialCard).join('');
  const recipes=searched.recipes.map(tm=>`<div class="mat-recipe"><div class="mat-recipehead"><strong>${escapeHTML(tm.id)} · ${escapeHTML(tm.name)}</strong><span>${tm.lp} LP</span></div><div class="mat-ingredients">${tm.ingredients.map(([id,q])=>`<span>${choose(id)} ×${q}</span>`).join('')}</div></div>`).join('');
  const mContent=selected?`<div class="mat-selected"><div class="mat-title"><div><span class="tag success">精选离线资料</span><h2>${escapeHTML(selected.name)}</h2><p>${escapeHTML(selected.en)}</p></div><div class="mat-locationtag">${escapeHTML(selected.area)}</div></div>
+ <div class="how-first"><span class="method-tag">获取方式 · 野生宝可梦掉落</span><h3>击败或捕捉 ${escapeHTML(selected.producers.join('／'))}</h3><p>也可以派出宝可梦使用 Let's Go 自主对战收集材料（不增加努力值）。无需找商店购买；下方区域是已核实的优先寻找地点。</p></div>
  <div class="subtle-title">谁会掉落？</div><div class="mat-producers">${selected.producers.map(n=>localPokemon(n)?`<button class="mat-poke mat-poke-link" data-action="material-dex" data-name="${escapeHTML(n)}" title="查看${escapeHTML(n)}图鉴与分布">${escapeHTML(n)} · 查看图鉴 ↗</button>`:`<span class="mat-poke">${escapeHTML(n)}</span>`).join('')}</div>
  <div class="subtle-title">到哪里寻找？</div><div class="mat-locations">${selected.locations.map(n=>`<div class="mat-location"><span class="mat-pin">⌖</span><strong>${escapeHTML(n)}</strong></div>`).join('')}</div>
  <p class="help">${escapeHTML(selected.locationNote)} 这些是优先寻找区域，不代表每次刷新必定出现，也不是精确地图坐标。</p>
  <div class="subtle-title">怎样收集？</div><div class="mat-methods"><div><b>普通对战／捕捉</b><span>击败或捕捉对应野生宝可梦，战斗结算后领取材料。</span></div><div><b>Let's Go 自主对战</b><span>派出首位宝可梦对附近目标自主对战，适合大量刷取；可得材料与经验，但不会增加努力值。</span></div><div><b>太晶团体战</b><span>部分对应宝可梦的团体战也可能掉落材料，具体奖励因挑战而异。</span></div></div>
  ${selected.tip?`<div class="tip-block" style="margin-top:13px">${escapeHTML(selected.tip)}</div>`:''}
+ ${selected.tradeFor?`<div class="how-first"><span class="method-tag">还可兑换进化道具 · ${escapeHTML(selected.tradeFor.version)}</span><h3>集齐 ${selected.tradeFor.quantity} 个 → ${escapeHTML(selected.tradeFor.name)}</h3><p>前往 ${escapeHTML(selected.tradeFor.location)}，和指定NPC对话兑换。</p><button class="btn subtle small" data-action="item-open-from-material" data-id="${escapeHTML(selected.tradeFor.itemId)}">查看进化道具详情 →</button></div>`:''}
  <div class="subtle-title" style="margin-top:19px">哪些招式学习器要用它？</div>
  ${recipesUsing(selected.id).length?recipesUsing(selected.id).map(tm=>`<div class="mat-recipe"><div class="mat-recipehead"><strong>${escapeHTML(tm.id)} · ${escapeHTML(tm.name)}</strong><span>${tm.lp} LP</span></div><div class="mat-ingredients">${tm.ingredients.map(([id,q])=>`<span>${choose(id)} ×${q}</span>`).join('')}</div></div>`).join(''):'<p class="help">当前精选配方尚未收录此材料的具体用途，不代表游戏中没有用途。</p>'}
  <div class="divider"></div><div class="subtle-title">材料数量计算（手动记录）</div><div class="mat-counts"><label>我已有<input type="number" min="0" max="9999" inputmode="numeric" data-field="materialOwned" value="${progress.owned}"></label><label>需要<input type="number" min="1" max="9999" inputmode="numeric" data-field="materialTarget" value="${progress.target}"></label><div class="mat-remain"><span>还差</span><strong>${progress.remaining}</strong><small>个材料</small></div></div>
@@ -1951,7 +2367,7 @@ function renderMaterials(){
  <div class="mat-source"><a href="${escapeHTML(selected.source)}" target="_blank" rel="noopener noreferrer">查看资料来源（需要联网） ↗</a></div>
  </div>`:'<div class="tip-block">请从上面的列表选择一种材料。</div>';
  return pTitle('材料获取速查','不知道爪子、毛、鳞片哪里刷？按材料、掉落宝可梦或招式学习器查找。','POKÉMON SV / TM MATERIALS')+displayStatus()+
- `<div class="panel"><div class="paneltop"><h2>01 / 搜索材料或招式</h2><span class="tag info">离线精选 ${MATERIALS.length} 种</span></div>
+ `<div class="panel"><div class="quick-switch"><button class="btn" data-action="show-materials">宝可梦掉落材料</button><button class="btn subtle" data-action="show-items">商店／NPC／道具地点 →</button></div><div class="paneltop"><h2>01 / 搜索材料或招式</h2><span class="tag info">离线精选 ${MATERIALS.length} 种</span></div>
  <div class="search-row"><input type="search" id="material-search" aria-label="材料、宝可梦或招式" placeholder="例如：熊宝宝 / 爪子 / 金属爪 / TM031" value="${escapeHTML(state.materialQuery)}" autocomplete="off"><button class="btn" data-action="material-search">查询</button></div>
  <div class="examples" style="margin-top:13px">${[['熊宝宝的爪子','熊宝宝的爪子'],['乌波的黏液','乌波的黏液'],['猫鼬少的毛','猫鼬少的毛'],['撒娇','撒娇'],['金属爪','金属爪']].map(([q,n])=>`<button class="exbtn" data-action="material-example" data-query="${q}">${n}</button>`).join('')}</div>
  ${searched.recipes.length?`<div class="subtle-title" style="margin-top:17px">匹配到的学习器配方</div>${recipes}`:''}
@@ -1964,10 +2380,10 @@ function recMoveBadge(id){
  const move=COMMON_MOVES[id]||getMoveCatalog()?.[id];
  return `<div class="rec-move"><span class="rec-move-name">${escapeHTML(move?.zh||id)}</span>${move?`<span class="rec-move-type">${badgeType(move.type)} <small>${move.category==='physical'?'物理':move.category==='special'?'特殊':'变化'}</small></span>`:''}</div>`;
 }
-function recCard(b){
+function recCard(b,rank=0){
  const p=localPokemon(b.pokemon);
  const itemMatch=ITEM_GUIDES.find(x=>b.item.includes(x.name));
- return `<article class="rec-card"><div class="rec-head"><div><div class="rec-priority">${escapeHTML(RANK_MEANING[b.tier])} · ${escapeHTML(b.roles.join(' / '))}</div><h3>${escapeHTML(b.pokemon)}</h3><div class="rec-smalltypes">${p?.types.map(t=>badgeType(t)).join(' ')||''}</div></div><div class="rec-figure">${specimenArt(p)}</div></div>
+ return `<article class="rec-card"><div class="rec-head"><div><div class="rec-priority">${rank+1} · ${escapeHTML(RANK_MEANING[b.tier])} · ${escapeHTML(b.roles.join(' / '))}</div><h3>${escapeHTML(b.pokemon)}</h3><div class="rec-smalltypes">${p?.types.map(t=>badgeType(t)).join(' ')||''}</div></div><div class="rec-figure">${specimenArt(p)}</div></div>
  <p class="rec-reason">${escapeHTML(b.reason)}</p>
  <div class="rec-sets"><div class="rec-kicker">推荐招式搭配（${b.mode==='raid'?'太晶团体战':'剧情通关'}）</div><div class="rec-moves">${b.moves.map(recMoveBadge).join('')}</div></div>
  <dl class="rec-facts"><div><dt>性格</dt><dd>${escapeHTML(b.nature)}</dd></div><div><dt>特性</dt><dd>${escapeHTML(b.ability)}</dd></div><div><dt>太晶候选</dt><dd>${escapeHTML(b.tera)}</dd></div><div><dt>努力值倾向</dt><dd>${escapeHTML(b.ev)}</dd></div><div class="rec-full"><dt>携带道具</dt><dd>${escapeHTML(b.item)}</dd></div></dl>
@@ -1983,12 +2399,12 @@ function renderRecommendations(){
  `<div class="panel rec-entry"><div class="paneltop"><h2>01 / 选择使用场景</h2><span class="tag info">非官方 · 精选建议</span></div>
  <div class="mode-toggle"><button data-action="rec-mode" data-value="story" class="${mode==='story'?'active':''}">剧情通关</button><button data-action="rec-mode" data-value="raid" class="${mode==='raid'?'active':''}">太晶团体战</button></div>
  <p class="help">这里不是《朱／紫》官方实力榜，也不是实时排位使用率。<b>优先培养／值得培养／针对性培养</b>是根据当前场景的编辑性判断，不是精确数值评分。DLC、版本限定及后期进化会影响获得难度。</p>
- <div class="rec-filter-row">${field('按照宝可梦原本属性筛选',choice('recType',[['all','全部18种属性'],...TYPES.map(([id,zh])=>[id,zh])],state.recType))}${field('按照战术体系筛选',choice('recRole',RECOMMENDATION_ROLES,state.recRole))}</div>
+ <div class="type-quick-grid">${TYPES.map(([id,name])=>`<button type="button" class="type-quick ${state.recType===id?'active':''}" data-action="rec-type" data-type="${id}">${badgeType(id)}</button>`).join('')}</div><div class="rec-filter-row">${field('按照宝可梦原本属性筛选',choice('recType',[['all','全部18种属性'],...TYPES.map(([id,zh])=>[id,zh])],state.recType))}${field('按照战术体系筛选',choice('recRole',RECOMMENDATION_ROLES,state.recRole))}</div>
  ${state.recTarget?`<div class="rec-focus">正在查看 <b>${escapeHTML(state.recTarget)}</b> 的精选配置 <button class="btn subtle small" data-action="rec-clear-target">显示全部推荐</button></div>`:''}<div class="rec-summary"><strong>${picked.length}</strong> 套符合筛选条件的精选培养建议 <span>· 离线可查看</span></div></div>
- ${renderMyTeam()}
- <div class="panel"><div class="paneltop"><h2>02 / 分场景推荐</h2><span class="tag">${mode==='story'?'通关配置':'团体战配置'}</span></div>
- ${picked.length?`<div class="rec-list">${shown.map(recCard).join('')}</div>${!state.recShowAll&&picked.length>10?`<button class="btn subtle block rec-more" data-action="rec-more">展开全部 ${picked.length} 套推荐</button>`:''}`:'<div class="tip-block">这一筛选下还没有经过核实的精选培养方案；不代表这种属性或体系没有强力宝可梦。可更换属性、定位或场景。</div>'}
+ <div class="panel" id="recommend-list"><div class="paneltop"><h2>02 / ${state.recType==='all'?'分场景培养推荐':TYPE_NAME[state.recType]+'属性推荐序列'}</h2><span class="tag">${mode==='story'?'通关配置':'团体战配置'}</span></div>
+ ${picked.length?`<p class="rank-context">按本工具已核实的精选配置排序：优先培养 → 值得培养 → 针对性培养。<b>这是场景推荐顺序，不是全游戏排名或实时胜率。</b></p><div class="rec-list">${shown.map((b,i)=>recCard(b,i)).join('')}</div>${!state.recShowAll&&picked.length>10?`<button class="btn subtle block rec-more" data-action="rec-more">展开全部 ${picked.length} 套推荐</button>`:''}`:'<div class="tip-block">这一筛选下还没有经过核实的精选培养方案；不代表这种属性或体系没有强力宝可梦。可更换属性、定位或场景。</div>'}
  <p class="help" style="margin-top:15px">招式是本地精选图鉴中已记录的候选搭配，尚不是逐只完成全量《朱／紫》合法学习条件审计；部分方案只列出3招。道具、特性和太晶类型是不同用途的选项，不能当作同时拥有。请按实际版本、形态和队伍核对。</p></div>
+ ${renderMyTeam()}
  <div class="panel"><div class="paneltop"><h2>03 / 组队模板</h2><span class="tag success">按用途选择</span></div>
  <p class="help">${mode==='raid'?'团体战的四只宝可梦是备用培养池：一次挑战要选适合该首领的一只（多人联机可协调不同职责），不是四只一起上场。':'主线战斗可携带六只宝可梦，组队要看攻击覆盖、换人和共同弱点，而不只看种族值总和。'}</p>
  <div class="rec-team-select">${candidates.map(t=>`<button data-action="rec-team" data-id="${t.id}" class="${t.id===team?.id?'active':''}">${escapeHTML(t.name)}</button>`).join('')}</div>
@@ -1999,14 +2415,14 @@ function renderRecommendations(){
 function renderMyTeam(){
  const names=state.myTeamSlots,model=teamSnapshot(names,state.myTeamMode),suggestions=candidateChanges(names,state.myTeamMode),hints=teamMoveHints(names,state.myTeamMode);
  const valid=model.members.length, problems=model.summary.weakClusters, shared=model.summary.sharedWeaknesses, missing=model.summary.missingOffense;
- const opts=['<option value="">— 请选择 —</option>',...BUILTIN.slice().sort((a,b)=>a.zh.localeCompare(b.zh,'zh-CN')).map(p=>`<option value="${escapeHTML(p.zh)}">${escapeHTML(p.zh)} · ${p.types.map(t=>TYPE_NAME[t]).join('＋')}</option>`)];
- return `<div class="panel myteam-panel"><div class="paneltop"><h2>我的六只 · 属性与配招分析</h2><span class="tag success">新功能 · 自动保存在本设备</span></div>
+ const count=getDirectory()?.length||BUILTIN.length;
+ return `<div class="panel myteam-panel" id="my-team"><div class="paneltop"><h2>我的六只 · 属性与配招分析</h2><span class="tag success">新功能 · 自动保存在本设备</span></div>
  <p class="help">把游戏里正在使用的六只选进来。<b>剧情队</b>看六只协同；<b>团体战</b>只分析六只备选培养池，不代表六只同时出战。可先用模板体验，再逐只替换。</p>
  <div class="mode-toggle"><button data-action="my-team-mode" data-value="story" class="${state.myTeamMode==='story'?'active':''}">剧情通关队</button><button data-action="my-team-mode" data-value="raid" class="${state.myTeamMode==='raid'?'active':''}">团体战备选池</button></div>
- <div class="myteam-grid">${names.map((name,i)=>`<div class="myteam-member"><label for="myteam-slot-${i}">第 ${i+1} 只</label><select id="myteam-slot-${i}" data-team-slot="${i}">${opts.join('').replace(`value="${escapeHTML(name)}"`,`value="${escapeHTML(name)}" selected`)}</select></div>`).join('')}</div>
+ <div class="myteam-grid">${names.map((name,i)=>`<div class="myteam-member"><label for="myteam-slot-${i}">第 ${i+1} 只</label><div class="search-wrap"><div class="team-input-row"><input type="search" class="team-lookup" data-team-query="${i}" id="myteam-slot-${i}" value="${escapeHTML(name)}" placeholder="名称／英文／编号" autocomplete="off"><button class="btn small" data-action="my-team-lookup" data-slot="${i}">加入</button></div><div class="suggestions hidden" id="suggest-team-${i}"></div></div><small>${name?'已选：'+escapeHTML(name):'未选择'} · 可联网查询更多宝可梦</small></div>`).join('')}</div><p class="help">目前可离线选择${BUILTIN.length}只精选宝可梦；${getDirectory()?`已同步${count}个中文名称，其他宝可梦可逐只联网加载并缓存`: '要查其他宝可梦，首次请联网输入完整中文名或图鉴编号并点“加入”'}。选中后将保存到本机，不需要反复查找。</p>
  <div class="three-btn"><button class="btn small subtle" data-action="my-team-template" data-id="story-balance">填入稳健通关模板</button><button class="btn small subtle" data-action="my-team-template" data-id="story-fast">填入速攻模板</button><button class="btn small subtle" data-action="my-team-clear">清空队伍</button></div>
  ${model.summary.duplicates.length?`<div class="tip-block danger-note">存在重复成员：${model.summary.duplicates.map(escapeHTML).join('、')}。计算时同名只统计一次，建议修改。</div>`:''}
- ${model.summary.unknown.length?`<div class="tip-block">未收录：${model.summary.unknown.map(escapeHTML).join('、')}；当前离线选择只覆盖${BUILTIN.length}个条目，不能视为全部朱／紫图鉴。</div>`:''}
+ ${model.summary.unknown.length?`<div class="tip-block">未收录：${model.summary.unknown.map(escapeHTML).join('、')}；请联网查询该成员，或检查名称；未加载的数据不参与队伍分析。</div>`:''}
  <div class="myteam-metrics"><div><strong>${valid}</strong><small>有效成员</small></div><div><strong>${problems.length}</strong><small>三只以上共同弱点</small></div><div><strong>${18-missing.length}/18</strong><small>理论本系打点覆盖</small></div></div>
  ${valid?`<div class="myteam-report"><h3>共同防御弱点</h3>${shared.length?`<div class="myteam-risk">${shared.map(w=>`<div><b>${escapeHTML(w.zh)}攻击</b><span>${w.victims.length}只被克制：${w.victims.map(v=>`${escapeHTML(v.name)} ${valFormat(v.factor)}`).join('、')}</span></div>`).join('')}</div>`:'<p class="help">没有任何一种攻击属性同时克制2只及以上成员（仅原始属性、未计特性和太晶）。</p>'}
  <h3>进攻覆盖提醒</h3><p class="help">按队伍成员的<b>原本属性</b>假定存在同属性攻击招式推算，<b>不是已学会或合法可学招式的验证</b>。真正伤害还要看物攻、特攻、招式及特性。</p>
@@ -2023,7 +2439,7 @@ function renderItemFinder(){
  const shown=state.itemShowAll||state.itemQuery?found:found.slice(0,8);
  const active=found.some(x=>x.id===state.itemSelected)?getItemGuide(state.itemSelected):null;
  return pTitle('道具与功能在哪里？','按道具名称、用途、地图地区或获取方式查询；把“去哪儿、找谁、需要什么”放在一起。','SCARLET / VIOLET · 道具地点速查')+displayStatus()+
- `<div class="panel"><div class="paneltop"><h2>01 / 查询道具和功能</h2><span class="tag info">${ITEM_GUIDES.length}条精选资料</span></div>
+ `<div class="panel"><div class="quick-switch"><button class="btn subtle" data-action="show-materials">宝可梦掉落材料 →</button><button class="btn" data-action="show-items">商店／道具地点</button></div><div class="paneltop"><h2>01 / 查询道具和功能</h2><span class="tag info">${ITEM_GUIDES.length}条精选资料</span></div>
  <div class="search-row"><input type="search" id="item-search" value="${escapeHTML(state.itemQuery)}" placeholder="例如：红线、模仿香草、极限特训、北上乡" autocomplete="off" spellcheck="false"><button class="btn" data-action="item-search">查询</button></div>
  <div class="rec-filter-row" style="margin-top:12px">${field('用途分类',choice('itemCategory',ITEM_CATEGORIES.map(x=>[x,x]),state.itemCategory))}${field('版本／地区',choice('itemRegion',ITEM_REGIONS.map(x=>[x,x]),state.itemRegion))}</div>
  <div class="examples" style="margin-top:12px">${['模仿香草','银色王冠','蜜汁苹果','复合金属','修改太晶属性'].map(x=>`<button class="exbtn" data-action="item-example" data-query="${x}">${x}</button>`).join('')}</div>
@@ -2031,10 +2447,69 @@ function renderItemFinder(){
  <div class="panel"><div class="paneltop"><h2>02 / 查询结果</h2><span class="tag">${found.length} 项</span></div>
  ${found.length?`<div class="item-search-results">${shown.map(x=>`<button data-action="item-select" data-id="${x.id}" class="${x.id===state.itemSelected?'active':''}"><b>${escapeHTML(x.name)}</b><small>${escapeHTML(x.category)} · ${escapeHTML(x.region)}</small><span>查看获取方法 →</span></button>`).join('')}</div>${!state.itemShowAll&&!state.itemQuery&&found.length>8?`<button class="btn small subtle" data-action="item-more" style="margin-top:12px">展开全部 ${found.length} 项，或直接按名称搜索</button>`:''}`:'<div class="tip-block">暂无匹配的已核实条目。可以试道具用途、中文简称或英文名；不要把“未收录”理解成游戏里没有。</div>'}</div>
  ${active?`<div class="panel item-detail"><div class="paneltop"><h2>03 / ${escapeHTML(active.name)}</h2><span class="tag success">来源可核对</span></div>
- <p class="item-english">${escapeHTML(active.en)} · ${escapeHTML(active.category)} · ${escapeHTML(active.region)}</p><p class="explain">${escapeHTML(active.uses)}</p>
+ <p class="item-english">${escapeHTML(active.en)} · ${escapeHTML(active.category)} · ${escapeHTML(active.region)}</p><div class="how-first"><span class="method-tag">获取方法优先</span><h3>${escapeHTML(active.ways[0]?.how||'详情见下方')}</h3><p><b>前往：</b>${escapeHTML(active.ways[0]?.place||'待核对')}<br><b>条件：</b>${escapeHTML(active.ways[0]?.condition||'待核对')}</p></div><p class="explain">${escapeHTML(active.uses)}</p>
+ ${active.id==='auspicious-armor'||active.id==='malicious-armor'?`<button class="btn" data-action="item-to-material" data-id="${active.id==='auspicious-armor'?'bronzor-fragment':'sinistea-chip'}">先查看兑换材料怎么刷 →</button>`:''}
  <div class="item-ways">${active.ways.map((w,i)=>`<article><div class="item-step">${i+1}</div><div><h3>${escapeHTML(w.place)}</h3><p><b>获取：</b>${escapeHTML(w.how)}</p><p><b>条件：</b>${escapeHTML(w.condition)}</p></div></article>`).join('')}</div>
  <a class="item-source-link" href="${active.source}" target="_blank" rel="noopener noreferrer">核对资料来源（外部网站） ↗</a>
  <div class="three-btn"><button class="btn small subtle" data-action="show-materials">查看招式学习器材料 →</button><button class="btn small subtle" data-action="show-recommend">返回培养与组队建议 →</button></div></div>`:''}`;
+}
+function renderReferenceEncyclopedia(){
+ const groups={moves:'招式大全',abilities:'特性百科',items:'道具百科'};
+ const kind=groups[state.refKind]?state.refKind:'moves';
+ const remote=kind==='moves'?Object.entries(getMoveCatalog()||{}).map(([id,m])=>({id,zh:m.zh||id,type:m.type,power:m.power,accuracy:m.accuracy,kind:m.category,remote:true})):getReferenceIndex(kind)||[];
+ const matches=referenceSearch(kind,state.refQuery,remote);
+ const visible=matches.slice(0,state.refExpanded?45:12);
+ const selected=referenceById(kind,state.refSelected,remote);
+ const active=selected&&matches.some(x=>x.id===selected.id)?selected:matches[0];
+ const detailed=active&&getCachedReferenceDetail(kind,active.id);
+ const selectedInfo=detailed||active;
+ const source=selectedInfo?.source;
+ return pTitle('招式、特性与道具百科','先查清楚每一种机制是什么，再进入组合模拟。常用条目离线可用，未收录的可联网补充资料。')+displayStatus()+
+ `<div class="panel"><div class="paneltop"><h2>01 / 选择资料类别</h2><span class="tag info">按《朱／紫》规则优先</span></div>
+ <div class="segmented" role="group" aria-label="资料类别">${Object.entries(groups).map(([id,n])=>`<button class="${kind===id?'on':''}" data-action="ref-kind" data-kind="${id}">${n}</button>`).join('')}</div>
+ <div class="search-row" style="margin-top:15px"><input type="search" id="ref-search" value="${escapeHTML(state.refQuery)}" placeholder="搜中文名、英文名、效果，例如：鼠数儿／技术高手／老千骰子"><button class="btn" data-action="ref-search">搜索</button></div>
+ <p class="help">${kind==='moves'?'招式':kind==='abilities'?'特性':'道具'}：已核实说明 ${REFERENCE_GROUPS[kind].length} 条，${remote.length?'联网名称索引 '+remote.length+' 条':'可点下方按钮同步更多中文名称'}。 <b>联网目录不等于全部都能在《朱／紫》使用或获得。</b></p>
+ <div class="three-btn"><button class="btn subtle" data-action="ref-sync" ${state.busy?'disabled':''}>${remote.length?'重新读取／使用在线目录':'联网补全该类名称索引'}</button><button class="btn" data-action="show-combo">打开组合效果模拟 →</button></div>
+ <div class="reference-list">${visible.map(x=>`<button class="reference-option ${active?.id===x.id?'active':''}" data-action="ref-select" data-id="${escapeHTML(x.id)}"><strong>${escapeHTML(x.zh)}</strong><small>${escapeHTML(x.summary||'联网查看详情')}</small><span>${x.remote?'索引 · 待核对':'已整理'}</span></button>`).join('')||'<div class="tip-block">没有找到匹配条目。可以先同步目录，或换成英文名。</div>'}</div>
+ ${matches.length>visible.length?`<button class="btn subtle" data-action="ref-more">继续显示（共${matches.length}条）</button>`:''}
+ </div>
+ ${selectedInfo?`<div class="panel reference-detail" id="ref-detail"><div class="paneltop"><h2>02 / ${escapeHTML(selectedInfo.zh)}</h2><span class="tag ${selectedInfo.remote?'info':'success'}">${selectedInfo.remote?'在线资料 · 游戏版本待核实':'精选机制说明'}</span></div>
+ ${selectedInfo.type?`<p>${typePick(selectedInfo.type)} ${escapeHTML(selectedInfo.kind||'')} · 威力 ${escapeHTML(selectedInfo.power??'—')} · 命中 ${escapeHTML(selectedInfo.accuracy??'—')}%</p>`:''}
+ <p class="ref-lead">${escapeHTML(selectedInfo.summary||'尚无说明')}</p>
+ ${selectedInfo.detail?`<p class="explain">${escapeHTML(selectedInfo.detail)}</p>`:''}
+ ${selectedInfo.where?`<div class="how-first"><b>获取方式／地点</b><p>${escapeHTML(selectedInfo.where)}</p></div>`:''}
+ ${selectedInfo.availability?`<p class="help">${escapeHTML(selectedInfo.availability)}</p>`:''}
+ <div class="three-btn">${active.remote&&!detailed?`<button class="btn" data-action="ref-load-detail" data-id="${escapeHTML(active.id)}" ${state.busy?'disabled':''}>联网补充这个条目的说明</button>`:''}
+ ${source?`<a class="btn subtle" href="${escapeHTML(source)}" target="_blank" rel="noopener noreferrer">核对原始资料 ↗</a>`:''}
+ ${kind==='items'?`<button class="btn subtle" data-action="ref-where" data-id="${escapeHTML(active?.id||'')}">查看已核实获取地点 →</button>`:''}<button class="btn subtle" data-action="show-combo">组合效果模拟 →</button></div></div>`:''}`;
+}
+function renderComboSimulator(){
+ const config={pokemon:state.comboPokemon,move:state.comboMove,ability:state.comboAbility,item:state.comboItem,tera:state.comboTera,target:state.comboTarget};
+ const r=simulateCombo(config);
+ const baseline=simulateCombo({...config,item:'none'});
+ const per=n=>(n*100).toFixed(1)+'%';
+ const own=SIM_POKEMON.find(p=>p.id===state.comboPokemon);
+ const tern=[['none','未太晶化'],['normal','一般太晶'],['fairy','妖精太晶'],['ghost','幽灵太晶']];
+ return pTitle('组合效果模拟器','把宝可梦、招式、特性、携带道具与太晶属性放在一起，解释效果如何叠加；不支持的机制不会伪造伤害。')+displayStatus()+
+ `<div class="panel"><div class="paneltop"><h2>01 / 选择实战组合</h2><span class="tag info">已核实的组合模型</span></div>
+ <div class="examples">${COMBO_PRESETS.map(x=>`<button class="exbtn" data-action="combo-preset" data-id="${x.id}">${escapeHTML(x.name)}</button>`).join('')}</div>
+ <div class="fields" style="margin-top:14px">
+ ${field('使用者',choice('comboPokemon',SIM_POKEMON.map(x=>[x.id,x.name]),state.comboPokemon))}
+ ${field('招式',choice('comboMove',SIM_MOVES.map(x=>[x.id,x.name+' · '+TYPE_NAME[x.type]]),state.comboMove))}
+ ${field('特性',choice('comboAbility',SIM_ABILITIES.map(x=>[x.id,x.name]),state.comboAbility))}
+ ${field('携带道具',choice('comboItem',SIM_ITEMS.map(x=>[x.id,x.name]),state.comboItem))}
+ ${field('太晶属性',choice('comboTera',tern,state.comboTera))}
+ ${field('目标防御属性（示例）',choice('comboTarget',SIM_TARGETS.map(x=>[x[0],x[1]]),state.comboTarget))}
+ </div><p class="help">使用者当前：${escapeHTML(own?.name||'未选择')}。每只宝可梦最多同时携带一个道具。修改任意条件后自动重算。</p></div>
+ ${r.supported?`<div class="panel"><div class="paneltop"><h2>02 / 组合结果</h2><span class="tag ${r.legal?'success':'warning'}">${r.legal?'已核对该使用者合法性':'包含不合法配置'}</span></div>
+ <div class="result-strip"><div class="stat-card"><div class="tiny muted">单击命中率</div><div class="number">${per(r.accuracyPerCheck)}</div><div class="caption">${state.comboItem==='wide-lens'?'广角镜已生效':'按当前道具计算'}</div></div><div class="stat-card"><div class="tiny muted">每击基础威力</div><div class="number">${r.perHitAfterAbility}</div><div class="caption">原始 ${r.perHitOriginal} ${r.techMultiplier>1?'· 技术高手×1.5':''}</div></div><div class="stat-card"><div class="tiny muted">达到最高连击数概率</div><div class="number">${per(r.probabilityMax)}</div><div class="caption">最多${r.maxHits}击</div></div></div>
+ <div class="combo-keyline"><div><b>平均成功命中次数</b><strong>${Number(r.expectedHits.toFixed(2))}次</strong></div><div><b>本系修正</b><strong>×${r.stab}</strong></div><div><b>属性相性</b><strong>×${r.typeMultiplier}</strong></div><div><b>加成后期望威力指标</b><strong>${Number(r.index.toFixed(1))}</strong></div></div>
+ ${state.comboItem==='wide-lens'&&state.comboMove==='population-bomb'?`<div class="how-first"><b>广角镜的实际价值</b><p>不带广角镜：打满10击约 ${per(baseline.probabilityMax)}；携带广角镜：约 ${per(r.probabilityMax)}。这来自连续十次命中判定，而不是“总命中率简单加10个百分点”。</p></div>`:''}
+ <div class="ref-lead">${escapeHTML(r.note)}</div><p class="help">${escapeHTML(r.method)} 实际HP伤害还取决于攻防能力、等级、随机浮动、暴击、每击取整和防守方特性。</p>
+ <div class="combo-prob">${r.dist.filter(x=>x.p>0.001).map(x=>`<div><span>${x.hits}击</span><div class="combo-bar"><i style="width:${(x.p*100).toFixed(1)}%"></i></div><b>${per(x.p)}</b></div>`).join('')}</div>
+ ${r.warnings.map(x=>`<p class="tip-block">${escapeHTML(x)}</p>`).join('')}
+ <button class="btn subtle" data-action="show-encyclopedia">查相关特性、道具和招式说明 →</button></div>`:`<div class="panel"><p>${escapeHTML(r.reason)}</p></div>`}
+ <div class="panel"><h2>03 / 需要继续补齐的模拟内容</h2><p class="help">当前重点支持鼠数儿、种子机关枪、嬉闹及精选特性／道具。对未知招式、复杂场地天气、守住、团体战护盾、所有宝可梦合法性、完整HP伤害暂不模拟。日后需引入经过验证的第九世代伤害引擎并覆盖特殊规则。</p></div>`;
 }
 function renderAbout(){
  const count=getDirectory()?.length||0;
@@ -2043,8 +2518,8 @@ function renderAbout(){
  `<div class="panel"><div class="paneltop"><h2>版本与更新</h2><span class="tag success">当前 V${APP_VERSION}</span></div><p class="help">新版本上传到同一个 GitHub Pages 地址后，在联网状态下检查；保留原图标，无需重新安装。首次升级旧版时也可以关闭 App 后重新打开。</p><div class="three-btn"><button class="btn" data-action="check-update" ${state.busy?'disabled':''}>检查新版本</button><button class="btn subtle" data-action="reload-update">刷新应用</button></div>${state.updateAvailable?'<div class="evo-note">检测到新版本，点击“刷新应用”载入。</div>':''}</div>
  <div class="panel"><div class="paneltop"><h2>数据管理</h2><span class="tag success">可离线使用核心功能</span></div>
  <div class="result-strip"><div class="stat-card"><div class="tiny muted">内置精选宝可梦</div><div class="number">${BUILTIN.length}</div><div class="caption">离线基础数据</div></div><div class="stat-card"><div class="tiny muted">在线中文名称</div><div class="number">${count||'—'}</div><div class="caption">${count?'已同步':'未同步'}</div></div><div class="stat-card"><div class="tiny muted">招式目录</div><div class="number">${mCount||'—'}</div><div class="caption">${mCount?'已同步':'未同步'}</div></div></div>
- <div class="three-btn" style="margin-top:17px"><button class="btn" data-action="sync-dir" ${state.busy?'disabled':''}>同步完整中文名称目录</button><button class="btn subtle" data-action="sync-moves" ${state.busy?'disabled':''}>同步招式属性资料</button></div>
- <p class="help">联网同步会从 PokéAPI 公共数据仓库下载中文名称与招式资料并保存到当前浏览器；未同步时可使用内置精选数据。同步成功不代表所有宝可梦都在《朱／紫》可获得，实际版本合法性需另核查。</p></div>
+ <div class="three-btn" style="margin-top:17px"><button class="btn" data-action="breed-sync-catalog">${getBreedingCatalog()?'已缓存蛋群／性别索引':'联网补全蛋群与本篇／DLC图鉴索引'}</button><button class="btn" data-action="sync-dir" ${state.busy?'disabled':''}>同步完整中文名称目录</button><button class="btn subtle" data-action="sync-moves" ${state.busy?'disabled':''}>同步招式属性资料</button></div>
+ <p class="help">“补全蛋群与图鉴索引”会同时获取性别比例、蛋群和帕底亚／北上乡／蓝莓图鉴成员。目录补全后，搜索仍需按需获取单只宝可梦的属性／种族值（初次联网、后续缓存）。联网同步会从 PokéAPI 公共数据仓库下载中文名称与招式资料并保存到当前浏览器；未同步时可使用内置精选数据。同步成功不代表所有宝可梦都在《朱／紫》可获得，实际版本合法性需另核查。</p></div>
  <div class="panel" id="reference-dlc"><div class="paneltop"><h2>DLC / 零之秘宝资料备查</h2><span class="tag info">本篇＋碧之假面＋蓝之圆盘＋番外篇</span></div>
  <p class="explain">本工具的长期数据范围包含本篇及全部《零之秘宝》，但当前离线图鉴仍是<b>精选条目</b>，不代表已经导入所有 DLC 宝可梦及获取地点。</p>
  <div class="ref-section"><h3>按内容来源区分</h3><div class="crystal-facts"><div><b>本篇 · 帕底亚</b><span>帕底亚图鉴及主线野外、团体战资料</span></div><div><b>碧之假面 · 北上乡</b><span>新增形态、北上图鉴、特殊道具进化</span></div><div><b>蓝之圆盘 · 蓝莓学园</b><span>蓝莓图鉴、回归宝可梦、星晶太晶</span></div><div><b>番外篇</b><span>后续剧情开启条件与桃歹郎等特殊资料</span></div></div></div>
@@ -2052,7 +2527,7 @@ function renderAbout(){
  <div class="ref-section"><h3>三种重要 DLC 进化方法</h3><div class="crystal-facts"><div><b>啃果虫 → 裹蜜虫</b><span>使用蜜汁苹果（碧之假面）</span></div><div><b>裹蜜虫 → 蜜集大蛇</b><span>学会龙声鼓舞后升级（蓝之圆盘）</span></div><div><b>斯魔茶 → 来悲粗茶</b><span>按形态使用凡作茶碗或杰作茶碗（碧之假面）</span></div></div></div>
  </div>
  <div class="panel" id="reference-quick"><div class="paneltop"><h2>常用规则速查</h2></div><div class="ref-grid"><div><b>普通太晶</b><span>防御改看太晶属性；原本属性的本系招式加成仍保留。</span></div><div><b>双属性克制</b><span>两个防御属性倍率相乘，可为×0、¼、½、1、2、4。</span></div><div><b>努力值</b><span>总量510，单项252；力量道具一般额外增加对应努力值8点。</span></div><div><b>繁殖遗传</b><span>主要看蛋群、性别以及百变怪等例外；后代种类通常跟母方。</span></div><div><b>配招提醒</b><span>理论克制不代表某只宝可梦能学会该属性招式，应先核对可学招式。</span></div><div><b>团体战提醒</b><span>首领防御看太晶属性，但进攻招式仍与原本宝可梦相关；还要检查特性。</span></div></div>
- <button class="btn subtle" data-action="show-crystal">打开太晶矿图标速查 →</button><button class="btn subtle" data-action="show-materials">查询学习器材料获取 →</button><button class="btn subtle" data-action="show-type-guide">招式属性图标与攻防克制 →</button><button class="btn" data-action="show-recommend">强势宝可梦与组队推荐 →</button><button class="btn subtle" data-action="show-items">道具与功能获取地点 →</button></div>
+ <button class="btn subtle" data-action="show-crystal">打开太晶矿图标速查 →</button><button class="btn subtle" data-action="show-materials">查询学习器材料获取 →</button><button class="btn subtle" data-action="show-type-guide">招式属性图标与攻防克制 →</button><button class="btn" data-action="show-recommend">强势宝可梦与组队推荐 →</button><button class="btn subtle" data-action="show-items">道具与功能获取地点 →</button><button class="btn" data-action="show-encyclopedia">特性／道具／招式百科 →</button><button class="btn" data-action="show-combo">组合效果模拟器 →</button></div>
  <div class="panel"><div class="paneltop"><h2>目前已实现的范围</h2></div>
  <div class="kv"><dt>属性相克</dt><dd>18种常规属性、单双属性、普通太晶属性和常见免疫规则；星晶太晶仅按原本防御属性处理</dd>
  <dt>特性</dt><dd>储水、引水、干燥皮肤、蓄电、避雷针、飘浮、食土、引火、食草、厚脂肪等常见免疫和减伤；其他特性只显示名称，不保证已计算</dd>
@@ -2068,15 +2543,51 @@ function renderAbout(){
  <div class="panel"><div class="paneltop"><h2>版权与数据来源</h2></div><p class="help">本工具为非官方、非商业的学习原型，不隶属于 Nintendo、Game Freak、The Pokémon Company。宝可梦名称及游戏相关标识归其权利人所有。基础数据在线来源为 PokéAPI（BSD-3-Clause 软件仓库），未将第三方战术攻略全文或游戏素材打包。部分公开数据库内容可能随项目更新而变化。</p>
  <div class="pillline"><a class="chip" href="https://pokeapi.co/docs/v2" target="_blank" rel="noopener">PokéAPI 文档 ↗</a><a class="chip" href="https://github.com/PokeAPI/pokeapi/tree/master/data/v2/csv" target="_blank" rel="noopener">PokéAPI CSV 数据 ↗</a><a class="chip" href="https://calc.pokemonshowdown.com/" target="_blank" rel="noopener">Showdown 高级计算器 ↗</a></div></div>`;
 }
+function renderSpecialEvolutions(){
+ const list=searchSpecialEvolutions(state.evoQuery,state.evoKind);
+ const entries=(state.evoMore?list:list.slice(0,16)).map(x=>`<article class="guide-entry"><div class="pillline"><span class="tag info">${escapeHTML(x.kind)}</span><span class="tag">${escapeHTML(x.scope)}</span></div><h3>${escapeHTML(x.from)} → ${escapeHTML(x.to)}</h3><p><strong>条件：</strong>${escapeHTML(x.condition)}</p><p>${escapeHTML(x.steps)}</p><div class="three-btn">${x.item?`<button class="btn small subtle" data-action="special-item" data-name="${escapeHTML(x.item)}">查「${escapeHTML(x.item)}」在哪获得</button>`:''}<button class="btn small subtle" data-action="special-dex" data-name="${escapeHTML(x.to)}">查进化后图鉴</button></div></article>`).join('');
+ return pTitle('特殊进化条件速查','不是所有宝可梦都靠升级进化。可按道具、性别、交换、招式、步数及DLC条件查具体操作。')+displayStatus()+
+ `<div class="panel"><div class="paneltop"><h2>01 / 搜索进化路线</h2><span class="tag success">${SPECIAL_EVOLUTIONS.length}条精选</span></div><div class="search-row"><input id="evo-search" type="search" placeholder="例如 奇鲁莉安、觉醒之石、愤怒之拳" value="${escapeHTML(state.evoQuery)}"><button class="btn" data-action="evo-search">查询</button></div><div class="field"><label>进化方式</label>${choice('evoKind',SPECIAL_EVOLUTION_KINDS.map(x=>[x,x]),state.evoKind)}</div><div class="examples">${['奇鲁莉安','火暴猴','飞天螳螂','裹蜜虫'].map(x=>`<button class="exbtn" data-action="evo-example" data-name="${x}">${x}</button>`).join('')}</div><p class="help">这些是《朱／紫》精选特殊进化，不是全量进化清单。先核对版本及DLC来源；道具地点仅展示本工具已核实条目。</p></div>`+
+ `<div class="panel"><div class="paneltop"><h2>02 / 进化查询结果</h2><span class="tag">${list.length}条</span></div><div class="guide-results">${entries||'<p class="help">没有匹配的离线记录。请尝试其他名字或在图鉴中在线查进化链。</p>'}</div>${list.length>16&&!state.evoMore?'<button class="btn subtle" data-action="evo-more">显示全部结果</button>':''}<p class="help">参考资料：<a href="${SPECIAL_EVOLUTION_SOURCE}" target="_blank" rel="noopener noreferrer">Serebii《朱／紫》进化方式</a>，部分进化为DLC新增。</p></div>`;
+}
+function raidBossProfile(){
+ if(state.raidBossKey==='custom')return state.raidBossCustom||localPokemon(state.raidBossQuery);
+ return VERIFIED_FIVE_STAR_BOSSES[state.raidBossKey]||null;
+}
+function renderRaidAdvisor(){
+ const boss=raidBossProfile();
+ const info=boss?analyzeFiveStar({boss,tera:state.raidTera,ability:state.raidAbility,stars:Number(state.raidStars),mode:state.raidMode,candidates:CURATED_BUILDS,candidateLookup:localPokemon}):null;
+ const presets=Object.entries(VERIFIED_FIVE_STAR_BOSSES).map(([k,p])=>[k,p.zh]);
+ const attacks=info?.verified?[...info.verified.moves,...info.verified.extras].map(x=>`<span class="chip">${escapeHTML(x.zh)}${x.type?' · '+TYPE_NAME[x.type]:''}</span>`).join(''):'';
+ const candidates=info?.candidates?.map((c,i)=>{
+  const b=c.build;
+  const matchLabel=`${escapeHTML(c.best.zh)} · ${valFormat(c.best.match)}`;
+  return `<article class="guide-entry"><div class="pillline"><span class="tag ${i===0?'success':'info'}">候选${i+1}（非胜率榜）</span><span class="tag">${escapeHTML(b.roles?.join(' / ')||'')}</span></div><h3>${escapeHTML(b.pokemon)}</h3><div class="guide-sub"><strong>优先考虑：</strong>${matchLabel}</div><p><b>推荐招式：</b>${b.moves.map(id=>escapeHTML(COMMON_MOVES[id]?.zh||id)).join('／')}</p><p><b>性格／努力值：</b>${escapeHTML(b.nature)}；${escapeHTML(b.ev)}</p><p><b>特性／道具／太晶：</b>${escapeHTML(b.ability)}；${escapeHTML(b.item)}；${escapeHTML(b.tera)}</p><p>${c.comments.map(escapeHTML).join('；')}。</p><p class="help">风险：${escapeHTML(b.caution)}${c.risk.unknown?' 当前首领招式未核实，防御风险无法确认。':''}</p></article>`;
+ }).join('')||'';
+ return pTitle('太晶团体战智能顾问','输入首领和太晶属性，输出属性克制、已核实的首领招式，以及有依据的培养候选。不把规则初筛当成必胜攻略。')+displayStatus()+
+ `<div class="panel"><div class="paneltop"><h2>01 / 选择首领条件</h2><span class="tag info">普通五星优先</span></div><div class="fields">${field('太晶团体战星级',choice('raidStars',[['5','5星 · 重点支持'],['6','6星 · 仅属性初筛'],['7','7星活动 · 仅属性初筛']],state.raidStars))}${field('战斗方式',choice('raidMode',[['solo','单人挑战'],['team','多人联机']],state.raidMode))}${field('已核实的五星首领',choice('raidBossKey',[...presets,['custom','其他宝可梦（自行输入）']],state.raidBossKey))}${field('首领太晶属性',`<select data-field="raidTera">${allTypeOptions(state.raidTera,false)}</select>`)}${field('首领特性（只有确定时才选择）',choice('raidAbility',[['','未知／不指定'],['water-absorb','储水'],['flash-fire','引火'],['levitate','飘浮'],['volt-absorb','蓄电'],['sap-sipper','食草']],state.raidAbility))}</div>${state.raidBossKey==='custom'?`<div class="search-row"><input id="raid-boss-search" type="search" value="${escapeHTML(state.raidBossQuery)}" placeholder="例如 玛力露丽、clodsire、#980"><button class="btn" data-action="raid-boss-lookup">查询</button></div>`:''}<div class="examples">${[['slowbro','呆壳兽'],['gengar','耿鬼'],['tinkaton','巨锻匠'],['annihilape','弃世猴']].map(([k,n])=>`<button class="exbtn" data-action="raid-preset" data-id="${k}">${n}</button>`).join('')}</div><p class="help">首领可能拥有原本属性的招式，而太晶属性通常决定它受到什么属性攻击最有效；普通五星也可能出现额外动作、护盾和能力重置。地区、活动及版本差异另行核对。</p></div>`+
+ (boss?`<div class="panel"><div class="paneltop"><h2>02 / 属性与首领风险</h2><span class="tag ${info?.verified?'success':'warn'}">${info?.verified?'有核实招式':'仅属性初筛'}</span></div><p><strong>${escapeHTML(boss.zh)}</strong> · 原属性 ${typeText(boss.types)} · 太晶 ${badgeType(state.raidTera)}</p><p><b>优先攻击属性：</b>${info.bestTypes.length?info.bestTypes.map(x=>`<span class="chip">${escapeHTML(x.name)} ${valFormat(x.value)}</span>`).join(' '):'目前没有2倍效果的普通攻击属性'}</p>${info.nullTypes.length?`<p class="help">免疫／无效：${info.nullTypes.map(x=>`${x.name} ${valFormat(x.value)}`).join('、')}</p>`:''}${info.verified?`<p><b>首领招式和额外行动：</b></p><div class="pillline">${attacks}</div><p class="help">${escapeHTML(info.verified.note)} · <a href="${FIVE_STAR_RAID_SOURCE}" target="_blank" rel="noopener noreferrer">核实首领数据</a></p>`:`<div class="tip-block">未核实此星级、物种的固定首领招式。不能仅凭太晶属性推荐“安全通关”，以下培养对象只作为攻击属性候选。</div>`}</div>
+ <div class="panel"><div class="paneltop"><h2>03 / 建议培养候选与配招</h2><span class="tag">${info.candidates.length}个</span></div><p class="help">${escapeHTML(info.confidence)}。候选来自本工具精选团体战培养池，未对所有宝可梦搜索最优解；风险按原始防御属性计算。</p><div class="guide-results">${candidates||'<p class="help">当前精选培养池没有可用的攻击候选。请在图鉴／推荐页扩展搜索，或考虑有辅助招式的宝可梦。</p>'}</div></div>
+ <div class="panel"><div class="paneltop"><h2>04 / 实战顺序与注意事项</h2></div><ol class="readable-steps"><li>先核对首领的原属性攻击、特性和额外行动，再选不会轻易倒下的宝可梦。</li><li>如果携带腹鼓，务必先判断扣除一半HP后是否能活过首领下一次攻击；不安全就改走强化／吸血路线。</li><li>必要时使用防御或治疗应援；打出有效攻击累积太晶能量，留意护盾和清除强化。</li><li>首领开启护盾后，优先使用与自己太晶属性一致的攻击招式；单人优先维持生存，多人注意辅助分工。</li></ol><p class="help">${escapeHTML(info.warning)}。不同地图的护盾倍率及活动首领规则可能不同。<a href="https://www.serebii.net/scarletviolet/teraraidbattles.shtml" target="_blank" rel="noopener noreferrer">查看机制来源</a></p><div class="three-btn"><button class="btn subtle" data-action="raid-to-counter">进入18属性完整计算 →</button><button class="btn subtle" data-action="show-recommend">查看精选团体战培养池 →</button></div></div>`:'<div class="panel"><p>暂无匹配的首领记录。请尝试已核实五星首领，或联网查询具体宝可梦。</p></div>');
+}
+
 function render(){
  document.documentElement.dataset.textSize=state.fontLarge?'large':'normal';
- const menu=[['counter','⚔','战斗速查'],['dex','◈','宝可梦图鉴'],['train','◫','努力值培养'],['breed','◎','繁殖遗传'],['about','◉','资料备查']];
- const content=state.tab==='items'?renderItemFinder():state.tab==='recommend'?renderRecommendations():state.tab==='type-guide'?renderTypeGuide():state.tab==='materials'?renderMaterials():state.tab==='crystal'?renderCrystalGuide():state.tab==='counter'?renderCounter():state.tab==='dex'?renderDex():state.tab==='train'?renderTraining():state.tab==='breed'?renderBreeding():renderAbout();
+ const menu=[['counter','⚔','怎么打'],['dex','◈','查图鉴'],['train','◫','培养'],['recommend','★','推荐与队伍'],['materials','⌖','查资料']];
+ const group=({raid:'counter',specialEvo:'dex',counter:'counter','type-guide':'counter',crystal:'counter',dex:'dex',breed:'dex',train:'train',recommend:'recommend',materials:'materials',items:'materials',encyclopedia:'materials',combo:'materials',about:'materials'})[state.tab]||'counter';
+ const quickLinks={
+  counter:[['counter','战斗分析','back-counter'],['crystal','太晶矿','show-crystal'],['raid','团体战打法','show-raid-advisor'],['type-guide','属性克制','show-type-guide']],
+  dex:[['dex','宝可梦图鉴','show-dex'],['breed','繁殖蛋群','show-breed'],['specialEvo','特殊进化','show-special-evo']],
+  train:[['train','努力值训练','show-training'],['recommend','培养推荐','show-recommend']],
+  recommend:[['recommend','属性推荐榜','show-recommend'],['team-anchor','我的六只','my-team-focus']],
+  materials:[['materials','材料','show-materials'],['items','获取地点','show-items'],['encyclopedia','招式／特性／道具','show-encyclopedia'],['combo','组合模拟','show-combo'],['about','更新','show-reference']]
+ };
+ const quickNav=`<nav class="subnav-tabs" aria-label="当前类别快速入口">${(quickLinks[group]||[]).map(([id,n,action])=>`<button type="button" data-action="${action}" class="${state.tab===id?'active':''}">${n}</button>`).join('')}</nav>`;
+ const content=state.tab==='raid'?renderRaidAdvisor():state.tab==='specialEvo'?renderSpecialEvolutions():state.tab==='combo'?renderComboSimulator():state.tab==='encyclopedia'?renderReferenceEncyclopedia():state.tab==='items'?renderItemFinder():state.tab==='recommend'?renderRecommendations():state.tab==='type-guide'?renderTypeGuide():state.tab==='materials'?renderMaterials():state.tab==='crystal'?renderCrystalGuide():state.tab==='counter'?renderCounter():state.tab==='dex'?renderDex():state.tab==='train'?renderTraining():state.tab==='breed'?renderBreeding():renderAbout();
  $('#app').innerHTML=`<div class="shell"><header class="topbar"><div class="topline"><div class="appmark"></div><div><div class="brand">太晶战术图鉴</div><div class="subbrand">《宝可梦 朱／紫》 · 随身战术助手</div></div><span class="version">iPhone V${APP_VERSION}</span><div class="header-controls"><span class="offline-caption">✓ 常用查询可离线使用</span><button class="font-switch" data-action="font-toggle" aria-label="切换文字大小">${state.fontLarge?'A− 恢复字号':'A+ 放大文字'}</button></div></div></header>
- <div class="mainlayout"><aside class="sidebar"><div class="sidebar-label">TOOLS / 功能</div>${menu.map(([id,ic,name])=>`<button class="navbtn ${(id===state.tab||(id==='counter'&&state.tab==='crystal'))?'active':''}" data-tab="${id}"><span class="navico">${ic}</span>${name}</button>`).join('')}
- <button class="navbtn ${state.tab==='recommend'?'active':''}" data-action="show-recommend"><span class="navico">★</span>强势推荐与组队</button><button class="navbtn" data-action="show-type-guide"><span class="navico">◈</span>招式属性图标</button><button class="navbtn" data-action="show-crystal"><span class="navico">◇</span>太晶矿速查</button><button class="navbtn ${state.tab==='materials'?'active':''}" data-action="show-materials"><span class="navico">◧</span>材料获取速查</button><button class="navbtn ${state.tab==='items'?'active':''}" data-action="show-items"><span class="navico">♧</span>道具／功能地点</button><div class="sidebox"><b>这次为什么无效？</b>属性只是第一层。记得检查对方有没有储水、飘浮、引火，以及太晶化后防御属性的变化。</div></aside>
- <main class="content">${content}<div class="status"><span class="dot"></span><span>18种属性规则在本地计算 · 非官方个人学习工具 · 详细伤害数值仅提供简化分析</span></div><footer class="footer">宝可梦相关名称属于原权利人。当前为学习与验证原型，不能替代游戏内数据核对或完整对战模拟器。</footer></main></div>
- <nav class="bottomnav">${menu.map(([id,ic,name])=>`<button class="${(id===state.tab||(id==='counter'&&state.tab==='crystal'))?'active':''}" data-tab="${id}"><span>${ic}</span>${name}</button>`).join('')}</nav></div>`;
+ <div class="mainlayout"><aside class="sidebar"><div class="sidebar-label">常用功能</div>${menu.map(([id,ic,name])=>`<button class="navbtn ${group===id?'active':''}" data-tab="${id}"><span class="navico">${ic}</span>${name}</button>`).join('')}<div class="sidebox"><b>选择任务，而不是先选工具</b><p>想打赢对手→怎么打；想选队伍→推荐与队伍；材料／道具去哪儿→查资料。</p></div></aside>
+ <main class="content">${quickNav}${content}<div class="status"><span class="dot"></span><span>属性规则可离线计算 · 专项数据与结论均标注覆盖范围</span></div><footer class="footer">非官方个人学习工具。未核实的游戏资料不做确定性判断。</footer></main></div>
+ <nav class="bottomnav">${menu.map(([id,ic,name])=>`<button class="${group===id?'active':''}" data-tab="${id}"><span>${ic}</span>${name}</button>`).join('')}</nav></div>`;
  persist();
 }
 function showSuggestions(kind,text){
@@ -2112,17 +2623,91 @@ function preset(name){
  state.foe=localPokemon(ex.foe);state.foeQuery=ex.foe;state.foeAbility=ex.ability;state.foeTera=ex.tera;state.selectedAttackType=ex.type;state.manual=false;
  state.own=localPokemon(ex.own);state.ownQuery=ex.own;state.ownTera='none';state.tab='counter';state.status='';render();
 }
+async function lookupTeamSlot(slot,value){
+ if(!Number.isInteger(slot)||slot<0||slot>=6)return;
+ const q=String(value||'').trim();
+ if(!q){state.myTeamSlots[slot]='';state.status='第'+(slot+1)+'个队伍位置已清空。';render();return;}
+ state.busy=true;state.status='正在查找'+q+'，首次查询非离线宝可梦需要网络…';state.statusError=false;render();
+ try{
+  const p=await lookupPokemon(q);
+  if(!registerTeamPokemon(p))throw new Error('资料缺少属性或种族值，暂不能进行队伍计算');
+  state.myTeamSlots[slot]=p.zh;
+  // Bound to selected roster, not all fetched Pokémon. Persist only required fields.
+  state.myTeamProfiles[p.en]={id:p.id,zh:p.zh,en:p.en,types:p.types,stats:p.stats,abilities:p.abilities||[],origin:p.origin};
+  state.status=`第${slot+1}只已加入：${p.zh}。${p.origin==='offline'?'本地已收录。':'联网获取并保存了属性和数值；是否属于《朱／紫》可用形态仍需核对。'}`;
+  state.statusError=false;
+ }catch(e){state.status=`第${slot+1}只加入失败：${String(e.message||e)}；已保留原成员。`;state.statusError=true;}
+ finally{state.busy=false;render();}
+}
+function showTeamSuggestions(slot,text){
+ const target=$(`#suggest-team-${slot}`);if(!target)return;
+ const matches=matchingPokemon(text);
+ if(!matches.length){target.innerHTML='<div class="suggestion muted">没有本地候选，输入完整名称后点击“加入”会尝试联网查找。</div>';target.classList.remove('hidden');return;}
+ target.innerHTML=matches.slice(0,12).map(p=>`<button class="suggestion" data-action="my-team-pick" data-slot="${slot}" data-pick="${escapeHTML(p.zh)}"><span>${escapeHTML(p.zh)}</span><span>#${p.id} · ${escapeHTML(p.en)}</span></button>`).join('');target.classList.remove('hidden');
+}
 // Event delegation prevents stale callbacks when panels are re-rendered.
 document.addEventListener('click',async event=>{
  const btn=event.target.closest('[data-tab],[data-action]');
  if(!btn)return;
  if(btn.dataset.tab){state.tab=btn.dataset.tab;state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
  const a=btn.dataset.action;
+ if(a==='show-raid-advisor'||a==='show-special-evo'){state.tab=a==='show-raid-advisor'?'raid':'specialEvo';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
+ if(a==='raid-preset'){state.raidBossKey=btn.dataset.id;state.raidBossQuery=VERIFIED_FIVE_STAR_BOSSES[state.raidBossKey]?.zh||'';state.raidBossCustom=null;state.raidStars='5';state.tab='raid';render();return;}
+ if(a==='raid-to-counter'){const boss=raidBossProfile();if(!boss)return;state.foe=boss;state.foeQuery=boss.zh;state.foeTera=state.raidTera;state.foeAbility=state.raidAbility;state.tab='counter';render();return;}
+ if(a==='raid-boss-lookup'){
+  const name=$('#raid-boss-search')?.value.trim();if(!name)return;
+  state.raidBossQuery=name;state.busy=true;state.status='正在查找首领资料…';render();
+  try{const found=await lookupPokemon(name);state.raidBossCustom=found;state.status=`已找到${found.zh}。如果没有匹配的普通五星首领数据，只进行属性初筛。`;state.statusError=false;}
+  catch(e){state.raidBossCustom=null;state.status='暂时无法查询：'+String(e.message||e);state.statusError=true;}
+  finally{state.busy=false;render();}return;
+ }
+ if(a==='evo-search'){state.evoQuery=$('#evo-search')?.value?.trim()||'';state.evoMore=false;render();return;}
+ if(a==='evo-example'){state.evoQuery=btn.dataset.name;state.evoMore=false;state.tab='specialEvo';render();return;}
+ if(a==='evo-more'){state.evoMore=true;render();return;}
+ if(a==='special-item'){state.itemQuery=btn.dataset.name;state.itemSelected=searchItemGuides(state.itemQuery)[0]?.id||'';state.tab='items';render();return;}
+ if(a==='special-dex'){
+  state.dexQuery=btn.dataset.name;const p=localPokemon(btn.dataset.name);
+  if(p){state.dexPoke=p;state.tab='dex';render();return;}
+  state.busy=true;state.status='正在查询进化形态的宝可梦资料…';render();
+  try{state.dexPoke=await lookupPokemon(btn.dataset.name);state.status='';state.tab='dex';state.statusError=false;}
+  catch(e){state.status='在线查找失败：'+String(e.message||e);state.statusError=true;}
+  finally{state.busy=false;render();}return;
+ }
+ if(a==='show-encyclopedia'||a==='show-combo'){state.tab=a==='show-combo'?'combo':'encyclopedia';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
+ if(a==='ref-where'){
+  const item=getItemGuide(btn.dataset.id);
+  if(item){state.itemQuery=item.name;state.itemSelected=item.id;state.itemCategory='全部';state.itemRegion='全部';state.tab='items';state.status='';}
+  else state.status='此条目获取地点尚未经过本版核实。请先查看来源链接。';
+  render();return;
+ }
+ if(a==='combo-preset'){const preset=COMBO_PRESETS.find(x=>x.id===btn.dataset.id);if(preset){Object.assign(state,Object.fromEntries(Object.entries(preset).filter(([k])=>k!=='id'&&k!=='name').map(([k,v])=>['combo'+k[0].toUpperCase()+k.slice(1),v])));render();}return;}
+ if(a==='ref-kind'){state.refKind=btn.dataset.kind;state.refQuery='';state.refSelected='';state.refExpanded=false;render();return;}
+ if(a==='ref-search'){state.refQuery=$('#ref-search')?.value?.trim()||'';state.refSelected='';state.refExpanded=false;render();return;}
+ if(a==='ref-select'){state.refSelected=btn.dataset.id;render();document.getElementById('ref-detail')?.scrollIntoView?.({behavior:'smooth',block:'start'});return;}
+ if(a==='ref-more'){state.refExpanded=true;render();return;}
+ if(a==='ref-sync'){
+  if(state.busy)return;state.busy=true;state.status='正在同步中文名称目录，首次需要联网…';render();
+  try{const r=await loadReferenceIndex(state.refKind);state.status=`已同步 ${r.count} 条名称。注意：这是跨世代索引，不能直接当作朱紫全量可用清单。`;state.statusError=false;}
+  catch(e){state.status='同步失败：'+String(e.message||e);state.statusError=true;}finally{state.busy=false;render();}return;
+ }
+ if(a==='ref-load-detail'){
+  if(state.busy)return;state.busy=true;state.status='正在获取条目说明…';render();
+  try{await lookupReferenceDetail(state.refKind,btn.dataset.id);state.status='资料已缓存。注意翻译与版本规则仍须核对。';state.statusError=false;}
+  catch(e){state.status='详情查询失败：'+String(e.message||e);state.statusError=true;}finally{state.busy=false;render();}return;
+ }
+ if(a==='show-dex'||a==='show-breed'||a==='show-training'){state.tab=({ 'show-dex':'dex','show-breed':'breed','show-training':'train'})[a];state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
+ if(a==='my-team-focus'){state.tab='recommend';state.status='';render();document.querySelector('#my-team')?.scrollIntoView?.({behavior:'smooth',block:'start'});return;}
+ if(a==='my-team-lookup'){const slot=Number(btn.dataset.slot);await lookupTeamSlot(slot,$(`#myteam-slot-${slot}`)?.value);return;}
+ if(a==='my-team-pick'){await lookupTeamSlot(Number(btn.dataset.slot),btn.dataset.pick);return;}
+ if(a==='rec-type'){state.recType=btn.dataset.type;state.recRole='all';state.recTarget='';state.recShowAll=true;state.tab='recommend';render();document.getElementById('recommend-list')?.scrollIntoView?.({behavior:'smooth',block:'start'});return;}
+ if(a==='type-guide-to-recommend'){state.recType=state.focusType;state.recMode='story';state.recRole='all';state.recTarget='';state.recShowAll=true;state.tab='recommend';render();window.scrollTo({top:0,behavior:'auto'});return;}
  if(a==='show-items'){state.tab='items';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
  if(a==='item-more'){state.itemShowAll=true;render();return;}
  if(a==='item-search'){state.itemShowAll=false;state.itemQuery=String($('#item-search')?.value||'').trim();const list=searchItemGuides(state.itemQuery,state.itemCategory,state.itemRegion);state.itemSelected=list[0]?.id||'';render();return;}
  if(a==='item-example'){state.itemShowAll=false;state.itemQuery=btn.dataset.query;state.itemCategory='全部';state.itemRegion='全部';state.itemSelected=searchItemGuides(state.itemQuery)[0]?.id||'';render();return;}
  if(a==='item-select'){state.itemSelected=btn.dataset.id;render();document.querySelector('.item-detail')?.scrollIntoView?.({behavior:'smooth',block:'start'});return;}
+ if(a==='item-to-material'){state.selectedMaterial=btn.dataset.id;state.materialQuery=getMaterial(btn.dataset.id)?.name||'';state.materialTarget=getMaterial(btn.dataset.id)?.tradeFor?.quantity||3;state.tab='materials';render();window.scrollTo({top:0,behavior:'auto'});return;}
+ if(a==='item-open-from-material'){const item=getItemGuide(btn.dataset.id);if(item){state.itemSelected=item.id;state.itemQuery=item.name;state.itemRegion='全部';state.itemCategory='全部';state.tab='items';render();window.scrollTo({top:0,behavior:'auto'});}return;}
  if(a==='my-team-mode'){state.myTeamMode=btn.dataset.value==='raid'?'raid':'story';render();return;}
  if(a==='my-team-clear'){state.myTeamSlots=Array(6).fill('');render();return;}
  if(a==='my-team-template'){const t=CURATED_TEAMS.find(t=>t.id===btn.dataset.id);if(t){state.myTeamSlots=t.members.slice(0,6);state.myTeamMode=t.mode;render();}return;}
@@ -2144,9 +2729,9 @@ document.addEventListener('click',async event=>{
  if(a==='material-select-from-dex'){state.materialQuery='';state.selectedMaterial=btn.dataset.material;state.tab='materials';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
  if(a==='material-dex'){state.tab='dex';state.status='';await lookup('dex',btn.dataset.name);window.scrollTo({top:0,behavior:'auto'});return;}
  if(a==='material-from-dex'){state.materialQuery=state.dexPoke?.zh||'';const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';state.tab='materials';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
- if(a==='material-search'){state.materialQuery=String($('#material-search')?.value||'').trim();const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';render();return;}
- if(a==='material-example'){state.materialQuery=btn.dataset.query;const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';render();return;}
- if(a==='material-select'){state.selectedMaterial=btn.dataset.material;state.materialOwned=0;state.materialTarget=3;render();return;}
+ if(a==='material-search'){state.materialQuery=String($('#material-search')?.value||'').trim();const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';state.materialTarget=getMaterial(state.selectedMaterial)?.tradeFor?.quantity||3;render();return;}
+ if(a==='material-example'){state.materialQuery=btn.dataset.query;const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';state.materialTarget=getMaterial(state.selectedMaterial)?.tradeFor?.quantity||3;render();return;}
+ if(a==='material-select'){state.selectedMaterial=btn.dataset.material;state.materialOwned=0;state.materialTarget=getMaterial(btn.dataset.material)?.tradeFor?.quantity||3;render();return;}
  if(a==='show-crystal'){state.tab='crystal';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
  if(a==='back-counter'){state.tab='counter';state.status='';render();window.scrollTo({top:0,behavior:'auto'});return;}
  if(a==='crystal-pick'){state.crystalType=btn.dataset.type;render();return;}
@@ -2172,7 +2757,19 @@ document.addEventListener('click',async event=>{
   const p=presets[btn.dataset.example];if(p){state.breedA=localPokemon(p[0]);state.breedB=localPokemon(p[1]);state.breedAQuery=p[0];state.breedBQuery=p[1];state.breedSexA=p[2];state.breedSexB=p[3];state.breedItemA='';state.breedItemB='';state.breedHADonor=false;state.tab='breed';state.status='';render();}return;
  }
  if(a==='breed-swap'){[state.breedA,state.breedB]=[state.breedB,state.breedA];[state.breedAQuery,state.breedBQuery]=[state.breedBQuery,state.breedAQuery];[state.breedSexA,state.breedSexB]=[state.breedSexB,state.breedSexA];[state.breedItemA,state.breedItemB]=[state.breedItemB,state.breedItemA];render();return;}
- if(a==='breed-partner'){const p=localPokemon(btn.dataset.name);if(p){state.breedB=p;state.breedBQuery=p.zh;const m=breedMeta(p);state.breedSexB=m?.gender==='female'?'female':m?.gender==='male'?'male':m?.gender==='genderless'?'genderless':state.breedSexA==='female'?'male':'female';render();}return;}
+ if(a==='breed-partner'){
+  try{state.busy=true;const p=await lookupPokemon(btn.dataset.name);state.breedB=p;state.breedBQuery=p.zh;const m=breedMeta(p);
+    state.breedSexB=m?.gender==='female'?'female':m?.gender==='male'?'male':m?.gender==='genderless'?'genderless':state.breedSexA==='female'?'male':'female';
+    state.status='已载入'+p.zh+'。请检查双亲性别和携带道具。';state.statusError=false;
+  }catch(e){state.status='无法加载该配对对象：'+e.message;state.statusError=true;}finally{state.busy=false;render();}return;
+ }
+ if(a==='breed-filter'){state.breedPartnerFilter=String($('#breed-partner-filter')?.value||'').trim();render();return;}
+ if(a==='breed-sync-catalog'){
+  if(state.busy)return;state.busy=true;state.status='正在同步蛋群、性别和本篇／DLC图鉴目录；首次需要网络…';render();
+  try{const r=await loadBreedingCatalog();setBreedingCatalog(getBreedingCatalog());state.status=`已缓存 ${r.count} 种物种的蛋群／性别索引，其中 ${r.svCount} 种列入本篇及DLC三本地区图鉴。`;state.statusError=false;}
+  catch(e){state.status='同步未完成：'+(e.message||e)+'。精选离线功能仍可使用。';state.statusError=true;}
+  finally{state.busy=false;render();}return;
+ }
  if(a==='breed-online'){
   if(state.busy)return;state.busy=true;state.status='正在查询蛋群和性别资料…';render();
   try{const data=await Promise.all([enrichBreedingData(state.breedA),enrichBreedingData(state.breedB)]);state.breedA=data[0];state.breedB=data[1];state.status='已从 PokéAPI 获取双亲蛋群和性别资料。仍需确认它们在《朱／紫》中可用。';state.statusError=false;}
@@ -2230,13 +2827,14 @@ document.addEventListener('click',async event=>{
  }
 });
 document.addEventListener('input',event=>{
+ const teamInput=event.target.closest('.team-lookup');if(teamInput){showTeamSuggestions(Number(teamInput.dataset.teamQuery),teamInput.value);return;}
  const inp=event.target.closest('.pk-search');if(!inp)return;
  const kind=inp.dataset.search;
  state[({foe:'foeQuery',own:'ownQuery',dex:'dexQuery',breedA:'breedAQuery',breedB:'breedBQuery'})[kind]||'dexQuery']=inp.value;
  showSuggestions(kind,inp.value);
 });
 document.addEventListener('keydown',async event=>{
- const inp=event.target.closest('.pk-search');if(event.target.id==='item-search'&&event.key==='Enter'){event.preventDefault();state.itemQuery=event.target.value.trim();state.itemSelected=searchItemGuides(state.itemQuery,state.itemCategory,state.itemRegion)[0]?.id||'';render();return;}if(event.target.id==='material-search'&&event.key==='Enter'){event.preventDefault();state.materialQuery=event.target.value.trim();const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';render();return;}if(event.target.id==='move-search'&&event.key==='Enter'){event.preventDefault();state.moveQuery=event.target.value;state.selectedMove=findMove(state.moveQuery)?.id||'';render();return;}if(inp&&event.key==='Enter'){event.preventDefault();await lookup(inp.dataset.search);}
+ const inp=event.target.closest('.pk-search');if(event.target.id==='breed-partner-filter'&&event.key==='Enter'){event.preventDefault();state.breedPartnerFilter=event.target.value.trim();render();return;}if(event.target.classList?.contains('team-lookup')&&event.key==='Enter'){event.preventDefault();await lookupTeamSlot(Number(event.target.dataset.teamQuery),event.target.value);return;}if(event.target.id==='raid-boss-search'&&event.key==='Enter'){event.preventDefault();document.querySelector('[data-action=raid-boss-lookup]')?.click();return;}if(event.target.id==='evo-search'&&event.key==='Enter'){event.preventDefault();state.evoQuery=event.target.value.trim();state.evoMore=false;render();return;}if(event.target.id==='ref-search'&&event.key==='Enter'){event.preventDefault();state.refQuery=event.target.value.trim();state.refSelected='';state.refExpanded=false;render();return;}if(event.target.id==='item-search'&&event.key==='Enter'){event.preventDefault();state.itemQuery=event.target.value.trim();state.itemSelected=searchItemGuides(state.itemQuery,state.itemCategory,state.itemRegion)[0]?.id||'';render();return;}if(event.target.id==='material-search'&&event.key==='Enter'){event.preventDefault();state.materialQuery=event.target.value.trim();const found=searchMaterials(state.materialQuery);state.selectedMaterial=found.materials[0]?.id||'';state.materialTarget=getMaterial(state.selectedMaterial)?.tradeFor?.quantity||3;render();return;}if(event.target.id==='move-search'&&event.key==='Enter'){event.preventDefault();state.moveQuery=event.target.value;state.selectedMove=findMove(state.moveQuery)?.id||'';render();return;}if(inp&&event.key==='Enter'){event.preventDefault();await lookup(inp.dataset.search);}
  if(inp&&event.key==='Escape'){const box=$('#suggest-'+inp.dataset.search);box?.classList.add('hidden');}
 });
 document.addEventListener('change',event=>{
@@ -2249,6 +2847,7 @@ document.addEventListener('change',event=>{
   else if(key==='materialTarget')state.materialTarget=safeNum(el.value,1,9999);
   else if(key==='level')state.level=safeNum(el.value,1,100);
   else if(key==='itemCategory'||key==='itemRegion'){state.itemShowAll=false;state[key]=el.value;const found=searchItemGuides(state.itemQuery,state.itemCategory,state.itemRegion);state.itemSelected=found[0]?.id||'';}
+  else if(key==='raidBossKey'){state.raidBossKey=el.value;state.raidBossCustom=null;state.raidBossQuery=VERIFIED_FIVE_STAR_BOSSES[el.value]?.zh||'';}
   else if(key==='recType'||key==='recRole'){state[key]=el.value;state.recTarget='';state.recShowAll=false;}
   else if(key==='trainTarget')state.trainTarget=safeNum(el.value,0,252);
   else if(key==='selectedMove'){state.selectedMove=el.value;state.selectedAttackType=COMMON_MOVES[el.value]?.type||state.selectedAttackType;}
