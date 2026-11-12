@@ -1,0 +1,57 @@
+name: Verify Scarlet Violet database (development branch only)
+
+on:
+  push:
+    branches:
+      - dev/full-database-v1.2
+
+# This workflow NEVER publishes to GitHub Pages.
+permissions:
+  contents: read
+
+jobs:
+  check-database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check out development branch
+        uses: actions/checkout@v4
+      - name: Confirm we are not on production
+        shell: bash
+        run: |
+          test "$GITHUB_REF_NAME" = "dev/full-database-v1.2"
+          test -s build_sv_data.py
+          test -s index.html
+          python -m py_compile build_sv_data.py
+      - name: Download data and generate offline snapshot
+        run: |
+          mkdir -p preview
+          python build_sv_data.py --output preview/sv-data.json --coverage preview/coverage.json
+      - name: Validate snapshot for Scarlet Violet
+        run: |
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          c=json.loads(Path('preview/coverage.json').read_text(encoding='utf-8'))
+          d=json.loads(Path('preview/sv-data.json').read_text(encoding='utf-8'))
+          required={'帕底亚':400,'北上乡':200,'蓝莓':243}
+          for region,min_count in required.items():
+              count=c['regionSpecies'].get(region,0)
+              assert count>=min_count,(region,count,min_count)
+          assert c['pokemonSpeciesSearchable']>=400,c
+          assert c['svMoveEntries']>=350,c
+          assert len(d['pokemon'])>=500,len(d['pokemon'])
+          assert any(p['en']=='pikachu' and p['baseEn']=='pichu' for p in d['pokemon'])
+          assert all('eggGroups' in p and 'genderRate' in p for p in d['breedingIndex'])
+          print('DATA GATE PASS')
+          print(json.dumps(c,ensure_ascii=False,indent=2))
+          PYCODE
+      - name: Upload test results for inspection (NOT a website release)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sv-data-development-check
+          path: |
+            preview/sv-data.json
+            preview/coverage.json
+          retention-days: 7
