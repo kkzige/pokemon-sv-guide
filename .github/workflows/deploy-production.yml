@@ -1,0 +1,89 @@
+name: Build Pokemon SV v1.2.1 PRODUCTION (verified offline snapshot)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: production-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # Safeguard: this workflow deploys ONLY from the production repository.
+    if: github.repository == 'kkzige/pokemon-sv-guide'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Validate required files
+        run: |
+          python -m py_compile build_sv_data.py
+          for f in index.html sw.js manifest.webmanifest icon.svg apple-touch-icon.png version.json; do test -s "$f"; done
+      - name: Generate verified full offline snapshot
+        run: |
+          mkdir -p site
+          python build_sv_data.py --output site/sv-data.json --coverage site/coverage.json
+      - name: Verify data completeness before publishing production
+        run: |
+          python - <<'PYVERIFY'
+          import json
+          from pathlib import Path
+          c=json.loads(Path('site/coverage.json').read_text(encoding='utf-8'))
+          d=json.loads(Path('site/sv-data.json').read_text(encoding='utf-8'))
+          for region,n in {'帕底亚':400,'北上乡':200,'蓝莓':243}.items():
+              assert c['regionSpecies'].get(region,0)>=n,(region,c['regionSpecies'].get(region,0))
+          assert c['pokemonSpeciesSearchable']>=400,c
+          assert c['svMoveEntries']>=350,c
+          assert len(d['pokemon'])>=500,len(d['pokemon'])
+          print('PRODUCTION DATA GATE PASS')
+          print(json.dumps(c,ensure_ascii=False,indent=2))
+          PYVERIFY
+      - name: Assemble self-contained production PWA for iPhone Safari
+        run: |
+          cp sw.js manifest.webmanifest icon.svg apple-touch-icon.png version.json site/
+          python - <<'PYEMBED'
+          import json
+          from pathlib import Path
+          data=Path('site/sv-data.json').read_text(encoding='utf-8')
+          obj=json.loads(data)
+          assert obj['schema']==1 and len(obj['pokemon'])>=500
+          assert len(obj['directory'])>=400 and len(obj['moves'])>=350
+          # Inert JSON in the same HTML download: Safari needs no second fetch.
+          safe=data.replace('<',r'\u003c')
+          marker='<script id="sv-offline-snapshot" type="application/json">'+safe+'</script>'
+          html=Path('index.html').read_text(encoding='utf-8')
+          assert '</head>' in html and 'initSVSnapshot' in html
+          html=html.replace('</head>',marker+'\n</head>',1)
+          Path('site/index.html').write_text(html,encoding='utf-8')
+          coverage_file=Path('site/coverage.json')
+          coverage=json.loads(coverage_file.read_text(encoding='utf-8'))
+          coverage['version']='1.2.1'
+          coverage_file.write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf-8')
+          assert json.loads(safe)['schema']==1
+          print('PRODUCTION HTML INLINE DATABASE:',len(data),'JSON characters')
+          print('PRODUCTION HTML SIZE:',Path('site/index.html').stat().st_size,'bytes')
+          PYEMBED
+          test -s site/index.html && test -s site/sv-data.json
+          touch site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    if: github.repository == 'kkzige/pokemon-sv-guide'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified production PWA to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
