@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="太晶战术图鉴">
   <meta name="description" content="专为《宝可梦 朱／紫》设计的属性克制、太晶、特性、招式和努力值计算工具。">
-  <title>太晶战术图鉴 · 朱／紫 V1.2.2</title>
+  <title>太晶战术图鉴 · 朱／紫 V1.2.3</title>
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
@@ -2450,7 +2450,7 @@ function renderDex(){
  const p=state.dexPoke;
  const weakness=offenseList(p,'none','').filter(x=>x.value>1);
  const immunity=offenseList(p,'none','').filter(x=>x.value===0);
- return pTitle('图鉴与能力查询','查看属性图标、离线进化家族、种族值，以及精选已核实的野外分布与掉落材料。图片首次显示需要网络。')+dataStatus()+displayStatus()+
+ return pTitle('图鉴与能力查询','查看属性图标、离线进化家族、种族值、朱／紫版本差异、精选野外地点与TM材料。图片首次显示需要网络。')+dataStatus()+displayStatus()+
  `<div class="panel"><div class="paneltop"><h2>搜索宝可梦</h2><span class="tag info">中英双语</span></div>${searchBox('dex',state.dexQuery)}<div class="examples" style="margin-top:12px"><button class="exbtn" data-action="quick-dex" data-name="迷你龙">迷你龙</button><button class="exbtn" data-action="quick-dex" data-name="伊布">伊布</button><button class="exbtn" data-action="quick-dex" data-name="巴布土拨">巴布土拨</button><button class="exbtn" data-action="quick-dex" data-name="海豚侠">海豚侠</button><button class="exbtn" data-action="quick-dex" data-name="苍炎刃鬼">苍炎刃鬼</button><button class="exbtn" data-action="quick-dex" data-name="厄诡椪">DLC：厄诡椪</button></div></div>
  <div class="panel">${specSummary(p)}<div class="picture-help">宝可梦外观参考图从公共图片服务器联网加载，非游戏官方授权图库；离线时自动显示编号占位。不会将第三方形象图打包进公开仓库。</div><div class="divider"></div><dl class="kv"><dt>属性</dt><dd>${p.types.map(t=>typePick(t)).join(' ')}</dd><dt>可拥有特性</dt><dd>${(p.abilities||[]).map(a=>`<span class="chip">${escapeHTML(abilityZh(a))}</span>`).join('')}</dd></dl></div>
  <div class="panel"><div class="paneltop"><h2>特殊进化条件</h2></div><p class="help">觉醒之石限定性别、交换进化、累计使用招式、随行1000步等，可直接查看核实步骤。</p><button class="btn" data-action="show-special-evo">打开特殊进化速查 →</button></div>
@@ -2458,13 +2458,42 @@ function renderDex(){
  <div class="panel"><div class="paneltop"><h2>弱点与免疫</h2><span class="tag">按原本防御属性计算</span></div><div class="facts"><span>弱点 <b>${weakness.map(x=>`${TYPE_NAME[x.id]} ${valFormat(x.value)}`).join('、')||'无'}</b></span><span>免疫 <b>${immunity.map(x=>TYPE_NAME[x.id]).join('、')||'无'}</b></span></div><div class="results" style="margin-top:14px">${offenseList(p).map(renderMatchCard).join('')}</div><div class="help" style="margin-top:12px">以上是纯属性相克，未计入特性。点击“怎么打它”可选择太晶属性、特性与具体招式。</div><div class="three-btn" style="margin-top:14px"><button class="btn small" data-action="to-counter">分析如何打败 ${escapeHTML(p.zh)}</button><button class="btn subtle small" data-action="to-training">培养这只宝可梦</button><button class="btn subtle small" data-action="to-breed">分析繁殖遗传</button><button class="btn subtle small" data-action="material-from-dex">查询对应掉落材料</button><button class="btn small" data-action="rec-from-dex">查看这只的培养推荐</button></div></div>`;
 }
 function renderDexHabitatPanel(p){
- const habitat=habitatFor(p);
- const drops=materialsForPokemon(p);
- const locator=habitat?`<div class="habitat-areas">${habitat.locations.map(area=>`<span class="habitat-area">⌖ ${escapeHTML(area)}</span>`).join('')}</div><p class="help">${escapeHTML(habitat.note)} <a href="${escapeHTML(habitat.source)}" target="_blank" rel="noopener noreferrer">查看核对来源 ↗</a></p>`:
- `<div class="tip-block">尚未核实这只宝可梦在《朱／紫》中的野外出现区域。不能据此判断它不能捕捉；请在 Switch 游戏图鉴中查看栖息地，并留意朱／紫版本、DLC、交换及 HOME 来源。</div>`;
- const items=drops.length?drops.map(m=>`<button class="dex-drop" data-action="material-select-from-dex" data-material="${m.id}"><strong>${escapeHTML(m.name)}</strong><span>查来源与对应TM配方 →</span></button>`).join(''):
- `<p class="help">已核实的材料库暂无这只宝可梦的掉落记录；不代表游戏里一定没有对应材料。其他携带道具不属于这里的材料列表。</p>`;
- return `<div class="panel"><div class="paneltop"><h2>野外分布与掉落物品</h2><span class="tag info">精选已核实</span></div><div class="subtle-title">野外分布（不是完整地图）</div>${locator}<div class="divider"></div><div class="subtle-title">击败／捕捉掉落的TM材料</div><div class="dex-drops">${items}</div><p class="help">此处列出的是制作招式学习器的宝可梦材料，不等于它可能携带的道具；实际掉落并非固定数量。若需补充，请以游戏内栖息地图与道具信息为准。</p><div class="three-btn"><button class="btn subtle small" data-action="material-from-dex">打开材料获取速查</button><button class="btn subtle small" data-action="show-type-guide">查看18种招式属性克制</button></div></div>`;
+ // Acquisition facts are generated into the same offline SV snapshot; curated V1.2.2 entries remain as fallback.
+ const fresh=p.svAcquisition||getSVPokemon(p.en)?.svAcquisition||null;
+ const v=fresh?.version||null;
+ const h=fresh?.habitat||null;
+ const legacy=habitatFor(p);
+ const nativeText=v?.native==='scarlet'?'朱（Scarlet）原生限定':v?.native==='violet'?'紫（Violet）原生限定':h?.native==='both'?'朱、紫两版均有已核实的野外记录':'暂未列入已核实的版本限定记录';
+ const nativeClass=v?'warning':'info';
+ const versionIntro=v?.scope==='form'?'此标记只针对当前地区形态，不适用于所有同名形态。':
+   v?'这里的“限定”指当前版本的原生取得方式；交换、联机、活动团体战及 HOME 仍可能让另一版本获得。':
+   h?.native==='both'?'已核实代表性野外区域，但不代表全部刷新地点。':'缺少限定标签不等于已经审核两版所有获取方式。';
+ const versionSection=`<div class="subtle-title">朱／紫版本与取得方式</div><div class="pillline"><span class="tag ${nativeClass}">${escapeHTML(nativeText)}</span></div><p class="help">${escapeHTML(versionIntro)} ${v?.note?escapeHTML(v.note):''} ${v?.source?`<a href="${escapeHTML(v.source)}" target="_blank" rel="noopener noreferrer">核对版本来源 ↗</a>`:''}</p>`;
+ let locator;
+ if(h){
+   locator=`<div class="habitat-areas">${h.areas.map(area=>`<span class="habitat-area">⌖ ${escapeHTML(area)}</span>`).join('')}</div><p class="help">${escapeHTML(h.region||'')} · ${escapeHTML(h.biome||'')} ${h.when?' · '+escapeHTML(h.when):''}。仅为已核实的代表性刷新区域，实际还受地形、时间、剧情及版本影响。<a href="${escapeHTML(h.source)}" target="_blank" rel="noopener noreferrer">查看资料来源 ↗</a></p>`;
+ }else if(legacy){
+   locator=`<div class="habitat-areas">${legacy.locations.map(area=>`<span class="habitat-area">⌖ ${escapeHTML(area)}</span>`).join('')}</div><p class="help">${escapeHTML(legacy.note)} <a href="${escapeHTML(legacy.source)}" target="_blank" rel="noopener noreferrer">查看核对来源 ↗</a></p>`;
+ }else if(v?.note?.includes('不按普通野生刷新')){
+   locator=`<p class="tip-block">这只宝可梦属于特定剧情、活动或特殊取得方式，不能按普通野外刷新地点寻找。${escapeHTML(v.note)}</p>`;
+ }else {
+   locator='<div class="tip-block">本工具尚无这只宝可梦经过核对的野外出现地点。可能通过野外捕捉、进化、交换、联机、团体战、活动或 HOME 获得；不能将“未录入地点”理解为无法获得。</div>';
+ }
+ const curated=materialsForPokemon(p);
+ const supplemental=fresh?.tmMaterials||[];
+ const matched=new Set(curated.map(m=>m.name));
+ const cards=curated.map(m=>`<button class="dex-drop" data-action="material-select-from-dex" data-material="${escapeHTML(m.id)}"><strong>${escapeHTML(m.name)}</strong><span>已收录配方 · 点此查询 →</span></button>`);
+ const sourceItems=getSVReferenceIndex('items')||[];
+ for(const m of supplemental){
+   const ref=sourceItems.find(x=>x.id===m.id);
+   const zh=m.zh||ref?.zh;
+   const name=zh&&zh!==m.id?zh:m.en;
+   if(matched.has(name))continue;
+   cards.push(`<div class="dex-drop" title="已登记材料来源；部分材料不用于TM制作，例如索财灵的硬币"><strong>${escapeHTML(name)}</strong><span>${m.purpose==='evolution-only'?'用于索财灵进化（集齐999枚）；不用于制作TM':'TM材料类别 · 不一定有对应的TM配方'}${!zh?' · 英文名待本地化':''}</span></div>`);
+   matched.add(name);
+ }
+ const items=cards.length?cards.join(''):'<p class="help">尚未找到这只宝可梦已核实的 TM 材料来源；有些宝可梦本来就不掉落这种材料。也不代表它没有其他携带道具。</p>';
+ return `<div class="panel"><div class="paneltop"><h2>版本限定、野外分布与掉落材料</h2><span class="tag info">独立数据来源</span></div>${versionSection}<div class="divider"></div><div class="subtle-title">野外分布（已核实的代表性地点）</div>${locator}<div class="divider"></div><div class="subtle-title">击败／捕捉或互动获得的材料</div><div class="dex-drops">${items}</div><p class="help">材料与野生宝可梦可能携带的道具是不同机制；索财灵的硬币用于进化而不是制作TM。这里只记录材料种类，不保证每场掉落或固定数量。新增材料来源基于本作资料表，DLC 与部分特殊形态仍需持续核对。</p><div class="three-btn"><button class="btn subtle small" data-action="material-from-dex">打开材料获取速查</button><button class="btn subtle small" data-action="show-type-guide">查看18种招式属性克制</button></div></div>`;
 }
 function renderTraining(){
  const p=state.own;
@@ -2559,7 +2588,7 @@ function renderGenericTrainingMoves(){
  <div class="help" style="margin-top:13px">${p.origin==='remote'?'使用了《朱／紫》可学习招式表进行筛选（仍需核对具体学习条件）。':'离线条目仅包含常用招式示例，不能代表完整可学招式表。'} 未计算战斗中特性、道具、天气或团体战专有战术。</div>
  <button class="btn small subtle" style="margin-top:12px" data-action="sync-moves">联网同步完整招式资料</button>`;
 }
-const APP_VERSION='1.2.2';
+const APP_VERSION='1.2.3';
 function materialCard(m){
  const current=state.selectedMaterial===m.id;
  const tms=recipesUsing(m.id);
@@ -2791,7 +2820,7 @@ function renderAbout(){
  <dt>进化路线</dt><dd>内置代表性宝可梦的多阶段及分支进化条件；少量在线资料可能包含非《朱／紫》的条件，须另行核对</dd>
  <dt>努力值实操</dt><dd>可选目标、对应力量道具及野生宝可梦、计算场次与增强剂、羽毛精确补足；可手动记录与撤销。训练记录保存在当前浏览器，并不连接 Switch。</dd>
  <dt>繁殖遗传</dt><dd>蛋群与性别配对、后代种类、道具遗传说明、常见离线配对与在线蛋群补全。未提供真实孵蛋数量或精确高V概率预测。</dd>
- <dt>属性图标速查</dt><dd>18种《朱／紫》招式属性图标（首次联网加载）、双向相性计算、太晶与具体对手联动；缺图时仍保留中文名</dd><dt>野外分布与材料</dt><dd>只展示已核实的部分地点与TM材料；未录入时明确提示，不把缺数据当作游戏中不存在</dd><dt>招式</dt><dd>支持按具体招式名称查询、内置示例与在线可学招式数据；推荐是启发式排序，不是 Pokémon Showdown 等价的完整伤害计算器</dd>
+ <dt>属性图标速查</dt><dd>18种《朱／紫》招式属性图标（首次联网加载）、双向相性计算、太晶与具体对手联动；缺图时仍保留中文名</dd><dt>野外分布与材料</dt><dd>版本原生限定与TM材料已扩充为独立离线索引；野外地点仍只展示已核实的代表性记录，不把缺数据当作游戏中不存在</dd><dt>招式</dt><dd>支持按具体招式名称查询、内置示例与在线可学招式数据；推荐是启发式排序，不是 Pokémon Showdown 等价的完整伤害计算器</dd>
  <dt>个人六只队伍</dt><dd>选择六只后显示共同弱点、按原本属性估计的理论攻击覆盖、精选替换与配招；本地保存，不模拟胜率与特殊机制。</dd><dt>道具／功能地点</dt><dd>精选常用道具、商店购买、NPC服务、DLC进化及解锁条件；附外部资料链接，非全量道具图鉴。</dd><dt>强势推荐和组队</dt><dd>34套离线场景培养建议、18属性及战术定位筛选、5个队伍／团体战候选池模板；为精选示例，不是实时排位榜或精确胜率。</dd><dt>未实现</dt><dd>全部招式特殊效果、天气场地、多回合团体战模拟、完整首领行动与盾牌机制、所有特性、道具及队伍自动最优规划</dd></div>
  </div>
  <div class="panel"><div class="paneltop"><h2>几个典型的使用情境</h2></div>

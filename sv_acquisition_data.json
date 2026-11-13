@@ -1,0 +1,2514 @@
+{
+  "schema": 1,
+  "scope": "scarlet-violet (Paldea + The Teal Mask + The Indigo Disk)",
+  "notes": "Locations are representative, not an exhaustive spawn map. Exclusive indicates original-version native acquisition rather than absolute impossibility of exchange/Union Circle/raid. TM materials differ from held items.",
+  "exclusives": {
+    "gligar": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "gliscor": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "larvitar": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "pupitar": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "tyranitar": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "cranidos": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "rampardos": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "drifloon": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "drifblim": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "stunky": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "skuntank": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "deino": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "zweilous": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "hydreigon": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "skrelp": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "dragalge": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "oranguru": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "cramorant": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "stonjourner": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "armarouge": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "对应版本原生进化道具限定，不表示另一版本通过交换无法获得。"
+    },
+    "great-tusk": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "scream-tail": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "brute-bonnet": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "flutter-mane": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "slither-wing": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "sandy-shocks": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "roaring-moon": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "koraidon": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "版本对应剧情传说宝可梦，不按普通野生刷新地点处理。"
+    },
+    "walking-wake": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "活动团体战相关；活动时间与跨版本参与条件需另核对，不能当作常驻野外刷新。"
+    },
+    "gouging-fire": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "蓝之圆盘后期特殊获取，不按普通野生刷新地点处理。"
+    },
+    "raging-bolt": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "蓝之圆盘后期特殊获取，不按普通野生刷新地点处理。"
+    },
+    "aipom": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "ambipom": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "misdreavus": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "mismagius": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "gulpin": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "swalot": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "bagon": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "shelgon": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "salamence": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "shieldon": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "bastiodon": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "clauncher": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "clawitzer": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "passimian": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "morpeko": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "dreepy": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "drakloak": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "dragapult": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "eiscue": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "ceruledge": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "对应版本原生进化道具限定，不表示另一版本通过交换无法获得。"
+    },
+    "iron-treads": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "iron-bundle": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "iron-hands": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "iron-jugulis": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "iron-moth": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "iron-thorns": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "iron-valiant": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked"
+    },
+    "miraidon": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "版本对应剧情传说宝可梦，不按普通野生刷新地点处理。"
+    },
+    "iron-leaves": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "活动团体战相关；活动时间与跨版本参与条件需另核对，不能当作常驻野外刷新。"
+    },
+    "iron-boulder": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "蓝之圆盘后期特殊获取，不按普通野生刷新地点处理。"
+    },
+    "iron-crown": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "species",
+      "confidence": "cross-checked",
+      "note": "蓝之圆盘后期特殊获取，不按普通野生刷新地点处理。"
+    },
+    "tauros-paldea-blaze-breed": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "form",
+      "confidence": "cross-checked"
+    },
+    "tauros-paldea-aqua-breed": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "form",
+      "confidence": "cross-checked"
+    },
+    "vulpix-alola": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "form",
+      "confidence": "cross-checked"
+    },
+    "ninetales-alola": {
+      "native": "scarlet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "form",
+      "confidence": "cross-checked"
+    },
+    "sandshrew-alola": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "form",
+      "confidence": "cross-checked"
+    },
+    "sandslash-alola": {
+      "native": "violet",
+      "source": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+      "scope": "form",
+      "confidence": "cross-checked"
+    }
+  },
+  "habitats": {
+    "ralts": {
+      "region": "帕底亚",
+      "areas": [
+        "南第1区"
+      ],
+      "biome": "城镇周边",
+      "when": "白天至傍晚",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-ralts-location/",
+      "native": "both",
+      "scope": "representative-wild-spawns"
+    },
+    "dratini": {
+      "region": "帕底亚",
+      "areas": [
+        "大锅湖",
+        "北第1区",
+        "北第2区",
+        "南第6区的河流"
+      ],
+      "biome": "湖泊与河流",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-dratini-location/",
+      "native": "both",
+      "scope": "representative-wild-spawns"
+    },
+    "eevee": {
+      "region": "帕底亚",
+      "areas": [
+        "南第2区",
+        "西第3区"
+      ],
+      "biome": "橄榄田与城镇周边",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-eevee-location/",
+      "native": "both",
+      "scope": "representative-wild-spawns"
+    },
+    "gible": {
+      "region": "帕底亚",
+      "areas": [
+        "南第6区",
+        "西第1区",
+        "西第2区"
+      ],
+      "biome": "洞穴",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-gible-location/",
+      "native": "both",
+      "scope": "representative-wild-spawns"
+    },
+    "gabite": {
+      "region": "帕底亚",
+      "areas": [
+        "南第6区",
+        "西第1区",
+        "第零区"
+      ],
+      "biome": "洞穴或地下",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-gabite-location/",
+      "native": "both",
+      "scope": "representative-wild-spawns"
+    },
+    "tinkatink": {
+      "region": "帕底亚",
+      "areas": [
+        "南第1区的遗迹",
+        "南第2区的遗迹",
+        "西第1区的遗迹"
+      ],
+      "biome": "遗迹",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-tinkatink-location/",
+      "native": "both",
+      "scope": "representative-wild-spawns"
+    },
+    "magikarp": {
+      "region": "帕底亚",
+      "areas": [
+        "南第1区的水域",
+        "南第5区的河流",
+        "大锅湖"
+      ],
+      "biome": "河流、湖泊、海洋",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-magikarp-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "gyarados": {
+      "region": "帕底亚",
+      "areas": [
+        "大锅湖"
+      ],
+      "biome": "湖泊",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-gyarados-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "ditto": {
+      "region": "帕底亚",
+      "areas": [
+        "西第2区",
+        "西第3区",
+        "锦汇镇附近"
+      ],
+      "biome": "草地／城镇附近（会伪装为其他宝可梦）",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-ditto-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "charcadet": {
+      "region": "帕底亚",
+      "areas": [
+        "南第1区部分山林",
+        "东第1区的林地",
+        "西第1区的岩石地带"
+      ],
+      "biome": "山林、洞穴与岩石地带（较稀少）",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-charcadet-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "frigibax": {
+      "region": "帕底亚",
+      "areas": [
+        "霜抹山"
+      ],
+      "biome": "雪地与洞穴",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-frigibax-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "pawmo": {
+      "region": "帕底亚",
+      "areas": [
+        "南第2区",
+        "南第4区",
+        "西第1区"
+      ],
+      "biome": "草地与山地",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-pawmo-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "dreepy": {
+      "region": "帕底亚",
+      "areas": [
+        "南第5区的沼泽",
+        "大锅湖"
+      ],
+      "biome": "沼泽、湖泊与河流",
+      "native": "violet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-dreepy-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "deino": {
+      "region": "帕底亚",
+      "areas": [
+        "南第6区的洞穴",
+        "西第2区的洞穴",
+        "第零区"
+      ],
+      "biome": "洞穴",
+      "native": "scarlet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-deino-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "bagon": {
+      "region": "帕底亚",
+      "areas": [
+        "南第5区"
+      ],
+      "biome": "山地",
+      "native": "violet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-bagon-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "larvitar": {
+      "region": "帕底亚",
+      "areas": [
+        "南第5区"
+      ],
+      "biome": "山地",
+      "native": "scarlet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-larvitar-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "larvesta": {
+      "region": "帕底亚",
+      "areas": [
+        "烘烘沙漠",
+        "西第2区的沙地"
+      ],
+      "biome": "沙漠",
+      "native": "both",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-larvesta-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "drakloak": {
+      "region": "帕底亚",
+      "areas": [
+        "大锅湖",
+        "第零区地下"
+      ],
+      "biome": "湖泊、河流或地下",
+      "native": "violet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-drakloak-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "zweilous": {
+      "region": "帕底亚",
+      "areas": [
+        "南第6区洞穴",
+        "第零区地下"
+      ],
+      "biome": "洞穴与地下",
+      "native": "scarlet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-zweilous-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "iron-moth": {
+      "region": "帕底亚",
+      "areas": [
+        "第零区"
+      ],
+      "biome": "草地（后期进入第零区）",
+      "native": "violet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-iron-moth-location/",
+      "scope": "representative-wild-spawns"
+    },
+    "iron-thorns": {
+      "region": "帕底亚",
+      "areas": [
+        "第零区"
+      ],
+      "biome": "岩石地带（后期进入第零区）",
+      "native": "violet",
+      "source": "https://www.powerpyx.com/pokemon-scarlet-violet-iron-thorns-location/",
+      "scope": "representative-wild-spawns"
+    }
+  },
+  "tmMaterials": {
+    "alomomola-mucus": {
+      "en": "Alomomola Mucus",
+      "sources": [
+        "alomomola"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "applin-juice": {
+      "en": "Applin Juice",
+      "sources": [
+        "applin",
+        "flapple",
+        "appletun"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "啃果虫的果汁"
+    },
+    "arrokuda-scales": {
+      "en": "Arrokuda Scales",
+      "sources": [
+        "arrokuda",
+        "barraskewda"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "axew-scales": {
+      "en": "Axew Scales",
+      "sources": [
+        "axew",
+        "fraxure",
+        "haxorus"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "azurill-fur": {
+      "en": "Azurill Fur",
+      "sources": [
+        "azurill",
+        "marill",
+        "azumarill"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "露力丽的毛"
+    },
+    "bagon-scales": {
+      "en": "Bagon Scales",
+      "sources": [
+        "bagon",
+        "shelgon",
+        "salamence"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "宝贝龙的鳞片"
+    },
+    "barboach-slime": {
+      "en": "Barboach Slime",
+      "sources": [
+        "barboach",
+        "whiscash"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "basculin-fang": {
+      "en": "Basculin Fang",
+      "sources": [
+        "basculin"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bergmite-ice": {
+      "en": "Bergmite Ice",
+      "sources": [
+        "bergmite",
+        "avalugg"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bombirdier-feather": {
+      "en": "Bombirdier Feather",
+      "sources": [
+        "bombirdier"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bonsly-tears": {
+      "en": "Bonsly Tears",
+      "sources": [
+        "bonsly",
+        "sudowoodo"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bounsweet-sweat": {
+      "en": "Bounsweet Sweat",
+      "sources": [
+        "bounsweet",
+        "steenee",
+        "tsareena"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bramblin-twig": {
+      "en": "Bramblin Twig",
+      "sources": [
+        "bramblin",
+        "brambleghast"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bronzor-fragment": {
+      "en": "Bronzor Fragment",
+      "sources": [
+        "bronzor",
+        "bronzong"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "bruxish-tooth": {
+      "en": "Bruxish Tooth",
+      "sources": [
+        "bruxish"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "buizel-fur": {
+      "en": "Buizel Fur",
+      "sources": [
+        "buizel",
+        "floatzel"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "cacnea-needle": {
+      "en": "Cacnea Needle",
+      "sources": [
+        "cacnea",
+        "cacturne"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "capsakid-seed": {
+      "en": "Capsakid Seed",
+      "sources": [
+        "capsakid",
+        "scovillain"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "cetoddle-grease": {
+      "en": "Cetoddle Grease",
+      "sources": [
+        "cetoddle",
+        "cetitan"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "charcadet-soot": {
+      "en": "Charcadet Soot",
+      "sources": [
+        "charcadet",
+        "armarouge",
+        "ceruledge"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "炭小侍的煤灰"
+    },
+    "chewtle-claw": {
+      "en": "Chewtle Claw",
+      "sources": [
+        "chewtle",
+        "drednaw"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "clauncher-claw": {
+      "en": "Clauncher Claw",
+      "sources": [
+        "clauncher",
+        "clawitzer"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "combee-honey": {
+      "en": "Combee Honey",
+      "sources": [
+        "combee",
+        "vespiquen"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "crabrawler-shell": {
+      "en": "Crabrawler Shell",
+      "sources": [
+        "crabrawler",
+        "crabominable"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "croagunk-poison": {
+      "en": "Croagunk Poison",
+      "sources": [
+        "croagunk",
+        "toxicroak"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "cryogonal-ice": {
+      "en": "Cryogonal Ice",
+      "sources": [
+        "cryogonal"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "cubchoo-fur": {
+      "en": "Cubchoo Fur",
+      "sources": [
+        "cubchoo",
+        "beartic"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "cufant-tarnish": {
+      "en": "Cufant Tarnish",
+      "sources": [
+        "cufant",
+        "copperajah"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "cyclizar-scales": {
+      "en": "Cyclizar Scales",
+      "sources": [
+        "cyclizar"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "dedenne-fur": {
+      "en": "Dedenne Fur",
+      "sources": [
+        "dedenne"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "deerling-hair": {
+      "en": "Deerling Hair",
+      "sources": [
+        "deerling",
+        "sawsbuck"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "deino-scales": {
+      "en": "Deino Scales",
+      "sources": [
+        "deino",
+        "zweilous",
+        "hydreigon"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "单首龙的鳞片"
+    },
+    "delibird-parcel": {
+      "en": "Delibird Parcel",
+      "sources": [
+        "delibird"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "diglett-dirt": {
+      "en": "Diglett Dirt",
+      "sources": [
+        "diglett",
+        "dugtrio"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "ditto-goo": {
+      "en": "Ditto Goo",
+      "sources": [
+        "ditto"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "dondozo-whisker": {
+      "en": "Dondozo Whisker",
+      "sources": [
+        "dondozo"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "dratini-scales": {
+      "en": "Dratini Scales",
+      "sources": [
+        "dratini",
+        "dragonair",
+        "dragonite"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "迷你龙的鳞片"
+    },
+    "dreepy-powder": {
+      "en": "Dreepy Powder",
+      "sources": [
+        "dreepy",
+        "drakloak",
+        "dragapult"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "多龙梅西亚的粉"
+    },
+    "drifloon-gas": {
+      "en": "Drifloon Gas",
+      "sources": [
+        "drifloon",
+        "drifblim"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "drowzee-fur": {
+      "en": "Drowzee Fur",
+      "sources": [
+        "drowzee",
+        "hypno"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "dunsparce-scales": {
+      "en": "Dunsparce Scales",
+      "sources": [
+        "dunsparce",
+        "dudunsparce"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "eevee-fur": {
+      "en": "Eevee Fur",
+      "sources": [
+        "eevee",
+        "vaporeon",
+        "jolteon",
+        "flareon",
+        "espeon",
+        "umbreon",
+        "leafeon",
+        "glaceon",
+        "sylveon"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "伊布的毛"
+    },
+    "eiscue-down": {
+      "en": "Eiscue Down",
+      "sources": [
+        "eiscue"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "falinks-sweat": {
+      "en": "Falinks Sweat",
+      "sources": [
+        "falinks"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "fidough-fur": {
+      "en": "Fidough Fur",
+      "sources": [
+        "fidough",
+        "dachsbun"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "finizen-mucus": {
+      "en": "Finizen Mucus",
+      "sources": [
+        "finizen",
+        "palafin"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "finneon-scales": {
+      "en": "Finneon Scales",
+      "sources": [
+        "finneon",
+        "lumineon"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "flabebe-pollen": {
+      "en": "Flabebe Pollen",
+      "sources": [
+        "flabebe",
+        "floette",
+        "florges"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "flamigo-down": {
+      "en": "Flamigo Down",
+      "sources": [
+        "flamigo"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "fletchling-feather": {
+      "en": "Fletchling Feather",
+      "sources": [
+        "fletchling",
+        "fletchinder",
+        "talonflame"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "flittle-down": {
+      "en": "Flittle Down",
+      "sources": [
+        "flittle",
+        "espathra"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "fomantis-leaf": {
+      "en": "Fomantis Leaf",
+      "sources": [
+        "fomantis",
+        "lurantis"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "foongus-spores": {
+      "en": "Foongus Spores",
+      "sources": [
+        "foongus",
+        "amoonguss"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "frigibax-scales": {
+      "en": "Frigibax Scales",
+      "sources": [
+        "frigibax",
+        "arctibax",
+        "baxcalibur"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "gastly-gas": {
+      "en": "Gastly Gas",
+      "sources": [
+        "gastly",
+        "haunter",
+        "gengar"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "gible-scales": {
+      "en": "Gible Scales",
+      "sources": [
+        "gible",
+        "gabite",
+        "garchomp"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "圆陆鲨的鳞片"
+    },
+    "gimmighoul-coin": {
+      "en": "Gimmighoul Coin",
+      "sources": [
+        "gimmighoul",
+        "gholdengo"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "purpose": "evolution-only",
+      "zh": "索财灵的硬币"
+    },
+    "girafarig-fur": {
+      "en": "Girafarig Fur",
+      "sources": [
+        "girafarig",
+        "farigiraf"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "glimmet-crystal": {
+      "en": "Glimmet Crystal",
+      "sources": [
+        "glimmet",
+        "glimmora"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "goomy-goo": {
+      "en": "Goomy Goo",
+      "sources": [
+        "goomy",
+        "sliggoo",
+        "goodra"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "gothita-eyelash": {
+      "en": "Gothita Eyelash",
+      "sources": [
+        "gothita",
+        "gothorita",
+        "gothitelle"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "greavard-wax": {
+      "en": "Greavard Wax",
+      "sources": [
+        "greavard",
+        "houndstone"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "grimer-toxin": {
+      "en": "Grimer Toxin",
+      "sources": [
+        "grimer",
+        "muk"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "growlithe-fur": {
+      "en": "Growlithe Fur",
+      "sources": [
+        "growlithe",
+        "arcanine"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "gulpin-mucus": {
+      "en": "Gulpin Mucus",
+      "sources": [
+        "gulpin",
+        "swalot"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "happiny-dust": {
+      "en": "Happiny Dust",
+      "sources": [
+        "happiny",
+        "chansey",
+        "blissey"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "hatenna-dust": {
+      "en": "Hatenna Dust",
+      "sources": [
+        "hatenna",
+        "hattrem",
+        "hatterene"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "hawlucha-down": {
+      "en": "Hawlucha Down",
+      "sources": [
+        "hawlucha"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "heracross-claw": {
+      "en": "Heracross Claw",
+      "sources": [
+        "heracross"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "hippopotas-sand": {
+      "en": "Hippopotas Sand",
+      "sources": [
+        "hippopotas",
+        "hippowdon"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "hoppip-leaf": {
+      "en": "Hoppip Leaf",
+      "sources": [
+        "hoppip",
+        "skiploom",
+        "jumpluff"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "houndour-fang": {
+      "en": "Houndour Fang",
+      "sources": [
+        "houndour",
+        "houndoom"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "igglybuff-fluff": {
+      "en": "Igglybuff Fluff",
+      "sources": [
+        "igglybuff",
+        "jigglypuff",
+        "wigglytuff"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "impidimp-hair": {
+      "en": "Impidimp Hair",
+      "sources": [
+        "impidimp",
+        "morgrem",
+        "grimmsnarl"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "indeedee-fur": {
+      "en": "Indeedee Fur",
+      "sources": [
+        "indeedee"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "klawf-claw": {
+      "en": "Klawf Claw",
+      "sources": [
+        "klawf"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "klefki-key": {
+      "en": "Klefki Key",
+      "sources": [
+        "klefki"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "komala-claw": {
+      "en": "Komala Claw",
+      "sources": [
+        "komala"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "kricketot-shell": {
+      "en": "Kricketot Shell",
+      "sources": [
+        "kricketot",
+        "kricketune"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "larvesta-fuzz": {
+      "en": "Larvesta Fuzz",
+      "sources": [
+        "larvesta",
+        "volcarona"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "larvitar-claw": {
+      "en": "Larvitar Claw",
+      "sources": [
+        "larvitar",
+        "pupitar",
+        "tyranitar"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "lechonk-hair": {
+      "en": "Lechonk Hair",
+      "sources": [
+        "lechonk",
+        "oinkologne"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "爱吃豚的毛"
+    },
+    "litleo-tuft": {
+      "en": "Litleo Tuft",
+      "sources": [
+        "litleo",
+        "pyroar"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "luvdisc-scales": {
+      "en": "Luvdisc Scales",
+      "sources": [
+        "luvdisc"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "magikarp-scales": {
+      "en": "Magikarp Scales",
+      "sources": [
+        "magikarp",
+        "gyarados"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "鲤鱼王的鳞片"
+    },
+    "magnemite-screw": {
+      "en": "Magnemite Screw",
+      "sources": [
+        "magnemite",
+        "magneton",
+        "magnezone"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "makuhita-sweat": {
+      "en": "Makuhita Sweat",
+      "sources": [
+        "makuhita",
+        "hariyama"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "mankey-fur": {
+      "en": "Mankey Fur",
+      "sources": [
+        "mankey",
+        "primeape"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "猴怪的毛"
+    },
+    "mareanie-spike": {
+      "en": "Mareanie Spike",
+      "sources": [
+        "mareanie",
+        "toxapex"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "mareep-wool": {
+      "en": "Mareep Wool",
+      "sources": [
+        "mareep",
+        "flaaffy",
+        "ampharos"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "maschiff-fang": {
+      "en": "Maschiff Fang",
+      "sources": [
+        "maschiff",
+        "mabosstiff"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "meditite-sweat": {
+      "en": "Meditite Sweat",
+      "sources": [
+        "meditite",
+        "medicham"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "meowth-fur": {
+      "en": "Meowth Fur",
+      "sources": [
+        "meowth",
+        "persian"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "mimikyu-scrap": {
+      "en": "Mimikyu Scrap",
+      "sources": [
+        "mimikyu"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "misdreavus-tears": {
+      "en": "Misdreavus Tears",
+      "sources": [
+        "misdreavus",
+        "mismagius"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "mudbray-mud": {
+      "en": "Mudbray Mud",
+      "sources": [
+        "mudbray",
+        "mudsdale"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "murkrow-bauble": {
+      "en": "Murkrow Bauble",
+      "sources": [
+        "murkrow",
+        "honchkrow"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "nacli-salt": {
+      "en": "Nacli Salt",
+      "sources": [
+        "nacli",
+        "naclstack",
+        "garganacl"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "noibat-fur": {
+      "en": "Noibat Fur",
+      "sources": [
+        "noibat",
+        "noivern"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "numel-lava": {
+      "en": "Numel Lava",
+      "sources": [
+        "numel",
+        "camerupt"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "nymble-claw": {
+      "en": "Nymble Claw",
+      "sources": [
+        "nymble",
+        "lokix"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "oranguru-fur": {
+      "en": "Oranguru Fur",
+      "sources": [
+        "oranguru"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "oricorio-feather": {
+      "en": "Oricorio Feather",
+      "sources": [
+        "oricorio"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "orthworm-tarnish": {
+      "en": "Orthworm Tarnish",
+      "sources": [
+        "orthworm"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "pachirisu-fur": {
+      "en": "Pachirisu Fur",
+      "sources": [
+        "pachirisu"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "passimian-fur": {
+      "en": "Passimian Fur",
+      "sources": [
+        "passimian"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "pawmi-fur": {
+      "en": "Pawmi Fur",
+      "sources": [
+        "pawmi",
+        "pawmo",
+        "pawmot"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "布拨的毛"
+    },
+    "pawniard-blade": {
+      "en": "Pawniard Blade",
+      "sources": [
+        "pawniard",
+        "bisharp",
+        "kingambit"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "petilil-leaf": {
+      "en": "Petilil Leaf",
+      "sources": [
+        "petilil",
+        "lilligant"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "phanpy-nail": {
+      "en": "Phanpy Nail",
+      "sources": [
+        "phanpy",
+        "donphan"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "pichu-fur": {
+      "en": "Pichu Fur",
+      "sources": [
+        "pichu",
+        "pikachu",
+        "raichu"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "皮丘的毛"
+    },
+    "pincurchin-spines": {
+      "en": "Pincurchin Spines",
+      "sources": [
+        "pincurchin"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "pineco-husk": {
+      "en": "Pineco Husk",
+      "sources": [
+        "pineco",
+        "forretress"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "psyduck-down": {
+      "en": "Psyduck Down",
+      "sources": [
+        "psyduck",
+        "golduck"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "qwilfish-spines": {
+      "en": "Qwilfish Spines",
+      "sources": [
+        "qwilfish"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "ralts-dust": {
+      "en": "Ralts Dust",
+      "sources": [
+        "ralts",
+        "kirlia",
+        "gardevoir",
+        "gallade"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "拉鲁拉丝的粉"
+    },
+    "rellor-mud": {
+      "en": "Rellor Mud",
+      "sources": [
+        "rellor",
+        "rabsca"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "riolu-fur": {
+      "en": "Riolu Fur",
+      "sources": [
+        "riolu",
+        "lucario"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "rockruff-rock": {
+      "en": "Rockruff Rock",
+      "sources": [
+        "rockruff",
+        "lycanroc"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "rolycoly-coal": {
+      "en": "Rolycoly Coal",
+      "sources": [
+        "rolycoly",
+        "carkol",
+        "coalossal"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "rookidee-feather": {
+      "en": "Rookidee Feather",
+      "sources": [
+        "rookidee",
+        "corvisquire",
+        "corviknight"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "rotom-sparks": {
+      "en": "Rotom Sparks",
+      "sources": [
+        "rotom"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "rufflet-feather": {
+      "en": "Rufflet Feather",
+      "sources": [
+        "rufflet",
+        "braviary"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "sableye-gem": {
+      "en": "Sableye Gem",
+      "sources": [
+        "sableye"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "salandit-gas": {
+      "en": "Salandit Gas",
+      "sources": [
+        "salandit",
+        "salazzle"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "sandile-claw": {
+      "en": "Sandile Claw",
+      "sources": [
+        "sandile",
+        "krokorok",
+        "krookodile"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "sandygast-sand": {
+      "en": "Sandygast Sand",
+      "sources": [
+        "sandygast",
+        "palossand"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "scatterbug-powder": {
+      "en": "Scatterbug Powder",
+      "sources": [
+        "scatterbug",
+        "spewpa",
+        "vivillon"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "scyther-claw": {
+      "en": "Scyther Claw",
+      "sources": [
+        "scyther",
+        "scizor",
+        "kleavor"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "seviper-fang": {
+      "en": "Seviper Fang",
+      "sources": [
+        "seviper"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "shellder-pearl": {
+      "en": "Shellder Pearl",
+      "sources": [
+        "shellder",
+        "cloyster"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "shellos-mucus": {
+      "en": "Shellos Mucus",
+      "sources": [
+        "shellos",
+        "gastrodon"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "shinx-fang": {
+      "en": "Shinx Fang",
+      "sources": [
+        "shinx",
+        "luxio",
+        "luxray"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "shroodle-ink": {
+      "en": "Shroodle Ink",
+      "sources": [
+        "shroodle",
+        "grafaiai"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "滋汁鼹的墨汁"
+    },
+    "shroomish-spores": {
+      "en": "Shroomish Spores",
+      "sources": [
+        "shroomish",
+        "breloom"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "shuppet-scrap": {
+      "en": "Shuppet Scrap",
+      "sources": [
+        "shuppet",
+        "banette"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "silicobra-sand": {
+      "en": "Silicobra Sand",
+      "sources": [
+        "silicobra",
+        "sandaconda"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "sinistea-chip": {
+      "en": "Sinistea Chip",
+      "sources": [
+        "sinistea",
+        "polteageist"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "skiddo-leaf": {
+      "en": "Skiddo Leaf",
+      "sources": [
+        "skiddo",
+        "gogoat"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "skrelp-kelp": {
+      "en": "Skrelp Kelp",
+      "sources": [
+        "skrelp",
+        "dragalge"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "skwovet-fur": {
+      "en": "Skwovet Fur",
+      "sources": [
+        "skwovet",
+        "greedent"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "slakoth-fur": {
+      "en": "Slakoth Fur",
+      "sources": [
+        "slakoth",
+        "vigoroth",
+        "slaking"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "懒人獭的毛"
+    },
+    "slowpoke-claw": {
+      "en": "Slowpoke Claw",
+      "sources": [
+        "slowpoke",
+        "slowbro",
+        "slowking"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "smoliv-oil": {
+      "en": "Smoliv Oil",
+      "sources": [
+        "smoliv",
+        "dolliv",
+        "arboliva"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "sneasel-claw": {
+      "en": "Sneasel Claw",
+      "sources": [
+        "sneasel",
+        "weavile"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "snom-thread": {
+      "en": "Snom Thread",
+      "sources": [
+        "snom",
+        "frosmoth"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "snorunt-fur": {
+      "en": "Snorunt Fur",
+      "sources": [
+        "snorunt",
+        "glalie",
+        "froslass"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "snover-berries": {
+      "en": "Snover Berries",
+      "sources": [
+        "snover",
+        "abomasnow"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "spiritomb-fragment": {
+      "en": "Spiritomb Fragment",
+      "sources": [
+        "spiritomb"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "spoink-pearl": {
+      "en": "Spoink Pearl",
+      "sources": [
+        "spoink",
+        "grumpig"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "squawkabilly-feather": {
+      "en": "Squawkabilly Feather",
+      "sources": [
+        "squawkabilly"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "stantler-hair": {
+      "en": "Stantler Hair",
+      "sources": [
+        "stantler"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "starly-feather": {
+      "en": "Starly Feather",
+      "sources": [
+        "starly",
+        "staravia",
+        "staraptor"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "stonjourner-stone": {
+      "en": "Stonjourner Stone",
+      "sources": [
+        "stonjourner"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "stunky-fur": {
+      "en": "Stunky Fur",
+      "sources": [
+        "stunky",
+        "skuntank"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "sunkern-leaf": {
+      "en": "Sunkern Leaf",
+      "sources": [
+        "sunkern",
+        "sunflora"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "surskit-syrup": {
+      "en": "Surskit Syrup",
+      "sources": [
+        "surskit",
+        "masquerain"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "swablu-fluff": {
+      "en": "Swablu Fluff",
+      "sources": [
+        "swablu",
+        "altaria"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "tadbulb-mucus": {
+      "en": "Tadbulb Mucus",
+      "sources": [
+        "tadbulb",
+        "bellibolt"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "光蚪仔的黏液"
+    },
+    "tandemaus-fur": {
+      "en": "Tandemaus Fur",
+      "sources": [
+        "tandemaus",
+        "maushold"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "tarountula-thread": {
+      "en": "Tarountula Thread",
+      "sources": [
+        "tarountula",
+        "spidops"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "tatsugiri-scales": {
+      "en": "Tatsugiri Scales",
+      "sources": [
+        "tatsugiri"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "tauros-hair": {
+      "en": "Tauros Hair",
+      "sources": [
+        "tauros-paldea-combat-breed",
+        "tauros-paldea-blaze-breed",
+        "tauros-paldea-aqua-breed"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "teddiursa-claw": {
+      "en": "Teddiursa Claw",
+      "sources": [
+        "teddiursa",
+        "ursaring"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "熊宝宝的爪子"
+    },
+    "tinkatink-hair": {
+      "en": "Tinkatink Hair",
+      "sources": [
+        "tinkatink",
+        "tinkatuff",
+        "tinkaton"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "小锻匠的毛"
+    },
+    "toedscool-flaps": {
+      "en": "Toedscool Flaps",
+      "sources": [
+        "toedscool",
+        "toedscruel"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "torkoal-coal": {
+      "en": "Torkoal Coal",
+      "sources": [
+        "torkoal"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "toxel-sparks": {
+      "en": "Toxel Sparks",
+      "sources": [
+        "toxel",
+        "toxtricity"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "tropius-leaf": {
+      "en": "Tropius Leaf",
+      "sources": [
+        "tropius"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "tynamo-slime": {
+      "en": "Tynamo Slime",
+      "sources": [
+        "tynamo",
+        "eelektrik",
+        "eelektross"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "varoom-fume": {
+      "en": "Varoom Fume",
+      "sources": [
+        "varoom",
+        "revavroom"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "veluza-fillet": {
+      "en": "Veluza Fillet",
+      "sources": [
+        "veluza"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "venonat-fang": {
+      "en": "Venonat Fang",
+      "sources": [
+        "venonat",
+        "venomoth"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "voltorb-sparks": {
+      "en": "Voltorb Sparks",
+      "sources": [
+        "voltorb",
+        "electrode"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "wattrel-feather": {
+      "en": "Wattrel Feather",
+      "sources": [
+        "wattrel",
+        "kilowattrel"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "wiglett-sand": {
+      "en": "Wiglett Sand",
+      "sources": [
+        "wiglett",
+        "wugtrio"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "wingull-feather": {
+      "en": "Wingull Feather",
+      "sources": [
+        "wingull",
+        "pelipper"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "wooper-slime": {
+      "en": "Wooper Slime",
+      "sources": [
+        "wooper-paldea",
+        "clodsire"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "乌波的黏液"
+    },
+    "yungoos-fur": {
+      "en": "Yungoos Fur",
+      "sources": [
+        "yungoos",
+        "gumshoos"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source",
+      "zh": "猫鼬少的毛"
+    },
+    "zangoose-claw": {
+      "en": "Zangoose Claw",
+      "sources": [
+        "zangoose"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    },
+    "zorua-fur": {
+      "en": "Zorua Fur",
+      "sources": [
+        "zorua",
+        "zoroark"
+      ],
+      "source": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+      "scope": "sv-tm-crafting",
+      "confidence": "single-source"
+    }
+  },
+  "sources": {
+    "exclusives": "https://www.serebii.net/scarletviolet/exclusives.shtml",
+    "tmMaterials": "https://www.gamerguides.com/pokemon-scarlet-and-violet/guide/how-to-play/tms/all-tm-crafting-materials-and-how-to-get-them/",
+    "habitats": "https://www.powerpyx.com/pokemon-scarlet-violet-all-pokemon-locations/"
+  }
+}
