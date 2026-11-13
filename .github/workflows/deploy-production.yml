@@ -1,4 +1,4 @@
-name: Build Pokemon SV v1.2.1 PRODUCTION (verified offline snapshot)
+name: Build Pokemon SV v1.2.2 PRODUCTION (enhanced offline snapshot)
 
 on:
   push:
@@ -25,12 +25,15 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Validate required files
         run: |
-          python -m py_compile build_sv_data.py
+          python -m py_compile build_sv_data.py enrich_sv_data.py
           for f in index.html sw.js manifest.webmanifest icon.svg apple-touch-icon.png version.json; do test -s "$f"; done
       - name: Generate verified full offline snapshot
         run: |
           mkdir -p site
           python build_sv_data.py --output site/sv-data.json --coverage site/coverage.json
+      - name: Enrich existing move catalog with PP and short Chinese game text
+        run: |
+          python enrich_sv_data.py --input site/sv-data.json --coverage site/coverage.json
       - name: Verify data completeness before publishing production
         run: |
           python - <<'PYVERIFY'
@@ -42,6 +45,7 @@ jobs:
               assert c['regionSpecies'].get(region,0)>=n,(region,c['regionSpecies'].get(region,0))
           assert c['pokemonSpeciesSearchable']>=400,c
           assert c['svMoveEntries']>=350,c
+          assert c['movePpEntries']>=350,c
           assert len(d['pokemon'])>=500,len(d['pokemon'])
           print('PRODUCTION DATA GATE PASS')
           print(json.dumps(c,ensure_ascii=False,indent=2))
@@ -65,7 +69,7 @@ jobs:
           Path('site/index.html').write_text(html,encoding='utf-8')
           coverage_file=Path('site/coverage.json')
           coverage=json.loads(coverage_file.read_text(encoding='utf-8'))
-          coverage['version']='1.2.1'
+          coverage['version']='1.2.2'
           coverage_file.write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf-8')
           assert json.loads(safe)['schema']==1
           print('PRODUCTION HTML INLINE DATABASE:',len(data),'JSON characters')
