@@ -1,5 +1,5 @@
-// 离线优先，升级兼容：新版本修改 CACHE 版本号，且 HTML 页面在线时总是先尝试获取新版。
-const CACHE='sv-tactical-iphone-v1.1.0';
+// 离线优先：preview 把基础库内置到已缓存的 HTML，避免 iOS 单独读取 JSON 失败导致整个离线查询退回精选。
+const CACHE='sv-tactical-iphone-v1.2.1';
 const ASSETS=['./','./index.html','./icon.svg','./apple-touch-icon.png','./manifest.webmanifest','./version.json'];
 const TERA_NUMBERS=Array.from({length:18},(_,i)=>i+1);
 const TERA_ICON_PATH='sprites/types/generation-ix/scarlet-violet/small/Tera/';
