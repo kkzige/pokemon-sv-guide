@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="太晶战术图鉴">
   <meta name="description" content="专为《宝可梦 朱／紫》设计的属性克制、太晶、特性、招式和努力值计算工具。">
-  <title>太晶战术图鉴 · 朱／紫 V1.2.5</title>
+  <title>太晶战术图鉴 · 朱／紫 V1.2.6</title>
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
@@ -632,9 +632,14 @@ button:focus-visible, input:focus-visible, select:focus-visible {outline:3px sol
 }
 
 
-/* V1.2.5 — category and training handbook, no external icon dependency. */
+/* V1.2.6 — category and training handbook, no external icon dependency. */
 .move-class{display:inline-flex;align-items:center;gap:6px;font-weight:700;white-space:nowrap;color:#344b65;font-size:14px}.move-class svg{width:29px;height:29px;flex:none;background:#1c304a;border-radius:6px;padding:4px;color:white}.move-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}.move-legend>div{border:1px solid #dce5ef;background:#f8fafc;border-radius:12px;padding:12px;line-height:1.65}.move-legend p{margin:7px 0;font-size:14px;color:#435973}.move-legend small{font-size:13px;color:#526579}.rec-moves{grid-template-columns:1fr}.move-detail-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.move-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:5px 0 0}.move-metrics>span{display:flex;flex-direction:column;align-items:center;border-radius:8px;background:#eff3f8;padding:7px 4px;font-variant-numeric:tabular-nums}.move-metrics b{font-size:17px;color:#203955}.move-metrics small{font-size:12px;color:#51647d}.nature-matrix-wrap{overflow:auto}.nature-matrix{width:100%;border-collapse:collapse;table-layout:fixed;min-width:325px;font-size:14px;text-align:center}.nature-matrix td,.nature-matrix th{padding:6px 3px;border-bottom:1px solid #e4eaf0}.nature-matrix button{width:100%;min-height:44px;border:1px solid transparent;border-radius:7px;background:#f5f7fa;color:#283f57;font-size:13px;font-weight:650;padding:4px 1px}.nature-matrix .common{background:#e5f3e9;color:#17643e}.nature-matrix .neutral{background:#e9edf2;color:#526377}.nature-matrix .selected{border:2px solid #315ec5;background:#e5efff}.nature-up{color:#b43d35!important}.nature-down{color:#2863a9!important}.nature-delta{display:grid;grid-template-columns:42px minmax(0,1fr) 52px;gap:9px;align-items:center;margin:9px 0}.nature-lanes{display:grid;gap:5px}.nature-lane{display:flex;align-items:center;gap:8px}.nature-track{flex:1;height:9px;background:#edf1f5;border-radius:10px;overflow:hidden}.nature-track i{display:block;height:100%;border-radius:10px;background:#9aa8b9}.nature-lane.after i{background:#4c83ca}.nature-lane.after.up i{background:#ce645b}.nature-lane b{width:37px;text-align:right;font-variant-numeric:tabular-nums;font-size:14px}.nature-delta>strong{text-align:right;font-variant-numeric:tabular-nums;font-size:14px}.nature-ev{display:flex;height:14px;border-radius:8px;overflow:hidden;background:#edf1f5;margin:12px 0 6px}.nature-ev span{min-width:0}.nature-ev-key{display:flex;gap:9px;flex-wrap:wrap;font-size:14px}.nature-ev-key span{font-weight:650}.nature-pair{display:grid;grid-template-columns:1fr 1fr;gap:9px}.nature-pair>div{background:#f4f7fb;padding:12px;border-radius:11px}.nature-pair strong{display:block;margin:4px 0}.nature-compare-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;color:#405671;margin:9px 0}.nature-compare-legend span:before{content:'';display:inline-block;width:10px;height:10px;border-radius:3px;background:#9aa8b9;margin-right:5px}.nature-compare-legend span:nth-child(2):before{background:#4c83ca}.nature-compare-legend span:nth-child(3):before{background:#ce645b}.nature-flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px;font-weight:650;color:#354b65}.nature-flow b{background:#eff4fb;border-radius:8px;padding:9px}.nature-reason{font-size:15px;color:#354b65;line-height:1.7}.move-examples td,.move-examples th{font-size:14px}.rec-candidate .rec-bar-fill{background:#5685ca}.rec-candidate .rec-bar:nth-child(2) .rec-bar-fill{background:#d77937}.rec-candidate .rec-bar:nth-child(4) .rec-bar-fill{background:#427fca}.rec-candidate .rec-bar:nth-child(3) .rec-bar-fill,.rec-candidate .rec-bar:nth-child(5) .rec-bar-fill{background:#899b70}.rec-candidate .rec-bar:nth-child(6) .rec-bar-fill{background:#8d79b5}.nature-move-role{font-size:13px;color:#56708a}.nature-guide-table{min-width:0}.nature-guide-table th,.nature-guide-table td{padding:9px 5px;font-size:14px}.nature-guide-table td:first-child{white-space:nowrap}.nature-delta .positive{color:#08745b}.nature-delta .negative{color:#b84249}@media(max-width:830px){.move-legend{grid-template-columns:1fr}.move-class{font-size:calc(15px + var(--ui-scale))}.nature-matrix button{font-size:calc(13px + var(--ui-scale))}.nature-pair{grid-template-columns:1fr}.nature-guide-table th,.nature-guide-table td{white-space:normal;font-size:14px}.move-examples th,.move-examples td{white-space:normal}.nature-delta{grid-template-columns:41px minmax(0,1fr) 42px}.move-legend p{font-size:16px}}
 
+/* V1.2.6 four-slot tactical cards; no horizontal scrolling. */
+.tactic-intro{font-size:15px;line-height:1.65}.tactic-intro details{margin:12px 0;border:1px solid #dce5f1;border-radius:12px;padding:12px}.tactic-intro summary{cursor:pointer;font-weight:700;color:#304b74}.tactic-intro details .fields{margin-top:12px}.tactic-card{border:1px solid #d5e0ee;border-radius:17px;padding:18px;margin:16px 0;background:#fbfcff;color:#243a55;font-size:15px;line-height:1.65;overflow-wrap:anywhere}.tactic-card h3{font-size:21px;margin:8px 0 0}.tactic-card .paneltop{align-items:flex-start}.tactic-score{display:flex;gap:5px;align-items:center;flex-shrink:0;text-align:right;color:#27569e}.tactic-score b{font-size:32px;font-variant-numeric:tabular-nums}.tactic-score small{font-size:11px;line-height:1.35;color:#53677f}.tactic-facts,.tactic-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.tactic-facts>div,.tactic-slot,.tactic-sub{padding:12px;border:1px solid #dce5ef;border-radius:12px;background:white;min-width:0}.tactic-facts>div{display:flex;flex-direction:column;gap:5px}.tactic-facts small{font-size:13px;color:#536780}.tactic-slot .move-detail-line{flex-wrap:wrap;gap:5px;align-items:center}.tactic-slot p,.tactic-sub p{margin:8px 0;line-height:1.65}.tactic-slot p{color:#3c536e}.tactic-swap{display:block;margin-top:10px;font-size:13px;color:#405a7e}.tactic-swap select{display:block;margin-top:5px;width:100%;font-size:14px;min-height:44px}.tactic-sub{margin-top:10px}.tactic-sub>p{display:flex;flex-wrap:wrap;gap:5px;align-items:center}.tactic-sub>p>b{font-size:13px;margin-right:4px}.tactic-bar{display:grid;grid-template-columns:94px minmax(0,1fr) 49px;gap:8px;align-items:center;font-size:13px;margin:8px 0}.tactic-bar i{height:9px;background:#e8edf5;border-radius:10px;overflow:hidden}.tactic-bar em{height:100%;display:block;background:#527ac2;border-radius:10px}.tactic-bar b{text-align:right;font-variant-numeric:tabular-nums}.tactic-library{margin-top:20px;border-top:1px solid #dce5ef;padding-top:13px}.tactic-library summary{cursor:pointer;font-weight:700;color:#335cce;min-height:44px;line-height:1.6}.tactic-card .help{color:#53677f}.tactic-card .nature-ev-key{font-size:13px}.tactic-card .move-metrics{margin-top:8px}.tactic-card .tag{white-space:normal}
+@media(max-width:700px){.tactic-card{padding:13px;font-size:calc(15px + var(--ui-scale));}.tactic-card h3{font-size:calc(19px + var(--ui-scale));}.tactic-slots{grid-template-columns:minmax(0,1fr)}.tactic-facts{gap:7px}.tactic-facts>div{padding:9px}.tactic-swap select{font-size:16px;min-height:48px}.tactic-score b{font-size:28px}.tactic-bar{font-size:14px;grid-template-columns:90px minmax(0,1fr) 48px}.tactic-slot{padding:12px}.tactic-card .paneltop{flex-wrap:wrap}}
+
+.tactic-compare{display:grid;gap:8px;padding:13px;background:#edf3fb;border:1px solid #d5e0ee;border-radius:13px;margin-top:14px}.tactic-compare-row{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid #d5e0ee;background:white;border-radius:11px;padding:12px;text-align:left;color:#28415f;min-width:0;min-height:56px}.tactic-compare-row>span{min-width:0;display:flex;flex-direction:column;gap:4px}.tactic-compare-row small{font-size:12px;line-height:1.5;color:#52677e;white-space:normal}.tactic-compare-row>strong{font-size:23px;color:#27569e;white-space:nowrap}.tactic-compare-row>strong small{font-size:11px}.tactic-card{scroll-margin-top:12px}
 </style>
 </head>
 <body>
@@ -1733,7 +1738,7 @@ const CURATED_BUILDS=[
  entry('仆刀将军','story','A',['物理输出','强化爆发'],['kowtow-cleave','iron-head','sucker-punch','swords-dance'],'固执','不服输／大将','恶／钢','黑色眼镜／金属膜','攻击252＋HP252','高攻击高防御，不意打提供先制压力，恶＋钢抵抗面可观。','格斗属性四倍克制；进化条件较复杂，偏后期。','本篇后期进化获得'),
  entry('戟脊龙','story','A',['物理输出','强化爆发'],['glaive-rush','icicle-crash','earthquake','dragon-dance'],'固执／爽朗','热交换','冰／龙','不融冰／达人带','攻击252＋速度252','冰＋龙打点独特，龙之舞强化后有较高爆发力。','较晚才能最终进化；巨剑突击后会承受加倍伤害风险。','最终进化等级54'),
  entry('快龙','story','A',['物理输出','强化爆发'],['dragon-claw','earthquake','extreme-speed','dragon-dance'],'固执','多重鳞片／精神力','一般／飞行','丝绸围巾／剩饭','攻击252＋速度252','神速先制收尾，龙之舞使中后期战斗更顺畅。','多重鳞片需隐藏特性且满HP才能发挥；小心冰招。','迷你龙进化链最终55级'),
- entry('三首恶龙','story','A',['特殊输出'],['dark-pulse','dragon-pulse','flamethrower','flash-cannon'],'内敛','飘浮','钢／恶','达人带','特攻252＋速度252','龙、恶、火、钢多属性特殊攻击覆盖面广。','妖精攻击四倍克制；最终进化64级，培养周期长。','紫版野外进化链限定，其他版本可交换'),
+ entry('三首恶龙','story','A',['特殊输出'],['dark-pulse','dragon-pulse','flamethrower','flash-cannon'],'内敛','飘浮','钢／恶','达人带','特攻252＋速度252','龙、恶、火、钢多属性特殊攻击覆盖面广。','妖精攻击四倍克制；最终进化64级，培养周期长。','朱版野外进化链限定，其他版本可交换'),
  entry('火神蛾','story','A',['特殊输出','强化爆发'],['fiery-dance','bug-buzz','quiver-dance'],'内敛／胆小','火焰之躯','火／虫','木炭／吃剩的东西','特攻252＋速度252','蝶舞同时强化特攻、特防、速度，火与虫输出扎实。','只列3个已确认的代表招式，第四格按实战需求补充；岩石招式四倍克制。','燃烧虫59级进化，偏中后期'),
  entry('土王','story','A',['防守辅助'],['earthquake','toxic','recover','yawn'],'慎重／淘气','储水／纯朴','钢／毒','吃剩的东西','HP252＋特防252','特殊耐久与辅助招式突出；储水可免疫水招式。','输出较慢；储水和纯朴是不同特性，实际拥有哪一个需查看。','帕底亚乌波20级进化'),
  entry('奇麒麟','story','A',['特殊输出','防守辅助'],['psychic','hyper-voice','nasty-plot'],'内敛','尾甲','超能力／一般','吃剩的东西','HP252＋特攻252','一般＋超能力的组合可免疫幽灵招式，尾甲能阻止对方先制招式。','当前只列3个内置可核对招式；偏慢，须防虫和恶。','麒麟奇学会双光束后升级进化'),
@@ -1960,7 +1965,7 @@ const REF_MOVES=[
  M('rage-fist','愤怒之拳','ghost','physical',50,100,'受到符合条件的攻击时基础威力逐步提高。','初始威力50，每次受到符合条件的攻击基础威力增加50，上限350；具体累计和重置条件需按第九世代规则核对。火暴猴累计使用20次该招式后升级可进化为弃世猴。','https://bulbapedia.bulbagarden.net/wiki/Rage_Fist_(move)')
 ];
 
-// V1.2.5: selected basic support-move explanations; not full battle engine.
+// V1.2.6: selected basic support-move explanations; not full battle engine.
 REF_MOVES.push(M("swords-dance","剑舞","normal","status",0,null,"攻击提高2级。","强化物理输出；已达到能力等级上限时不能继续提升。","https://bulbapedia.bulbagarden.net/wiki/Swords_Dance_(move)"));
 REF_MOVES.push(M("nasty-plot","诡计","dark","status",0,null,"特攻提高2级。","强化特殊输出；不提高物理攻击。","https://bulbapedia.bulbagarden.net/wiki/Nasty_Plot_(move)"));
 REF_MOVES.push(M("calm-mind","冥想","psychic","status",0,null,"特攻、特防各提高1级。","兼顾特殊输出和特殊耐久。","https://bulbapedia.bulbagarden.net/wiki/Calm_Mind_(move)"));
@@ -2479,9 +2484,9 @@ function renderFourMoves(ranked){
  const picks=[];const used=new Set();
  for(const m of ranked){if(picks.length>=4)break;if(used.has(m.type))continue;used.add(m.type);picks.push(m);}
  for(const m of ranked){if(picks.length>=4)break;if(!picks.includes(m))picks.push(m);}
- return picks.length?`<div class="pillline">${picks.map(m=>`<span class="chip">${badgeType(m.type)} ${escapeHTML(m.zh||m.id)}</span>`).join('')}</div><div class="help" style="margin-top:9px">这里只考虑当前对手的直接攻击覆盖；变化招式、强化、回血、团体战节奏需要再人工判断。</div>`:'<div class="help">暂无可计算的攻击招式，请联网查询可学习招式或选择其他宝可梦。</div>';
+ return picks.length?`<div class="pillline">${picks.map(m=>`<span class="chip">${badgeType(m.type)} ${escapeHTML(m.zh||m.id)}</span>`).join('')}</div><div class="help" style="margin-top:9px">这里只是当前对手的直接攻击候选，不是一套审核配招。请到培养页查看四招战术与组合评分。</div>`:'<div class="help">暂无可计算的攻击招式，请联网查询可学习招式或选择其他宝可梦。</div>';
 }
-function moveTile(m,calc){const cat=normalMoveClass(m.category),exception=MOVE_EXCEPTIONS[m.id];return `<div class="move-card"><div class="move-name">${escapeHTML(m.zh||m.id||'未知招式')}</div><div class="pillline">${typePick(m.type)}${moveClass(cat)}</div>${moveMetric(m)}${exception?`<p class="help">${escapeHTML(exception)}</p>`:''}${calc?`<div class="move-note">属性 ${valFormat(calc.match.value)} · 本系 ${valFormat(calc.stab)}</div>`:''}</div>`;}
+function moveTile(m,calc){const cat=normalMoveClass(m.category),exception=MOVE_EXCEPTIONS[m.id];return `<div class="move-card"><div class="move-name">${escapeHTML(m.zh||m.id||'未知招式')}</div><div class="pillline">${typePick(m.type)}${moveClass(cat)}</div>${moveMetric(m)}<p class="move-note">${escapeHTML(tacticMoveNote(m))}</p>${calc?`<div class="move-note">属性 ${valFormat(calc.match.value)} · 本系 ${valFormat(calc.stab)}</div>`:''}</div>`;}
 function findMove(q){
  const query=String(q||'').trim().toLowerCase();if(!query)return null;
  const catalogue=getMoveCatalog()||{};
@@ -2690,7 +2695,7 @@ function renderDexHabitatPanel(p){
  const items=cards.length?cards.join(''):'<p class="help">尚未找到这只宝可梦已核实的 TM 材料来源；有些宝可梦本来就不掉落这种材料。也不代表它没有其他携带道具。</p>';
  return `<div class="panel"><div class="paneltop"><h2>版本限定、野外分布与掉落材料</h2><span class="tag info">独立数据来源</span></div>${versionSection}<div class="divider"></div><div class="subtle-title">野外分布（已核实的代表性地点）</div>${locator}<div class="divider"></div><div class="subtle-title">击败／捕捉或互动获得的材料</div><div class="dex-drops">${items}</div><p class="help">材料与野生宝可梦可能携带的道具是不同机制；索财灵的硬币用于进化而不是制作TM。这里只记录材料种类，不保证每场掉落或固定数量。新增材料来源基于本作资料表，DLC 与部分特殊形态仍需持续核对。</p><div class="three-btn"><button class="btn subtle small" data-action="material-from-dex">打开材料获取速查</button><button class="btn subtle small" data-action="show-type-guide">查看18种招式属性克制</button></div></div>`;
 }
-// V1.2.5: canonical category labels and inline offline schematic symbols.
+// V1.2.6: canonical category labels and inline offline schematic symbols.
 function normalMoveClass(v){return ({physical:'physical',special:'special',status:'status','物理':'physical','特殊':'special','变化':'status','物理招式':'physical','特殊招式':'special','变化招式':'status'})[v]||'';}
 function moveClass(v){const key=normalMoveClass(v),labels={physical:'物理',special:'特殊',status:'变化'};if(!key)return '<span class="ghosttype">分类待核</span>';const glyph={physical:'<path d="M16 3 19 11 28 7 24 16 29 20 20 21 18 29 13 23 5 26 8 18 2 14 11 12 10 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',special:'<ellipse cx="16" cy="16" rx="13" ry="10"/><ellipse cx="16" cy="16" rx="8.5" ry="6.5"/><ellipse cx="16" cy="16" rx="3.5" ry="3"/>',status:'<ellipse cx="16" cy="16" rx="13" ry="9" fill="currentColor" stroke="none"/><path d="M16 7C7 17 25 20 16 25C24 24 29 20 29 16C29 11 23 7 16 7Z" fill="#1c304a" stroke="none"/>'};return `<span class="move-class"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">${glyph[key]}</svg>${labels[key]}</span>`;}
 function moveMetric(m){const val=(v,unit='')=>v==null||v===''?'—':escapeHTML(String(v))+unit;return `<div class="move-metrics"><span><b>${val(m.power>0?m.power:null)}</b><small>威力</small></span><span><b>${val(m.accuracy,'%')}</b><small>命中</small></span><span><b>${val(m.pp>0?m.pp:null)}</b><small>PP</small></span></div>`;}
@@ -2734,12 +2739,12 @@ function renderTraining(){
  <div class="panel"><div class="paneltop"><h2>03 / 自动生成入门方案</h2><span class="tag warn">启发式推荐</span></div>
  <div class="mode-toggle"><button data-action="mode" data-mode="story" class="${state.mode==='story'?'active':''}">剧情通关</button><button data-action="mode" data-mode="raid" class="${state.mode==='raid'?'active':''}">太晶团体战</button></div>
  <div class="half-spacer"></div><div class="readout"><strong>${escapeHTML(plan.role)} · 推荐 ${NATURES.find(n=>n[0]===plan.nature)?.[1]}</strong><br>${STAT_KEYS.filter(k=>plan.ev[k]>0).map(k=>`${STAT_NAMES[k]} ${plan.ev[k]}`).join(' + ')}<br>${escapeHTML(plan.explanation)}<br>太晶初步候选：${plan.teraCandidates.map(t=>badgeType(t)).join(' ')}</div>
- <div class="three-btn" style="margin-top:13px"><button class="btn" data-action="apply-plan">${state.showProjected?'收起目标能力对比':'预览目标能力（不修改输入）'}</button><button class="btn subtle" data-action="show-moves">查看候选配招</button></div>
+ <div class="three-btn" style="margin-top:13px"><button class="btn" data-action="apply-plan">${state.showProjected?'收起目标能力对比':'预览目标能力（不修改输入）'}</button><button class="btn subtle" data-action="show-moves">查看完整四招方案</button></div>
  ${natureAdvice(p,state.mode)}${state.showProjected?renderProjection(p,plan,current):''}<p class="help">自动方案只是入门基线，不是高星团体战的精确最优配法。耐久目标、首领招式、招式学习合法性和特殊战术需要另行核对。</p></div>
  <div class="panel rec-quick"><b>想看不同用途的推荐招式和队伍搭配？</b><p class="help">可按18种属性、输出方式和剧情／团体战场景筛选，先选合适的培养对象再决定努力值。</p><button class="btn" data-action="show-recommend">打开培养推荐与组队 →</button></div>
  ${mintPanel(p)}${renderTrainingSteps(plan)}
  ${renderEVPractice()}
- <div class="panel"><div class="paneltop"><h2>06 / 候选招式</h2><span class="tag">以自己的宝可梦为主</span></div>${renderGenericTrainingMoves()}</div>`;
+ <div class="panel" id="tactical-builds"><div class="paneltop"><h2>06 / 四招培养与作战方案</h2><span class="tag">场景适配 · 可替换</span></div>${renderGenericTrainingMoves()}</div>`;
 }
 function renderProjection(p,plan,current){
  const projected=buildStats(p,{iv:state.iv,ev:plan.ev,level:state.level,nature:plan.nature});
@@ -2795,18 +2800,123 @@ function renderEVPractice(){
  <div class="ev-caution"><b>防止练错：</b>只对“确实打赢对应野生宝可梦”的常规战斗记录。不能用 Let's Go 自动对战计数；力量道具要选对属性。队伍中分到经验值的其他宝可梦也会获得努力值。本工具没有连接 Switch，进度保存在此浏览器，不保证与游戏内自动一致。<br>如果需要准确训练，可先用降低努力值树果或净空麻糬重置，并从0开始记录。<br>注意：力量道具在孵蛋时也能影响个体值继承，但这是两种独立机制。</div>
  </div>`;
 }
-function renderGenericTrainingMoves(){
- const p=state.own;
- const moves=metadataForMoves(p);
- const focus=evPlan(p,state.mode).physical?'physical':'special';
- const scores=moves.filter(m=>m.category===focus&&m.power>0).map(m=>({...m,priority:(p.types.includes(m.type)?3:0)+(m.power||0)/30+(m.accuracy??100)/100})).sort((a,b)=>b.priority-a.priority);
- const shown=scores.slice(0,6);const support=moves.filter(m=>m.category==='status').slice(0,6);
- return `<p class="help">根据${escapeHTML(p.zh)}的原本属性与攻击/特攻种族值，整理可能适合的招式。变化类招式不会按纯威力排名，因此建议人工检查强化、回复与辅助招式。</p>
- <div class="move-list">${shown.map(m=>moveTile(m,null)).join('')||'<p class="muted">暂无适合当前输出分类的候选。</p>'}</div><div class="subtle-title" style="margin-top:14px">变化招式候选（不按威力排名）</div><div class="move-list">${support.map(m=>moveTile(m,null)).join('')||'<p class="help">暂无对应示例</p>'}</div>
- <div class="help" style="margin-top:13px">${p.origin==='remote'?'使用了《朱／紫》可学习招式表进行筛选（仍需核对具体学习条件）。':'离线条目仅包含常用招式示例，不能代表完整可学招式表。'} 未计算战斗中特性、道具、天气或团体战专有战术。</div>
- <button class="btn small subtle" style="margin-top:12px" data-action="sync-moves">联网同步完整招式资料</button>`;
+// V1.2.6 — four-slot tactical templates. Scores are transparent editorial heuristics, not damage or win rates.
+// role: hit / drain / setup-atk / setup-spa / setup-def / heal / debuff / utility. Risk: 0..3.
+const TACTIC_MOVES={};
+function tacticMove(ids,role,risk,notes){ids.split(' ').forEach((id,i)=>TACTIC_MOVES[id]={role,risk,note:Array.isArray(notes)?notes[i]:notes});}
+tacticMove('drain-punch bitter-blade giga-drain horn-leech parabolic-charge draining-kiss','drain',0,['吸取所造成伤害的50%，维持HP。','恢复造成伤害的50%，兼顾火系输出。','恢复造成伤害的50%。','恢复造成伤害的50%。','恢复造成伤害的50%；双打会波及邻近宝可梦。','恢复造成伤害的75%。']);
+tacticMove('swords-dance dragon-dance bulk-up coil belly-drum','setup-atk',0,['攻击+2级。','攻击、速度各+1级。','攻击、防御各+1级。','攻击、防御、命中各+1级。','消耗最大HP的一半，攻击升至+6；HP不足会失败。']);
+TACTIC_MOVES['belly-drum'].risk=2;
+tacticMove('nasty-plot calm-mind quiver-dance','setup-spa',0,['特攻+2级。','特攻、特防各+1级。','特攻、特防、速度各+1级。']);
+tacticMove('iron-defense','setup-def',0,'防御+2级；配合扑击可提高输出。');
+tacticMove('recover slack-off roost soft-boiled synthesis moonlight morning-sun','heal',0,['通常恢复最大HP的一半。','通常恢复最大HP的一半。','通常恢复最大HP的一半；当回合飞行属性可能暂时失去。','通常恢复最大HP的一半。','回复量受天气影响。','回复量受天气影响。','回复量受天气影响。']);
+tacticMove('screech fake-tears acid-spray chilling-water lunge spirit-break snarl mystical-fire','debuff',0,['对手防御-2级；护盾期间通常无效。','对手特防-2级；护盾期间通常无效。','命中后对手特防-2级，攻击附带降能力通常可穿护盾。','命中后对手攻击-1级。','命中后对手攻击-1级。','命中后对手特攻-1级。','命中后对手特攻-1级。','命中后对手特攻-1级。']);
+tacticMove('electric-terrain will-o-wisp thunder-wave reflect light-screen taunt spore yawn helping-hand','utility',1,['电气场地通常持续5回合；接地宝可梦的电招式威力×1.3；可触发夸克充能。','使命中的有效目标灼伤；针对首领时注意护盾。','使有效目标麻痹；注意免疫、命中和护盾。','降低我方所受物理伤害；具体倍率因单打、双打而异。','降低我方所受特殊伤害。','限制对手使用变化招式；注意护盾。','使命中的有效目标睡眠；草系等免疫粉末。','目标下回合末可能睡眠。','强化队友本回合输出；单人无法当作自身输出。']);
+tacticMove('thunder-punch ice-punch fire-punch iron-head dragon-claw earthquake rock-slide waterfall liquidation shadow-claw crunch knock-off play-rough ice-spinner extreme-speed aqua-jet jet-punch kowtow-cleave leaf-blade flower-trick','hit',0,['有概率麻痹目标，稳定电系物攻。','有概率冰冻目标，可补地面、龙、飞行打点。','有概率灼伤目标。','有概率使目标畏缩。','稳定龙系物攻。','高威力地面输出；双打可能击中队友。','可能畏缩，命中90%。','可能畏缩。','可能降低目标防御。','较易击中要害。','可能降低目标防御。','可移除多数目标携带道具；符合条件时威力增加。','有概率降低目标攻击。','清除场地；可能破坏电气场地联动。','优先度+2，用于收尾。','优先度+1，用于收尾。','优先度+1，用于收尾。','通常不会因命中判定落空。','较易击中要害。','通常必定击中要害。']);
+tacticMove('flamethrower thunderbolt ice-beam shadow-ball dark-pulse dragon-pulse energy-ball moonblast flash-cannon psychic surf dazzling-gleam power-gem earth-power air-slash hyper-voice torch-song bug-buzz fiery-dance','hit',0,['可能灼伤。','可能麻痹。','可能冰冻。','可能降低目标特防。','可能畏缩。','稳定龙系特攻。','可能降低目标特防。','可能降低目标特攻。','可能降低目标特防。','可能降低目标特防。','双打可能波及队友。','妖精特殊输出。','岩石特殊输出。','可能降低目标特防。','可能畏缩。','声音类攻击。','命中后自身特攻+1级。','可能降低目标特防。','可能提高自身特攻。']);
+tacticMove('close-combat armor-cannon make-it-rain wild-charge wave-crash flare-blitz brave-bird draco-meteor overheat focus-punch gigaton-hammer glaive-rush','hit',2,['攻击后自身防御、特防各降1级。','攻击后自身防御、特防各降1级。','攻击后自身特攻降1级。','造成伤害后承受反伤。','造成伤害后承受反伤。','造成伤害后承受反伤。','造成伤害后承受反伤。','使用后自身特攻下降2级。','使用后自身特攻下降2级。','蓄力期间被攻击打断会失败，不能只看150威力。','不能连续使用。','使用后至下次行动前承受攻击的伤害加倍。']);
+tacticMove('rage-fist body-press foul-play psyshock tera-blast sucker-punch electro-drift collision-course stored-power population-bomb','hit',1,['符合条件的受击使威力由50逐渐升至350。','用自身防御而非攻击计算。','用对手攻击而非自己攻击计算。','使用自身特攻、目标防御计算。','太晶后类型和分类可能变化；星晶规则另计。','目标使用攻击招式时才可能成功。','效果绝佳时还有额外伤害加成。','效果绝佳时还有额外伤害加成。','自身能力等级提升越多，基础威力越高。','连续命中机制，不按单击威力评价。']);
+// Explicit special formula moves excluded from ordinary automatic attack selection/scoring.
+const TACTIC_SPECIAL=new Set(['body-press','foul-play','psyshock','tera-blast','stored-power','population-bomb']);
+const TACTIC_ABILITIES={'quark-drive':'电气场地或驱劲能量触发：最高非HP能力提升30%，若是速度则50%；不固定加攻击。','huge-power':'实际物理攻击能力翻倍；不改变面板种族值。','pure-power':'实际物理攻击能力翻倍。','intimidate':'入场通常使对手攻击降低1级；免疫及反制特性例外。','flash-fire':'免疫火属性攻击；触发后火系攻击增强。','levitate':'通常免疫地面招式；破格等机制可能绕过。','unaware':'计算有关伤害时忽略对手相应能力等级变化；并非免疫所有强化机制。','defiant':'由对手降低能力时，攻击通常提高2级。','good-as-gold':'通常免疫其他宝可梦针对自身的变化招式；不是免疫全部首领机制。','electromorphosis':'受攻击后进入充电状态，强化下一次电系招式。','multiscale':'满HP时通常受到伤害减半。','protosynthesis':'晴天或驱劲能量触发，最高合格能力提高30%，速度则50%。','stamina':'受攻击时防御提高1级。','water-absorb':'通常免疫水属性招式并恢复HP。','volt-absorb':'通常免疫电属性招式并恢复HP。','technician':'符合条件的基础威力不超过60的招式威力提高50%。','rough-skin':'对接触攻击者造成反伤。','sturdy':'满HP时通常能避免被单次攻击直接击倒。'};
+const TACTIC_NAMES={...ABILITY_ALIASES,...ABILITY_NAME};
+const tacticAbilityName=id=>getSVAbilityName(id)||TACTIC_NAMES[id]||id||'未选定';
+const TACTIC_IRON_PARAMS={'drain-punch':['吸取拳','fighting','physical',75,100,10],'thunder-punch':['雷电拳','electric','physical',75,100,15],'ice-punch':['冰冻拳','ice','physical',75,100,15],'swords-dance':['剑舞','normal','status',0,null,20],'belly-drum':['腹鼓','normal','status',0,null,10],'electric-terrain':['电气场地','electric','status',0,null,10],'close-combat':['近身战','fighting','physical',120,100,5],'iron-head':['铁头','steel','physical',80,100,15]};
+const TACTIC_IRON_SETS=[
+ {id:'iron-burst',name:'腹鼓爆发 · 单人团体战',mode:'raid',moves:['belly-drum','drain-punch','thunder-punch','electric-terrain'],focus:'atk',nature:'adamant',ability:'quark-drive',tera:'fighting',item:'贝壳之铃',ev:{hp:252,atk:252,spd:4},why:'高HP与高攻击配合腹鼓、吸取拳；电场可自行触发夸克充能，但需要额外回合。',steps:'确认首领伤害与HP是否允许 → 腹鼓（安全时）→ 吸取拳回复并蓄太晶 → 格斗太晶后继续本系输出；需要电场时另找安全回合。',caution:'腹鼓损失一半最大HP。首领清除强化后不能机械重来；格斗打幽灵无效。'},
+ {id:'iron-steady',name:'剑舞续航 · 稳健团体战',mode:'raid',moves:['swords-dance','drain-punch','thunder-punch','ice-punch'],focus:'atk',nature:'adamant',ability:'quark-drive',tera:'fighting',item:'贝壳之铃',ev:{hp:252,atk:252,spd:4},why:'剑舞不扣HP，吸取拳边打边回复，冰冻拳补打击面；没有自带电场，夸克充能并非默认激活。',steps:'先确认承伤 → 安全时剑舞一次 → 吸取拳续航 → 根据太晶选择攻击；必要时再强化。',caution:'剑舞需更多回合才达到+6；冰冻拳不是地面抗性，遇高特攻、妖精或超能力仍可能很危险。'},
+ {id:'iron-electric',name:'电太晶 · 电场强化',mode:'raid',moves:['swords-dance','thunder-punch','drain-punch','electric-terrain'],focus:'atk',nature:'adamant',ability:'quark-drive',tera:'electric',item:'贝壳之铃',ev:{hp:252,atk:252,spd:4},why:'以电系输出应对水、飞行太晶，场地与夸克充能联动；吸取拳为备用回复。',steps:'确认地面免疫和对手原本招式 → 安全时布置电场与剑舞 → 雷电拳蓄太晶并输出，必要时吸取拳回血。',caution:'电场可能强化敌人的电招；地面太晶免疫电招，蓄电等特性也可能免疫。'},
+ {id:'iron-story',name:'耐久物攻 · 剧情',mode:'story',moves:['drain-punch','thunder-punch','ice-punch','swords-dance'],focus:'atk',nature:'adamant',ability:'quark-drive',tera:'fighting',item:'贝壳之铃',ev:{hp:252,atk:252,spd:4},why:'不强求速度，靠吸取拳回复和三种攻击属性推进后期剧情。',steps:'普通战斗先用克制招式，强敌才剑舞；优先维持HP。',caution:'紫版后期原生获取，朱版需交换等；慢速和特防偏低仍是限制。'}
+];
+function tacticEvidence(p){const s=getSVPokemon(p.en);return s?.en===p.en&&s.learnset?{p:s,exact:true,ids:new Set(Object.keys(s.learnset))}:{p,exact:false,ids:new Set(p.moves||[])};}
+function tacticMeta(id,p){const db=getSVMoves()?.[id];const explicit=p.en==='iron-hands'?TACTIC_IRON_PARAMS[id]:null;if(db)return {...db,id};if(explicit){const [zh,type,category,power,accuracy,pp]=explicit;return {id,zh,type,category,power,accuracy,pp};}return fullMove(id);}
+function tacticMoveNote(m){const known=TACTIC_MOVES[m.id];if(known)return known.note;const ref=REF_MOVES.find(x=>x.id===m.id);return MOVE_EXCEPTIONS[m.id]||ref?.summary||(m.flavorZh?(m.flavorVersion==='scarlet-violet'?'朱／紫短说明：':'跨世代短说明（待核对）：')+m.flavorZh:'机制尚未核实；仅显示基础参数。');}
+function tacticRole(m){return TACTIC_MOVES[m.id]?.role||(m.category==='status'?'unknown':'hit');}
+function tacticOrdinary(m){return m&&m.category!=='status'&&m.power>0&&!TACTIC_SPECIAL.has(m.id);}
+function tacticEV(focus,mode,p){return mode==='raid'||p.stats[5]<65?{hp:252,[focus]:252,spd:4}:{[focus]:252,spe:252,hp:4};}
+function tacticAbility(p,focus){return (focus==='atk'&&p.abilities?.find(x=>['huge-power','pure-power'].includes(x)))||p.abilities?.find(x=>TACTIC_ABILITIES[x])||p.abilities?.[0]||'';}
+function tacticScore(p,b,ms){
+ const focus=b.focus, hits=ms.filter(tacticOrdinary), matched=hits.filter(m=>m.category===(focus==='atk'?'physical':'special'));
+ const coverage=TYPES.map(([t,zh])=>({t,zh,mult:hits.length?Math.max(...hits.map(m=>typeFactor(m.type,[t]))):0}));
+ const strong=coverage.filter(x=>x.mult>=2), blocked=coverage.filter(x=>x.mult<1);
+ const aligned=hits.length?matched.length/hits.length:0;
+ const fit=Math.round(20*aligned+(b.nature===(focus==='atk'?'adamant':'modest')||b.nature===(focus==='atk'?'jolly':'timid')?5:0));
+ const cover=b.mode==='raid'?Math.round(15*strong.length/18+10*Number(hits.some(m=>m.type===b.tera))):Math.round(25*strong.length/18);
+ const risky=ms.reduce((sum,m)=>sum+(TACTIC_MOVES[m.id]?.risk??2)+(m.category!=='status'&&m.accuracy!=null&&m.accuracy<90?1:0),0);
+ const reliability=Math.max(0,20-2*risky);
+ const roles=ms.map(tacticRole),setup=roles.includes(focus==='atk'?'setup-atk':'setup-spa'),sustain=roles.includes('drain')||roles.includes('heal'),utility=roles.includes('utility')||roles.includes('debuff');
+ const synergy=(setup?8:0)+(sustain?7:0)+(utility?3:0)+(hits.some(m=>p.types.includes(m.type))?2:0);
+ const defensive=TYPES.map(([t,zh])=>({t,zh,mult:typeFactor(t,p.types)})),weak=defensive.filter(x=>x.mult>=2);
+ const resilience=Math.max(0,10-weak.reduce((s,x)=>s+(x.mult===4?3:1),0));
+ const parts=[['输出方向',fit,25],['属性打点',cover,25],['稳定性',reliability,20],['战术组合',synergy,20],['原属性抗性',resilience,10]];
+ return {parts,total:parts.reduce((s,x)=>s+x[1],0),strong,blocked,defensive,hits,roles,setup,sustain};
 }
-const APP_VERSION='1.2.5';
+function tacticAuto(p,e,mode,focus,variant){
+ const cat=focus==='atk'?'physical':'special';const ms=[...e.ids].map(id=>tacticMeta(id,p)).filter(m=>m&&TACTIC_MOVES[m.id]);
+ const attacks=ms.filter(m=>tacticOrdinary(m)&&m.category===cat&&(TACTIC_MOVES[m.id].risk===0||['rage-fist','electro-drift','collision-course'].includes(m.id)));
+ function value(m){return (m.power||0)*(m.accuracy??100)/100*(p.types.includes(m.type)?1.5:1)+(tacticRole(m)==='drain'?(mode==='raid'?55:20):0)+(m.id==='torch-song'?35:0);}
+ attacks.sort((a,b)=>value(b)-value(a)||a.id.localeCompare(b.id));if(!attacks.length)return null;
+ const setup=ms.filter(m=>tacticRole(m)===(focus==='atk'?'setup-atk':'setup-spa')&&m.id!=='belly-drum').sort((a,b)=>['swords-dance','nasty-plot','bulk-up','calm-mind','dragon-dance','quiver-dance','coil'].indexOf(a.id)-['swords-dance','nasty-plot','bulk-up','calm-mind','dragon-dance','quiver-dance','coil'].indexOf(b.id))[0];
+ const picked=[];const add=m=>{if(m&&picked.length<4&&!picked.some(x=>x.id===m.id))picked.push(m);};
+ add(attacks[0]);if(variant==='setup'){if(!setup)return null;add(setup);}else if(mode==='raid'){add(attacks.find(m=>tacticRole(m)==='drain'));add(ms.find(m=>tacticRole(m)==='heal'));}
+ while(picked.length<4){const available=attacks.filter(m=>!picked.includes(m));if(!available.length)break;const hitTypes=picked.filter(tacticOrdinary).map(m=>m.type);const gain=m=>TYPES.filter(([t])=>typeFactor(m.type,[t])>=2&&!hitTypes.some(k=>typeFactor(k,[t])>=2)).length;available.sort((a,b)=>(value(b)+gain(b)*25)-(value(a)+gain(a)*25));add(available[0]);}
+ if(picked.length<4){add(setup);add(ms.find(m=>tacticRole(m)==='heal'));}if(picked.length!==4)return null;
+ const tera=picked.find(m=>tacticOrdinary(m)&&p.types.includes(m.type))?.type||picked.find(tacticOrdinary).type;
+ return {id:'auto-'+focus+'-'+variant,name:(focus==='atk'?'物攻':'特攻')+(variant==='setup'?'强化候选':'覆盖与续航候选'),mode,focus,moves:picked.map(m=>m.id),nature:focus==='atk'?'adamant':'modest',ability:tacticAbility(p,focus),tera,item:mode==='raid'?'贝壳之铃':'按实际用途选择（未指定）',ev:tacticEV(focus,mode,p),why:'按明确机制、输出方向、本系与新增打点选择；仅为规则生成候选。',steps:'先用适合目标的本系或克制攻击；有强化或回复格时择安全回合使用，不保证适合当前首领。',caution:'未做逐只实战验证；招式学习途径、特性、道具与首领特殊机制需再核实。',auto:true};
+}
+function tacticBuilds(p,mode){
+ const e=tacticEvidence(p),data=e.p;let builds=[];
+ if(!data?.stats||data.stats.length!==6||!data.types?.length||['ogerpon','ogerpon-wellspring-mask','ogerpon-hearthflame-mask','ogerpon-cornerstone-mask','terapagos','terapagos-terastal','terapagos-stellar'].includes(data.en))return {e,p:data,builds:[]};
+ if(p.en==='iron-hands')builds=TACTIC_IRON_SETS.filter(x=>x.mode===mode).map(x=>({...x,source:'https://www.serebii.net/pokedex-sv/ironhands/'}));
+ else{
+  const old=CURATED_BUILDS.filter(x=>x.pokemon===p.zh&&x.mode===mode&&x.moves.length===4);
+  for(const [i,x] of old.entries()){
+   if(!x.moves.every(m=>e.ids.has(m)&&tacticMeta(m,p)))continue;
+   const focus=x.roles.includes('特殊输出')?'spa':x.roles.includes('物理输出')?'atk':null;if(!focus)continue;
+   const nature=NATURES.find(n=>n[1]===x.nature.split('／')[0])?.[0]||(focus==='atk'?'adamant':'modest');
+   const ability=(data.abilities||[]).find(a=>x.ability.split('／').includes(tacticAbilityName(a)))||tacticAbility(data,focus);
+   const tera=TYPES.find(([id,zh])=>zh===x.tera.split('／')[0])?.[0]||data.types[0];
+   builds.push({id:'old-'+i,name:x.roles.join(' · '),mode,focus,moves:x.moves,nature,ability,tera,item:x.item.split('／')[0],ev:tacticEV(focus,mode,data),why:x.reason,steps:'优先克制输出；按对应强化、续航或辅助招式的作用择机使用。',caution:x.caution,legacy:true});
+  }
+  const primary=(data.abilities?.some(a=>['huge-power','pure-power'].includes(a))||data.stats[1]>=data.stats[3])?'atk':'spa',secondary=primary==='atk'?'spa':'atk';
+  for(const focus of [primary,...(Math.abs(data.stats[1]-data.stats[3])<=25?[secondary]:[])])for(const variant of ['coverage','setup']){const b=tacticAuto(data,e,mode,focus,variant);if(b&&!builds.some(x=>x.moves.slice().sort().join()===b.moves.slice().sort().join()&&x.focus===b.focus))builds.push(b);}
+ }
+ return {e,p:data,builds:builds.filter(b=>new Set(b.moves).size===4&&b.moves.every(id=>tacticMeta(id,p))&&(!e.exact||b.moves.every(id=>e.ids.has(id)))).slice(0,4)};
+}
+const tacticSwapCache={};
+function tacticOptions(p,e,b,ids,slot){const current=tacticMeta(ids[slot],p),role=tacticRole(current);return [...new Set([...e.ids,...(p.en==='iron-hands'&&!e.exact?Object.keys(TACTIC_IRON_PARAMS):[])])].map(id=>tacticMeta(id,p)).filter(m=>m&&TACTIC_MOVES[m.id]&&!ids.includes(m.id)&&m.category===current.category&&(role===tacticRole(m)||(role==='hit'&&tacticRole(m)==='drain'))&&!(b.mode==='raid'&&['helping-hand'].includes(m.id))&&(!TACTIC_SPECIAL.has(m.id))).sort((a,b)=>(TACTIC_MOVES[a.id].risk-TACTIC_MOVES[b.id].risk)||(b.power-a.power)).slice(0,8);}
+function tacticTypeList(xs){return xs.length?xs.map(x=>`${badgeType(x.t)} <b>×${x.mult}</b>`).join(' '):'无';}
+function tacticLearn(e,id,p){const tags=e.p.learnset?.[id]||[];if(tags.length)return tags.map(t=>{const [a,l]=String(t).split(':');return a==='1'?(+l?'Lv.'+l:'进化／回忆（等级0）'):a==='2'?'蛋招式':a==='4'?'招式学习器':a==='3'?'教学记录':'方式编号 '+a;}).join('／');return p.en==='iron-hands'&&TACTIC_IRON_PARAMS[id]?'外部图鉴已列；具体学习途径见来源':'精选／在线记录；本地未取得具体学习途径';}
+function tacticRenderCard(p,e,b){
+ const key=p.en+'|'+b.mode+'|'+b.id,raw=tacticSwapCache[key]||b.moves;
+ const ids=new Set(raw).size===4&&raw.every(id=>tacticMeta(id,p)&&(!e.exact||e.ids.has(id)))?raw:b.moves;
+ const ms=ids.map(id=>tacticMeta(id,p)),s=tacticScore(p,b,ms),changed=ids.some((id,i)=>id!==b.moves[i]);
+ const tera=state.tacticOwnTera&&state.tacticOwnTera!=='plan'?state.tacticOwnTera:b.tera;
+ const after=TYPES.map(([t,zh])=>({t,zh,mult:typeFactor(t,[tera])}));
+ const target=[state.tacticTarget1,state.tacticTarget2].filter((t,i,a)=>TYPE_NAME[t]&&a.indexOf(t)===i);
+ const targetDef=state.tacticTargetTera&&state.tacticTargetTera!=='none'&&TYPE_NAME[state.tacticTargetTera]?[state.tacticTargetTera]:target;
+ const matchup=target.length?s.hits.map(m=>({m,mult:typeFactor(m.type,targetDef)})).sort((a,b)=>b.mult-a.mult):[];
+ const threats=target.map(t=>({t,mult:typeFactor(t,p.types),after:typeFactor(t,[tera])}));
+ const st=buildStats(p,{iv:state.iv,ev:b.ev,level:state.level,nature:b.nature});
+ const neutral=buildStats(p,{iv:state.iv,ev:b.ev,level:state.level,nature:'hardy'});
+ const ability=TACTIC_ABILITIES[b.ability]||REF_ABILITIES.find(a=>a.id===b.ability)?.summary||'具体战斗效果尚未纳入评分，请核对特性百科。';
+ const boost=ms.some(m=>m.id==='belly-drum')&&b.focus==='atk'?4:ms.some(m=>m.id===(b.focus==='atk'?'swords-dance':'nasty-plot'))?2:ms.some(m=>(b.focus==='atk'?['bulk-up','dragon-dance','coil']:['calm-mind','quiver-dance']).includes(m.id))?1.5:1;
+ const highest=Math.max(st.atk,st.def,st.spa,st.spd,st.spe);const boosters=['quark-drive','protosynthesis'].includes(b.ability);const atkBoost=boosters&&st[b.focus]===highest&&Object.entries(st).filter(([k,v])=>k!=='hp'&&v===highest).length===1;
+ const itemNote={'贝壳之铃':'造成有效伤害时可额外回复HP，适合持续输出；不保证每回合都能回满。','驱劲能量':'可触发符合条件的古代活性／夸克充能，不能与贝壳之铃同时携带。','吃剩的东西':'每回合回复少量HP，适合持续作战。','达人带':'强化效果绝佳的攻击；打中等倍率时不生效。'}[b.item];
+ const targetText=target.length?`<div class="tactic-sub"><b>当前对手：${target.map(t=>TYPE_NAME[t]).join('＋')}${targetDef!==target?' → '+TYPE_NAME[targetDef[0]]+'太晶':''}</b><p>四招中的普通攻击相性：${matchup.map(x=>`${escapeHTML(x.m.zh)} ×${x.mult}`).join('；')||'无可量化普通攻击'}</p><p>对手原本属性招式的潜在威胁（自身未太晶 → ${TYPE_NAME[tera]}太晶）：${threats.map(x=>`${TYPE_NAME[x.t]} ×${x.mult} → ×${x.after}`).join('；')}</p><p class="help">这里只使用属性，未假设实际招式、首领能力、特性、护盾或伤害；不改变通用适配分。</p></div>`:'';
+ return `<article class="tactic-card" id="tactic-${escapeHTML(b.id)}"><div class="paneltop"><div><span class="tag ${b.auto?'':'info'}">${changed?'自主替换候选':b.auto?'规则生成 · 未实战审核':b.legacy?'既有精选 · 条件待核对':'人工设计 · 资料核对'}</span><h3>${escapeHTML(b.name)}</h3></div><div class="tactic-score"><b>${s.total}</b><small>/100<br>方案适配分</small></div></div><p>${escapeHTML(changed?'已替换招式，下方分项及打点重新计算；原战术说明不再完全适用。':b.why)}</p><div class="tactic-facts"><div><small>特性（单选）</small><b>${escapeHTML(tacticAbilityName(b.ability))}</b></div><div><small>性格／薄荷</small><b>${natureRecord(b.nature)[1]} · ${natureEffect(b.nature)}</b></div><div><small>推荐太晶</small><b>${badgeType(b.tera)}</b></div><div><small>携带道具（单选）</small><b>${escapeHTML(b.item)}</b></div></div><p class="tip-block">${escapeHTML(ability)}${itemNote?`<br>${escapeHTML(b.item)}：${escapeHTML(itemNote)}`:''}</p>${evGraphic(b.ev)}<p class="help">按本页等级${state.level}、输入IV和方案EV模拟：HP ${st.hp} · 攻击 ${st.atk} · 防御 ${st.def} · 特攻 ${st.spa} · 特防 ${st.spd} · 速度 ${st.spe}。输出能力性格修正：${neutral[b.focus]} → ${st[b.focus]}。</p>${boost>1?`<p><b>强化后的输出能力示意：</b>${st[b.focus]} × ${boost} ≈ ${Math.floor(st[b.focus]*boost)}（按0级起步、一次对应强化成功；腹鼓直接+6；不含实际伤害）。</p>`:''}${atkBoost?`<p class="help">当前模拟的最高非HP能力为${STAT_NAMES[b.focus]}；特性若成功触发且选中该能力，通常额外×1.3（未强化时约 ${Math.floor(st[b.focus]*1.3)}）。未计入面板或默认评分。</p>`:''}${['huge-power','pure-power'].includes(b.ability)&&b.focus==='atk'?`<p class="help">特性生效时物理攻击能力约 ${st.atk} × 2 = ${st.atk*2}（不改变面板能力，不是最终伤害）。</p>`:''}<div class="tactic-slots">${ms.map((m,i)=>{const opts=tacticOptions(p,e,b,ids,i);return `<div class="tactic-slot"><div class="move-detail-line"><b>${i+1}. ${escapeHTML(m.zh||m.id)}</b>${badgeType(m.type)}${moveClass(m.category)}</div>${moveMetric(m)}<p>${escapeHTML(tacticMoveNote(m))}</p>${tacticOrdinary(m)?`<p class="help">通常本系加成：未太晶 ×${stab(m.type,p.types,'none')} → ${TYPE_NAME[tera]}太晶 ×${stab(m.type,p.types,tera)}。${m.id==='rage-fist'?'基础威力随受击变化。':''}</p>`:''}<small class="help">${m.category==='status'?'战术功能':tacticRole(m)==='drain'?'输出＋回复':p.types.includes(m.type)?'原本属性输出':'补充打击面'} · ${escapeHTML(tacticLearn(e,m.id,p))}</small>${opts.length?`<label class="tactic-swap">可替换（同类候选）<select data-tactic-key="${escapeHTML(key)}" data-tactic-slot="${i}" data-tactic-ids="${escapeHTML(ids.join(','))}"><option value="${escapeHTML(m.id)}">保留 ${escapeHTML(m.zh)}</option>${opts.map(o=>`<option value="${escapeHTML(o.id)}">${escapeHTML(o.zh||o.id)} · ${escapeHTML(tacticMoveNote(o))}</option>`).join('')}</select></label>`:''}</div>`;}).join('')}</div>${changed?`<button class="btn small subtle" data-action="tactic-reset" data-key="${escapeHTML(key)}">恢复原四招</button>`:`<div class="tactic-sub"><b>怎样操作</b><p>${escapeHTML(b.steps)}</p></div>`}<div class="tactic-sub"><b>属性覆盖：${s.strong.length}/18 种单属性目标可打出效果绝佳</b><p>${tacticTypeList(s.strong)}</p><b>所有普通攻击均被抵抗／免疫的单属性目标</b><p>${tacticTypeList(s.blocked)}</p><b>自身原属性弱点</b><p>${tacticTypeList(s.defensive.filter(x=>x.mult>=2))}</p><b>原属性抗性／免疫</b><p>${tacticTypeList(s.defensive.filter(x=>x.mult<1))}</p><b>${TYPE_NAME[tera]}太晶后的弱点</b><p>${tacticTypeList(after.filter(x=>x.mult>=2))}</p><b>太晶后抗性／免疫</b><p>${tacticTypeList(after.filter(x=>x.mult<1))}</p><small class="help">属性表未计特性、道具、特殊招式；星晶不在此处模拟。</small></div>${targetText}<div class="tactic-sub"><b>评分明细</b>${s.parts.map(([n,v,max])=>`<div class="tactic-bar"><span>${n}</span><i><em style="width:${v/max*100}%"></em></i><b>${v}/${max}</b></div>`).join('')}</div><p class="rec-note"><b>限制：</b>${escapeHTML(b.caution)}${changed?' 自主替换后须重新核对战术顺序。':''}</p>${b.source?`<a class="chip" target="_blank" rel="noopener" href="${b.source}">朱／紫学习表来源</a>`:''}</article>`;
+}
+function tacticCompare(p,e,builds){return builds.length>1?`<div class="tactic-compare"><b>对比培养路线 · 点击直达</b>${builds.map(b=>{const key=p.en+'|'+b.mode+'|'+b.id;const raw=tacticSwapCache[key]||b.moves;const ids=raw.length===4&&new Set(raw).size===4&&raw.every(id=>tacticMeta(id,p)&&(!e.exact||e.ids.has(id)))?raw:b.moves;const ms=ids.map(id=>tacticMeta(id,p));const t=tacticScore(p,b,ms);return `<button class="tactic-compare-row" data-action="tactic-jump" data-id="${escapeHTML(b.id)}"><span><b>${escapeHTML(b.name)}</b><small>${ids.map(id=>escapeHTML(tacticMeta(id,p)?.zh||id)).join(' · ')}</small></span><strong>${t.total}<small>/100</small></strong></button>`;}).join('')}<p class="help">分数高不代表打任何首领都更好；爆发方案可能在合适的目标面前更有效。</p></div>`:'';}
+function renderTactics(p,mode){const {e,p:data,builds}=tacticBuilds(p,mode);const options=[['none','未指定'],...TYPES.map(([t,n])=>[t,n])];return `<div class="tactic-intro"><p><b>${escapeHTML(p.zh)} · ${mode==='raid'?'太晶团体战':'剧情通关'}</b> — 每套固定四招，替换是换掉一个格子，不是增加第五招。</p><div class="mode-toggle"><button data-action="mode" data-mode="story" class="${mode==='story'?'active':''}">剧情通关</button><button data-action="mode" data-mode="raid" class="${mode==='raid'?'active':''}">太晶团体战</button></div><p class="help">${e.exact?'按当前形态的朱／紫离线学习关系过滤。具体等级、蛋招式、DLC和获取条件仍须核对。':'未取得当前形态完整学习关系；仅按已有示例或注明来源的招式生成，不代表完整可学性。'}</p><details ${state.tacticOpen?'open':''}><summary>指定对手属性与太晶（可选）</summary><div class="fields">${field('对手原属性1',choice('tacticTarget1',options,state.tacticTarget1||'none'))}${field('对手原属性2',choice('tacticTarget2',options,state.tacticTarget2||'none'))}${field('对手当前普通太晶',choice('tacticTargetTera',options,state.tacticTargetTera||'none'))}${field('自身太晶弱点对比',choice('tacticOwnTera',[['plan','按各方案推荐'],...TYPES.map(([t,n])=>[t,n])],state.tacticOwnTera||'plan'))}</div></details><details><summary>评分依据：不是胜率或伤害</summary><p class="help">输出方向25：普通攻击中符合方向的比例×20＋常用对应性格5；打点25：通关为18种单属性克制覆盖比例×25，团体战为覆盖比例×15＋有推荐太晶同属性攻击10；稳定20：每项机制风险扣2×风险值（0～3），低于90命中额外扣2；组合20：对应强化8、续航7、功能招式3、本系普通攻击2；原属性抗性10：每个2倍弱点扣1、4倍扣3，不低于0。总分仅比较已显示的候选结构，不计种族值总和、对手实力、特殊招式完整机制与特性数值，仅用于同一只宝可梦、同一场景的方案比较；不是不同宝可梦的强度榜。无完整四招则不评分。</p></details></div>${tacticCompare(data,e,builds)}${builds.length?builds.map(b=>tacticRenderCard(data,e,b)).join(''):'<div class="tip-block">当前已确认的适配招式不足以安全构成四招方案（或存在特殊形态机制）；不强行补招和评分，请使用下方招式资料或更换宝可梦。</div>'}`;}
+
+function renderGenericTrainingMoves(){
+ const p=state.own,e=tacticEvidence(p);const moves=[...e.ids].map(id=>tacticMeta(id,e.p)).filter(m=>m?.type);
+ const focus=evPlan(p,state.mode).physical?'physical':'special';
+ const primary=moves.filter(m=>m.category===focus&&m.power>0).sort((a,b)=>(TACTIC_MOVES[a.id]?.risk??3)-(TACTIC_MOVES[b.id]?.risk??3)||(b.power||0)-(a.power||0)).slice(0,12);
+ const support=moves.filter(m=>m.category==='status').sort((a,b)=>Number(!!TACTIC_MOVES[b.id])-Number(!!TACTIC_MOVES[a.id])).slice(0,12);
+ return renderTactics(p,state.mode)+`<details class="tactic-library"><summary>展开其他招式资料（${moves.length}条当前学习索引；仅展示部分）</summary><p class="help">这些不是同一套配招；每套方案只能选四个招式。优先看有机制说明的条目。</p><div class="move-list">${primary.map(m=>moveTile(m,null)).join('')||'<p class="help">暂无对应记录</p>'}</div><h3>变化招式资料</h3><div class="move-list">${support.map(m=>moveTile(m,null)).join('')||'<p class="help">暂无对应记录</p>'}</div><button class="btn small subtle" data-action="sync-moves">联网同步招式参数（可选）</button></details>`;
+}
+const APP_VERSION='1.2.6';
 function materialCard(m){
  const current=state.selectedMaterial===m.id;
  const tms=recipesUsing(m.id);
@@ -2843,7 +2953,7 @@ function renderMaterials(){
  <div class="panel"><div class="paneltop"><h2>02 / 获取方式与使用材料</h2><span class="tag">双向查询</span></div>${mContent}</div>
  <div class="panel"><div class="paneltop"><h2>03 / 收集须知</h2></div><div class="ref-grid"><div><b>材料不等于宝可梦携带物</b><span>“熊宝宝的爪子”是 TM 掉落物；不是偷取、拍落技能拿到的携带道具。</span></div><div><b>材料刷取与练努力值不同</b><span>自主对战可得材料但不增加EV。想练努力值应选择普通战斗。</span></div><div><b>太晶团体战奖励</b><span>可能包括对应宝可梦的材料，但不保证每场、每只都获得固定数量。</span></div><div><b>DLC 暂为部分覆盖</b><span>北上乡、蓝莓学园的完整材料与道具打印机配方仍需扩充，未收录不代表无法获得。</span></div></div></div>`;
 }
-function recMoveBadge(id){const m=fullMove(id);return `<div class="rec-move"><div class="move-detail-line">${moveClass(m?.category)}<span class="rec-move-name">${escapeHTML(m?.zh||id)}</span>${m?badgeType(m.type):''}</div>${m?moveMetric(m):''}${MOVE_EXCEPTIONS[id]?`<small class="nature-move-role">${escapeHTML(MOVE_EXCEPTIONS[id])}</small>`:''}</div>`;}
+function recMoveBadge(id){const m=fullMove(id);return `<div class="rec-move"><div class="move-detail-line">${moveClass(m?.category)}<span class="rec-move-name">${escapeHTML(m?.zh||id)}</span>${m?badgeType(m.type):''}</div>${m?moveMetric(m):''}${m?`<small class="nature-move-role">${escapeHTML(tacticMoveNote(m))}</small>`:''}</div>`;}
 function recCard(b,rank=0){
  const p=localPokemon(b.pokemon);
  const itemMatch=ITEM_GUIDES.find(x=>b.item.includes(x.name));
@@ -3356,7 +3466,9 @@ document.addEventListener('click',async event=>{
  if(a==='mode'){state.mode=btn.dataset.mode;render();return;}
  if(a==='reset-ev'){state.ev=Object.fromEntries(STAT_KEYS.map(k=>[k,0]));state.trainLog=[];state.trainCounts={battle:0,vitamin:0,feather:0};render();return;}
  if(a==='apply-plan'){state.showProjected=!state.showProjected;render();return;}
- if(a==='show-moves'){state.tab='counter';state.status='已带入培养对象，可以选择对手并比较候选招式。';render();window.scrollTo({top:0,behavior:'auto'});return;}
+ if(a==='show-moves'){document.getElementById('tactical-builds')?.scrollIntoView({behavior:'smooth',block:'start'});return;}
+ if(a==='tactic-reset'){delete tacticSwapCache[btn.dataset.key];render();return;}
+ if(a==='tactic-jump'){document.getElementById('tactic-'+btn.dataset.id)?.scrollIntoView({behavior:'smooth',block:'start'});return;}
  if(a==='to-counter'||a==='to-training'){
   const p=state.dexPoke;
   if(a==='to-counter'){state.foe=p;state.foeQuery=p.zh;state.foeAbility='';state.foeTera='none';state.tab='counter';}
@@ -3394,9 +3506,11 @@ document.addEventListener('keydown',async event=>{
 });
 document.addEventListener('change',event=>{
  const el=event.target;
+ if(el.dataset.tacticKey){const ids=el.dataset.tacticIds.split(',');const i=Number(el.dataset.tacticSlot);if(ids.length===4&&i>=0&&i<4&&!ids.some((id,j)=>j!==i&&id===el.value)){ids[i]=el.value;tacticSwapCache[el.dataset.tacticKey]=ids;render();}return;}
  if(el.dataset.teamSlot!==undefined){const slot=Number(el.dataset.teamSlot);if(Number.isInteger(slot)&&slot>=0&&slot<6){state.myTeamSlots[slot]=el.value;render();}return;}
  if(el.dataset.field){
   const key=el.dataset.field;
+  if(key.startsWith('tactic'))state.tacticOpen=true;
   if(key==='manual'||key==='ignoreAbility'||key==='breedHADonor')state[key]=el.checked;
   else if(key==='materialOwned')state.materialOwned=safeNum(el.value,0,9999);
   else if(key==='materialTarget')state.materialTarget=safeNum(el.value,1,9999);

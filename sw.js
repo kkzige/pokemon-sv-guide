@@ -1,5 +1,5 @@
-/* Production PWA worker v1.2.5. Install via original HTTPS origin only. */
-const CACHE='pokemon-sv-guide-v1.2.5';
+/* Production PWA worker v1.2.6. Install via original HTTPS origin only. */
+const CACHE='pokemon-sv-guide-v1.2.6';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg','./apple-touch-icon.png','./sv-data.json','./version.json','./sv_special_evolutions.json'];
 self.addEventListener('install',event=>{event.waitUntil((async()=>{const cache=await caches.open(CACHE);for(const url of CORE){try{const res=await fetch(new Request(url,{cache:'reload'}));if(res.ok)await cache.put(url,res.clone());}catch{}}await self.skipWaiting();})());});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('pokemon-sv-guide-')&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim();})());});
