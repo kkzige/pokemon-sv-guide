@@ -1,9 +1,9 @@
-/* Production PWA worker v1.2.4. Install via original HTTPS origin only. */
-const CACHE='pokemon-sv-guide-v1.2.4';
-const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg','./apple-touch-icon.png','./sv-data.json'];
+/* Production PWA worker v1.2.5. Install via original HTTPS origin only. */
+const CACHE='pokemon-sv-guide-v1.2.5';
+const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg','./apple-touch-icon.png','./sv-data.json','./version.json','./sv_special_evolutions.json'];
 self.addEventListener('install',event=>{event.waitUntil((async()=>{const cache=await caches.open(CACHE);for(const url of CORE){try{const res=await fetch(new Request(url,{cache:'reload'}));if(res.ok)await cache.put(url,res.clone());}catch{}}await self.skipWaiting();})());});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('pokemon-sv-guide-')&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim();})());});
-self.addEventListener('fetch',event=>{const req=event.request;if(req.method!=='GET')return;const url=new URL(req.url);if(url.origin!==self.location.origin)return;const isPage=req.mode==='navigate'||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/version.json');event.respondWith((async()=>{const cache=await caches.open(CACHE);if(isPage){try{const res=await fetch(req,{cache:'no-cache'});if(res.ok)await cache.put(req,res.clone());return res;}catch{return await cache.match(req)||await cache.match('./index.html')||Response.error();}}const cached=await cache.match(req);if(cached)return cached;try{const res=await fetch(req);if(res.ok)await cache.put(req,res.clone());return res;}catch{return Response.error();}})());});
+self.addEventListener('fetch',event=>{const req=event.request;if(req.method!=='GET')return;const url=new URL(req.url);if(url.origin!==self.location.origin)return;const isPage=req.mode==='navigate'||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/version.json');event.respondWith((async()=>{const cache=await caches.open(CACHE);if(isPage){try{const res=await fetch(req,{cache:'no-cache'});if(res.ok)await cache.put(req,res.clone());return res;}catch{return await cache.match(req,{ignoreSearch:true})||(url.pathname.endsWith('/version.json')?await cache.match('./version.json'):await cache.match('./index.html'))||Response.error();}}const cached=await cache.match(req);if(cached)return cached;try{const res=await fetch(req);if(res.ok)await cache.put(req,res.clone());return res;}catch{return Response.error();}})());});
 
 // Keep original behavior: two sets of 18 official-type icons can be pre-cached.
 const ICON_HOSTS=new Set(['raw.githubusercontent.com','cdn.jsdelivr.net']);
