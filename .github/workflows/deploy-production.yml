@@ -1,4 +1,4 @@
-name: Build Pokemon SV v1.2.5 PRODUCTION (enhanced offline snapshot)
+name: Build Pokemon SV v1.2.6 PRODUCTION (enhanced offline snapshot)
 
 on:
   push:
@@ -74,6 +74,12 @@ jobs:
           assert c['svTmMaterialSpecies']>=250,c
           assert c['svVerifiedHabitatRecords']>=20,c
           assert len(d['pokemon'])>=500,len(d['pokemon'])
+          # The showcased four-slot Iron Hands builds must not silently disappear.
+          iron=next((p for p in d['pokemon'] if p['en']=='iron-hands'),None)
+          required={'belly-drum','drain-punch','thunder-punch','electric-terrain','swords-dance','ice-punch'}
+          assert iron and 'quark-drive' in iron.get('abilities',[]), 'Iron Hands ability data missing'
+          assert required <= set(iron.get('learnset',{})), ('Iron Hands learnset incomplete', sorted(required-set(iron.get('learnset',{}))))
+          assert required <= set(d['moves']), 'Iron Hands move parameters missing'
           print('PRODUCTION DATA GATE PASS')
           print(json.dumps(c,ensure_ascii=False,indent=2))
           PYVERIFY
@@ -92,10 +98,10 @@ jobs:
           marker='<script id="sv-offline-snapshot" type="application/json">'+safe+'</script>'
           html=Path('index.html').read_text(encoding='utf-8')
           assert '</head>' in html and 'initSVSnapshot' in html
-          assert "const APP_VERSION='1.2.5'" in html
-          assert json.loads(Path('version.json').read_text('utf-8'))['version']=='1.2.5'
-          assert 'pokemon-sv-guide-v1.2.5' in Path('sw.js').read_text('utf-8')
-          assert all(x in html for x in ['natureMatrix','mintPanel','moveClassGuide','MINT_NATURES','renderExpertEvolutionHint'])
+          assert "const APP_VERSION='1.2.6'" in html
+          assert json.loads(Path('version.json').read_text('utf-8'))['version']=='1.2.6'
+          assert 'pokemon-sv-guide-v1.2.6' in Path('sw.js').read_text('utf-8')
+          assert all(x in html for x in ['natureMatrix','mintPanel','moveClassGuide','MINT_NATURES','renderExpertEvolutionHint','renderTactics','tacticScore','tacticBuilds','TACTIC_IRON_SETS'])
           evo=Path('sv_special_evolutions.json').read_text(encoding='utf-8')
           evo_obj=json.loads(evo)
           assert evo_obj['schema']==1 and len(evo_obj['records'])==90
@@ -105,7 +111,7 @@ jobs:
           Path('site/index.html').write_text(html,encoding='utf-8')
           coverage_file=Path('site/coverage.json')
           coverage=json.loads(coverage_file.read_text(encoding='utf-8'))
-          coverage['version']='1.2.5'
+          coverage['version']='1.2.6'
           coverage_file.write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf-8')
           assert json.loads(safe)['schema']==1
           assert len(json.loads(evo_safe)['records'])==90
