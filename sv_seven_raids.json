@@ -1,0 +1,2246 @@
+{
+  "schema": 1,
+  "asOf": "2026-11-20",
+  "official": "https://sv-news.pokemon.co.jp/en/",
+  "schedule": "https://sv-news.pokemon.co.jp/en/page/479.html",
+  "archive": "https://www.serebii.net/scarletviolet/teraraidbattleevents.shtml",
+  "notes": "首领属性、招式、护盾等为活动档案事实摘录；打法为编辑建议；日期为已核对部分，未宣称全部复刻轮次。",
+  "records": [
+    {
+      "id": "charizard",
+      "zh": "喷火龙",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "tera": "dragon",
+      "ability": "solar-power",
+      "nature": "modest",
+      "hp": 25,
+      "shield": [
+        65,
+        55
+      ],
+      "moves": [
+        "dragon-pulse",
+        "fire-blast",
+        "hurricane",
+        "focus-blast"
+      ],
+      "extra": [
+        "overheat",
+        "tera-blast",
+        "sunny-day",
+        "inferno"
+      ],
+      "timeline": "T99过热；T98首领清除；H70玩家清除；H50太晶爆发；H40大晴天；H20炼狱",
+      "periods": [
+        [
+          "2022-12-02",
+          "2022-12-04"
+        ],
+        [
+          "2022-12-16",
+          "2022-12-18"
+        ],
+        [
+          "2024-03-13",
+          "2024-03-17"
+        ],
+        [
+          "2026-01-16",
+          "2026-01-22"
+        ]
+      ],
+      "advice": "妖精免疫龙；优先特耐与回复，晴天太阳之力提高火力，别仅靠龙系克制。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightycharizardreturns.shtml",
+      "version": "both"
+    },
+    {
+      "id": "cinderace",
+      "zh": "闪焰王牌",
+      "types": [
+        "fire"
+      ],
+      "tera": "fighting",
+      "ability": "libero",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        70,
+        70
+      ],
+      "moves": [
+        "high-jump-kick",
+        "pyro-ball",
+        "acrobatics",
+        "iron-head"
+      ],
+      "extra": [
+        "bulk-up"
+      ],
+      "timeline": "T99健美；H90、75、45健美；H60首领清除；T60玩家清除",
+      "periods": [
+        [
+          "2022-12-30",
+          "2023-01-01"
+        ],
+        [
+          "2023-01-13",
+          "2023-01-15"
+        ],
+        [
+          "2026-06-12",
+          "2026-06-18"
+        ]
+      ],
+      "advice": "呆壳兽铁壁与诡计辅助力量路线；注意健美叠加，避免妖精直接吃铁头。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightycinderace.shtml",
+      "version": "both"
+    },
+    {
+      "id": "greninja",
+      "zh": "甲贺忍蛙",
+      "types": [
+        "water",
+        "dark"
+      ],
+      "tera": "poison",
+      "ability": "protean",
+      "nature": "sassy",
+      "hp": 30,
+      "shield": [
+        65,
+        75
+      ],
+      "moves": [
+        "gunk-shot",
+        "hydro-pump",
+        "ice-beam",
+        "night-slash"
+      ],
+      "extra": [
+        "toxic-spikes",
+        "double-team"
+      ],
+      "timeline": "T99毒菱与影子分身；T85玩家清除；H65首领清除；H50及T40影子分身",
+      "periods": [
+        [
+          "2023-01-27",
+          "2023-01-29"
+        ],
+        [
+          "2023-02-10",
+          "2023-02-12"
+        ],
+        [
+          "2026-05-08",
+          "2026-05-14"
+        ]
+      ],
+      "advice": "注意闪避与混合输出；地面弱水冰，超能力弱暗袭要害；耐久强化后再输出，不推荐盲目腹鼓。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightygreninja.shtml",
+      "version": "both"
+    },
+    {
+      "id": "pikachu",
+      "zh": "皮卡丘",
+      "types": [
+        "electric"
+      ],
+      "tera": "water",
+      "ability": "lightning-rod",
+      "nature": "quiet",
+      "hp": 50,
+      "shield": [
+        99,
+        99
+      ],
+      "moves": [
+        "thunder",
+        "surf",
+        "play-rough",
+        "iron-tail"
+      ],
+      "extra": [
+        "rain-dance"
+      ],
+      "timeline": "T99求雨；T98冲浪；T80首领清除及扣太晶能量；T65扣太晶能量；H65首领清除",
+      "periods": [
+        [
+          "2023-02-24",
+          "2023-02-27"
+        ],
+        [
+          "2024-07-12",
+          "2024-07-25"
+        ]
+      ],
+      "advice": "携带电气球，避雷针免疫电；草系吸取招式尽快充能，护盾几乎全程存在。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightypikachupokemondayevent.shtml",
+      "version": "both",
+      "variantSource": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightypikachureturns.shtml",
+      "shieldDamageByPeriod": [
+        {
+          "start": "2023-02-24",
+          "damage": [
+            1,
+            70,
+            120
+          ]
+        },
+        {
+          "start": "2024-07-12",
+          "damage": [
+            20,
+            30,
+            70
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decidueye",
+      "zh": "狙射树枭",
+      "types": [
+        "grass",
+        "ghost"
+      ],
+      "tera": "flying",
+      "ability": "long-reach",
+      "nature": "brave",
+      "hp": null,
+      "shield": [
+        60,
+        80
+      ],
+      "moves": [
+        "spirit-shackle",
+        "brave-bird",
+        "low-kick",
+        "leaf-blade"
+      ],
+      "extra": [
+        "feather-dance",
+        "swords-dance",
+        "air-cutter"
+      ],
+      "timeline": "T95玩家清除；T94羽毛舞；T81首领清除；T80剑舞；H60空气利刃两次",
+      "periods": [
+        [
+          "2023-03-17",
+          "2023-03-19"
+        ],
+        [
+          "2023-03-24",
+          "2023-03-26"
+        ],
+        [
+          "2026-05-15",
+          "2026-05-21"
+        ]
+      ],
+      "advice": "电系特攻避开羽毛舞降攻；注意低踢、叶刃，岩石候选须谨慎。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightydecidueye.shtml",
+      "version": "both"
+    },
+    {
+      "id": "samurott",
+      "zh": "大剑鬼",
+      "types": [
+        "water"
+      ],
+      "tera": "bug",
+      "ability": "shell-armor",
+      "nature": "lonely",
+      "hp": 35,
+      "shield": [
+        80,
+        87
+      ],
+      "moves": [
+        "aqua-cutter",
+        "megahorn",
+        "night-slash",
+        "drill-run"
+      ],
+      "extra": [
+        "focus-energy",
+        "swords-dance",
+        "bulldoze"
+      ],
+      "timeline": "T99聚气；H99重踏；T87及H65玩家清除；H50剑舞；T50首领清除",
+      "periods": [
+        [
+          "2023-03-31",
+          "2023-04-02"
+        ],
+        [
+          "2023-04-07",
+          "2023-04-09"
+        ],
+        [
+          "2026-04-17",
+          "2026-04-23"
+        ]
+      ],
+      "advice": "高要害威胁使铁壁不可靠；硬壳盔甲候选有价值；火岩弱水，飞行免地面但需核对耐久。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightysamurott.shtml",
+      "version": "both"
+    },
+    {
+      "id": "typhlosion",
+      "zh": "火暴兽",
+      "types": [
+        "fire"
+      ],
+      "tera": "ghost",
+      "ability": "flash-fire",
+      "nature": "mild",
+      "hp": 30,
+      "shield": [
+        80,
+        78
+      ],
+      "moves": [
+        "eruption",
+        "shadow-ball",
+        "play-rough",
+        "earthquake"
+      ],
+      "extra": [
+        "sunny-day"
+      ],
+      "timeline": "H98及T54大晴天；T91玩家清除；T89及T51喷火；H55首领清除",
+      "periods": [
+        [
+          "2023-04-14",
+          "2023-04-16"
+        ],
+        [
+          "2023-04-21",
+          "2023-04-23"
+        ],
+        [
+          "2026-02-06",
+          "2026-02-12"
+        ]
+      ],
+      "advice": "引火免疫火；晴天喷火初期危险，恶系输出注意嬉闹，避免弱地面。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightytyphlosion.shtml",
+      "version": "both"
+    },
+    {
+      "id": "inteleon",
+      "zh": "千面避役",
+      "types": [
+        "water"
+      ],
+      "tera": "ice",
+      "ability": "sniper",
+      "nature": "quiet",
+      "hp": 30,
+      "shield": [
+        85,
+        75
+      ],
+      "moves": [
+        "blizzard",
+        "snipe-shot",
+        "dark-pulse",
+        "tearful-look"
+      ],
+      "extra": [
+        "mist",
+        "snowscape"
+      ],
+      "timeline": "T99及H50白雾；T98及H49雪景；H90暴风雪；T80玩家清除",
+      "periods": [
+        [
+          "2023-04-28",
+          "2023-04-30"
+        ],
+        [
+          "2023-05-05",
+          "2023-05-07"
+        ],
+        [
+          "2026-06-19",
+          "2026-06-25"
+        ]
+      ],
+      "advice": "狙击手要害危险；钢系特攻或格斗回复，火系弱水；白雾期间别依赖降能力。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyinteleon.shtml",
+      "version": "both"
+    },
+    {
+      "id": "chesnaught",
+      "zh": "布里卡隆",
+      "types": [
+        "grass",
+        "fighting"
+      ],
+      "tera": "rock",
+      "ability": "bulletproof",
+      "nature": "impish",
+      "hp": 35,
+      "shield": [
+        80,
+        80
+      ],
+      "moves": [
+        "earthquake",
+        "hammer-arm",
+        "stone-edge",
+        "wood-hammer"
+      ],
+      "extra": [
+        "iron-defense",
+        "bulk-up",
+        "curse"
+      ],
+      "timeline": "T99铁壁；T81及H49玩家清除；H80地震；H50健美；T50诅咒",
+      "periods": [
+        [
+          "2023-05-12",
+          "2023-05-14"
+        ],
+        [
+          "2023-05-19",
+          "2023-05-19"
+        ],
+        [
+          "2023-06-16",
+          "2023-06-18"
+        ],
+        [
+          "2026-04-24",
+          "2026-04-30"
+        ]
+      ],
+      "advice": "防弹免疫能量球、波导弹等弹类；用其他草系特攻，警惕木槌与地震，避免物攻硬打铁壁。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightychesnaught.shtml",
+      "version": "both"
+    },
+    {
+      "id": "delphox",
+      "zh": "妖火红狐",
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "tera": "fairy",
+      "ability": "magician",
+      "nature": "timid",
+      "hp": 30,
+      "shield": [
+        85,
+        85
+      ],
+      "moves": [
+        "fire-blast",
+        "psychic",
+        "dazzling-gleam",
+        "will-o-wisp"
+      ],
+      "extra": [
+        "magic-room",
+        "nasty-plot"
+      ],
+      "timeline": "T100魔法闪耀；H85扣太晶能量；H60魔法空间及玩家清除；T65首领清除；T50诡计",
+      "periods": [
+        [
+          "2023-07-07",
+          "2023-07-09"
+        ],
+        [
+          "2023-07-14",
+          "2023-07-16"
+        ],
+        [
+          "2026-05-01",
+          "2026-05-07"
+        ]
+      ],
+      "advice": "引火钢系如席多蓝恩可考虑，注意魔法空间暂停道具；鬼火削弱物攻，毒系弱超能力。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightydelphox.shtml",
+      "version": "both"
+    },
+    {
+      "id": "rillaboom",
+      "zh": "轰擂金刚猩",
+      "types": [
+        "grass"
+      ],
+      "tera": "normal",
+      "ability": "grassy-surge",
+      "nature": "jolly",
+      "hp": 35,
+      "shield": [
+        85,
+        85
+      ],
+      "moves": [
+        "drum-beating",
+        "acrobatics",
+        "body-slam",
+        "low-kick"
+      ],
+      "extra": [
+        "growth",
+        "boomburst",
+        "bulk-up"
+      ],
+      "timeline": "T100、80生长；T80玩家清除；T79爆音波；H55首领清除；T55健美",
+      "periods": [
+        [
+          "2023-07-28",
+          "2023-07-30"
+        ],
+        [
+          "2023-08-04",
+          "2023-08-06"
+        ],
+        [
+          "2026-06-05",
+          "2026-06-11"
+        ]
+      ],
+      "advice": "格斗输出需承受杂技；选耐久足的吸取拳路线，留意青草场地与低踢。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyrillaboom.shtml",
+      "version": "both"
+    },
+    {
+      "id": "mewtwo",
+      "zh": "超梦",
+      "types": [
+        "psychic"
+      ],
+      "tera": "psychic",
+      "ability": "unnerve",
+      "nature": "modest",
+      "hp": 50,
+      "shield": [
+        99,
+        99
+      ],
+      "moves": [
+        "psystrike",
+        "aura-sphere",
+        "ice-beam",
+        "calm-mind"
+      ],
+      "extra": [
+        "rest"
+      ],
+      "timeline": "H75及35玩家清除；T75及H50首领清除；H48睡觉",
+      "periods": [
+        [
+          "2023-09-01",
+          "2023-09-17"
+        ]
+      ],
+      "advice": "特殊高难；推荐联机梦幻虫太晶吸血、剑舞、虫之抵抗和薄雾场地等分工。首领睡觉前布置薄雾场地（接地时防睡眠）；精神击破按防御计算。梦幻有专属能力加成。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightymewtwoshowdown.shtml",
+      "version": "both"
+    },
+    {
+      "id": "decidueye-hisui",
+      "zh": "狙射树枭（洗翠）",
+      "types": [
+        "grass",
+        "fighting"
+      ],
+      "tera": "grass",
+      "ability": "scrappy",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        60,
+        80
+      ],
+      "moves": [
+        "triple-arrows",
+        "brave-bird",
+        "shadow-claw",
+        "leaf-blade"
+      ],
+      "extra": [
+        "bulk-up",
+        "swords-dance",
+        "grassy-terrain",
+        "leaf-storm"
+      ],
+      "timeline": "T95玩家清除；T94健美；T81首领清除；T80剑舞；T60青草场地；T59飞叶风暴",
+      "periods": [
+        [
+          "2023-10-06",
+          "2023-10-08"
+        ],
+        [
+          "2023-10-13",
+          "2023-10-15"
+        ],
+        [
+          "2026-06-26",
+          "2026-07-02"
+        ]
+      ],
+      "advice": "胆量允许格斗攻击幽灵；三连箭可能降防与要害，优先耐久特攻、烧伤或无视强化。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyhisuiandecidueye.shtml",
+      "version": "both"
+    },
+    {
+      "id": "typhlosion-hisui",
+      "zh": "火暴兽（洗翠）",
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "tera": "fire",
+      "ability": "frisk",
+      "nature": "modest",
+      "hp": 30,
+      "shield": [
+        60,
+        70
+      ],
+      "moves": [
+        "infernal-parade",
+        "flamethrower",
+        "will-o-wisp",
+        "focus-blast"
+      ],
+      "extra": [
+        "sunny-day"
+      ],
+      "timeline": "T99鬼火；T95、40大晴天；T85首领清除；T80扣太晶能量；T60玩家清除",
+      "periods": [
+        [
+          "2023-11-03",
+          "2023-11-05"
+        ],
+        [
+          "2023-11-10",
+          "2023-11-12"
+        ],
+        [
+          "2026-07-03",
+          "2026-07-09"
+        ]
+      ],
+      "advice": "特攻水系可考虑，晴天削弱水；鬼火配合群魔乱舞，优先防异常与特耐。岩石弱真气弹。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyhisuiantyphlosion.shtml",
+      "version": "both"
+    },
+    {
+      "id": "eevee",
+      "zh": "伊布",
+      "types": [
+        "normal"
+      ],
+      "tera": "normal",
+      "ability": "anticipation",
+      "nature": "hardy",
+      "hp": 50,
+      "shield": [
+        99,
+        99
+      ],
+      "moves": [
+        "double-edge",
+        "hyper-voice",
+        "bite",
+        "charm"
+      ],
+      "extra": [
+        "baby-doll-eyes"
+      ],
+      "timeline": "T98圆瞳；T95及H65首领清除；T90扣太晶能量；H80、40玩家清除",
+      "periods": [
+        [
+          "2023-11-17",
+          "2023-11-20"
+        ]
+      ],
+      "advice": "持续降低攻击，考虑格斗特攻波导弹；幽灵免一般但仍怕咬住，尽早太晶破盾。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyeevee.shtml",
+      "version": "both"
+    },
+    {
+      "id": "samurott-hisui",
+      "zh": "大剑鬼（洗翠）",
+      "types": [
+        "water",
+        "dark"
+      ],
+      "tera": "water",
+      "ability": "sharpness",
+      "nature": "adamant",
+      "hp": 35,
+      "shield": [
+        80,
+        87
+      ],
+      "moves": [
+        "ceaseless-edge",
+        "razor-shell",
+        "x-scissor",
+        "sacred-sword"
+      ],
+      "extra": [
+        "swords-dance",
+        "focus-energy",
+        "bulldoze"
+      ],
+      "timeline": "T99剑舞；H99重踏；T87及H65玩家清除；H50聚气；T50首领清除",
+      "periods": [
+        [
+          "2023-11-24",
+          "2023-11-26"
+        ],
+        [
+          "2023-12-01",
+          "2023-12-03"
+        ],
+        [
+          "2026-07-10",
+          "2026-07-16"
+        ]
+      ],
+      "advice": "锋锐增强切割招式，圣剑无视防御等级；草系怕十字剪，电系优先但注意重踏。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyhisuiansamurott.shtml",
+      "version": "both"
+    },
+    {
+      "id": "iron-bundle",
+      "zh": "铁包袱",
+      "types": [
+        "ice",
+        "water"
+      ],
+      "tera": "ice",
+      "ability": "quark-drive",
+      "nature": "modest",
+      "hp": 30,
+      "shield": [
+        75,
+        80
+      ],
+      "moves": [
+        "freeze-dry",
+        "hydro-pump",
+        "blizzard",
+        "chilling-water"
+      ],
+      "extra": [
+        "snowscape",
+        "aurora-veil",
+        "electric-terrain"
+      ],
+      "timeline": "T99雪景；T98极光幕；H75电气场地及玩家清除；T50雪景；H45首领清除",
+      "periods": [
+        [
+          "2023-12-22",
+          "2023-12-24"
+        ]
+      ],
+      "advice": "冷冻干燥克水；冰太晶雪天物防提高，优先钢系特攻，泼冷水削弱物攻。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyironbundle.shtml",
+      "version": "both"
+    },
+    {
+      "id": "blaziken",
+      "zh": "火焰鸡",
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "tera": "flying",
+      "ability": "speed-boost",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        80,
+        80
+      ],
+      "moves": [
+        "blaze-kick",
+        "brave-bird",
+        "earthquake",
+        "low-kick"
+      ],
+      "extra": [
+        "overheat",
+        "rock-slide",
+        "swords-dance",
+        "bulk-up"
+      ],
+      "timeline": "H90玩家清除；H79过热；H70首领清除；H50岩崩；T90剑舞；T65健美",
+      "periods": [
+        [
+          "2024-01-12",
+          "2024-01-14"
+        ],
+        [
+          "2024-01-19",
+          "2024-01-21"
+        ],
+        [
+          "2026-02-27",
+          "2026-03-05"
+        ]
+      ],
+      "advice": "电系克飞但怕地震；漂浮电系较合适，留意能力暂时失效；避免低耐久。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyblaziken.shtml",
+      "version": "both"
+    },
+    {
+      "id": "empoleon",
+      "zh": "帝王拿波",
+      "types": [
+        "water",
+        "steel"
+      ],
+      "tera": "ice",
+      "ability": "competitive",
+      "nature": "modest",
+      "hp": 35,
+      "shield": [
+        80,
+        80
+      ],
+      "moves": [
+        "surf",
+        "flash-cannon",
+        "ice-beam",
+        "grass-knot"
+      ],
+      "extra": [
+        "snowscape",
+        "blizzard",
+        "iron-defense"
+      ],
+      "timeline": "T99雪景；T98暴风雪；H80及T50玩家清除；H65铁壁；H50首领清除",
+      "periods": [
+        [
+          "2024-02-02",
+          "2024-02-04"
+        ],
+        [
+          "2024-02-09",
+          "2024-02-11"
+        ],
+        [
+          "2026-03-27",
+          "2026-04-02"
+        ]
+      ],
+      "advice": "好胜被降能力会提高特攻，别使用酸液炸弹等降能力招式；关注钢和水的覆盖。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyempoleon.shtml",
+      "version": "both"
+    },
+    {
+      "id": "venusaur",
+      "zh": "妙蛙花",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "tera": "ground",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "hp": 30,
+      "shield": [
+        85,
+        80
+      ],
+      "moves": [
+        "earth-power",
+        "sludge-bomb",
+        "giga-drain",
+        "amnesia"
+      ],
+      "extra": [
+        "sunny-day",
+        "growth",
+        "petal-blizzard"
+      ],
+      "timeline": "T99及H50大晴天；T98生长；T97落英缤纷；T85玩家清除；H80首领清除",
+      "periods": [
+        [
+          "2024-02-28",
+          "2024-03-05"
+        ],
+        [
+          "2026-01-09",
+          "2026-01-15"
+        ]
+      ],
+      "advice": "草系输出怕污泥炸弹，水系怕终极吸取；考虑带防弹的洗翠黏美龙等特殊机制，须核对学招。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyvenusaur.shtml",
+      "version": "both"
+    },
+    {
+      "id": "blastoise",
+      "zh": "水箭龟",
+      "types": [
+        "water"
+      ],
+      "tera": "steel",
+      "ability": "rain-dish",
+      "nature": "naive",
+      "hp": 35,
+      "shield": [
+        99,
+        98
+      ],
+      "moves": [
+        "hydro-pump",
+        "flash-cannon",
+        "aura-sphere",
+        "iron-defense"
+      ],
+      "extra": [
+        "withdraw",
+        "shell-smash",
+        "rain-dance"
+      ],
+      "timeline": "T99缩入壳中；T75及H50首领清除；H75破壳；H49求雨；T60玩家清除",
+      "periods": [
+        [
+          "2024-03-06",
+          "2024-03-12"
+        ],
+        [
+          "2026-01-23",
+          "2026-01-29"
+        ]
+      ],
+      "advice": "开局盾；优先耐久格斗特攻，铁壁令普通物攻低效；破壳后注意爆发，火系怕水。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyblastoise.shtml",
+      "version": "both"
+    },
+    {
+      "id": "meganium",
+      "zh": "大竺葵",
+      "types": [
+        "grass"
+      ],
+      "tera": "psychic",
+      "ability": "leaf-guard",
+      "nature": "impish",
+      "hp": 35,
+      "shield": [
+        85,
+        80
+      ],
+      "moves": [
+        "seed-bomb",
+        "zen-headbutt",
+        "body-press",
+        "curse"
+      ],
+      "extra": [
+        "reflect",
+        "light-screen",
+        "bulldoze"
+      ],
+      "timeline": "T99反射壁；T98光墙；T79玩家清除；H70、40首领清除；H30重踏",
+      "periods": [
+        [
+          "2024-04-05",
+          "2024-04-07"
+        ],
+        [
+          "2024-04-12",
+          "2024-04-14"
+        ],
+        [
+          "2026-01-30",
+          "2026-02-05"
+        ]
+      ],
+      "advice": "双墙与诅咒；幽灵免扑击但要注意其他招式，纯朴可无视强化，破墙有价值。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightymeganium.shtml",
+      "version": "both"
+    },
+    {
+      "id": "primarina",
+      "zh": "西狮海壬",
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "tera": "fairy",
+      "ability": "liquid-voice",
+      "nature": "modest",
+      "hp": 35,
+      "shield": [
+        80,
+        75
+      ],
+      "moves": [
+        "moonblast",
+        "sparkling-aria",
+        "sing",
+        "psychic"
+      ],
+      "extra": [
+        "encore",
+        "surf"
+      ],
+      "timeline": "T90扣能量；T85及H35首领清除；T80玩家清除；T79再来一次；H50冲浪",
+      "periods": [
+        [
+          "2024-05-10",
+          "2024-05-12"
+        ],
+        [
+          "2024-05-17",
+          "2024-05-19"
+        ],
+        [
+          "2026-05-29",
+          "2026-06-04"
+        ]
+      ],
+      "advice": "钢系输出优先；赛富豪黄金之躯可防部分变化招式，留意水系伤害；唱歌与再来一次危险。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyprimarina.shtml",
+      "version": "both"
+    },
+    {
+      "id": "swampert",
+      "zh": "巨沼怪",
+      "types": [
+        "water",
+        "ground"
+      ],
+      "tera": "poison",
+      "ability": "damp",
+      "nature": "relaxed",
+      "hp": 30,
+      "shield": [
+        85,
+        80
+      ],
+      "moves": [
+        "earthquake",
+        "hydro-pump",
+        "sludge-wave",
+        "liquidation"
+      ],
+      "extra": [
+        "muddy-water",
+        "yawn"
+      ],
+      "timeline": "T99及H40浊流；T90扣能量；T80玩家清除；H75首领清除；T60哈欠",
+      "periods": [
+        [
+          "2024-05-31",
+          "2024-06-02"
+        ],
+        [
+          "2024-06-07",
+          "2024-06-09"
+        ],
+        [
+          "2026-03-06",
+          "2026-03-12"
+        ]
+      ],
+      "advice": "超能力输出可绕过水地对地面候选的压力；注意哈欠、浊流命中降低；混合耐久。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyswampert.shtml",
+      "version": "both"
+    },
+    {
+      "id": "emboar",
+      "zh": "炎武王",
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "tera": "electric",
+      "ability": "reckless",
+      "nature": "brave",
+      "hp": 40,
+      "shield": [
+        90,
+        80
+      ],
+      "moves": [
+        "flare-blitz",
+        "drain-punch",
+        "wild-charge",
+        "head-smash"
+      ],
+      "extra": [
+        "bulk-up",
+        "heat-crash"
+      ],
+      "timeline": "T90玩家清除；T80及H55首领清除；H40两次健美；H20高温重压",
+      "periods": [
+        [
+          "2024-06-14",
+          "2024-06-16"
+        ],
+        [
+          "2024-06-21",
+          "2024-06-23"
+        ],
+        [
+          "2026-04-10",
+          "2026-04-16"
+        ]
+      ],
+      "advice": "地面免电但仍要承受火格斗；舍身强化反伤招式，选耐久与回复，注意后期健美。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyemboar.shtml",
+      "version": "both"
+    },
+    {
+      "id": "sceptile",
+      "zh": "蜥蜴王",
+      "types": [
+        "grass"
+      ],
+      "tera": "dragon",
+      "ability": "unburden",
+      "nature": "hasty",
+      "hp": 35,
+      "shield": [
+        70,
+        75
+      ],
+      "moves": [
+        "leaf-blade",
+        "breaking-swipe",
+        "dragon-dance",
+        "thunder-punch"
+      ],
+      "extra": [
+        "leaf-storm",
+        "earthquake"
+      ],
+      "timeline": "T99飞叶风暴；T85玩家清除；T80扣能量；T65首领清除；H85广域破坏；H30地震",
+      "periods": [
+        [
+          "2024-06-28",
+          "2024-06-30"
+        ],
+        [
+          "2024-07-05",
+          "2024-07-07"
+        ],
+        [
+          "2026-02-20",
+          "2026-02-26"
+        ]
+      ],
+      "advice": "妖精特攻免龙且不受广域破坏降攻；注意雷电拳与地震，龙舞后需保持生存。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightysceptile.shtml",
+      "version": "both"
+    },
+    {
+      "id": "dondozo",
+      "zh": "吃吼霸",
+      "types": [
+        "water"
+      ],
+      "tera": "water",
+      "ability": "unaware",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        70,
+        70
+      ],
+      "moves": [
+        "wave-crash",
+        "order-up",
+        "earthquake",
+        "avalanche"
+      ],
+      "extra": [
+        "yawn",
+        "curse"
+      ],
+      "timeline": "T95哈欠；T90扣能量；T70玩家清除；H70首领清除；H50诅咒；H30波动冲",
+      "periods": [
+        [
+          "2024-07-26",
+          "2024-08-08"
+        ]
+      ],
+      "advice": "纯朴无视玩家进攻能力等级；优先降其防御或特防而非腹鼓，电怕地震、草怕雪崩。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightydondozo.shtml",
+      "version": "both"
+    },
+    {
+      "id": "dragonite",
+      "zh": "快龙",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "tera": "normal",
+      "ability": "inner-focus",
+      "nature": "brave",
+      "hp": 35,
+      "shield": [
+        75,
+        70
+      ],
+      "moves": [
+        "extreme-speed",
+        "scale-shot",
+        "dragon-dance",
+        "earthquake"
+      ],
+      "extra": [
+        "rain-dance",
+        "hurricane",
+        "thunder",
+        "draco-meteor"
+      ],
+      "timeline": "T99求雨；T98暴风；H95打雷；T80玩家清除；T70首领清除；H30流星群",
+      "periods": [
+        [
+          "2024-08-23",
+          "2024-09-01"
+        ],
+        [
+          "2026-09-25",
+          "2026-10-01"
+        ]
+      ],
+      "advice": "神速优先行动、精神力防威吓；格斗输出注意暴风；幽灵免一般不代表免地震与龙攻击。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightydragonite.shtml",
+      "version": "both"
+    },
+    {
+      "id": "incineroar",
+      "zh": "炽焰咆哮虎",
+      "types": [
+        "fire",
+        "dark"
+      ],
+      "tera": "dark",
+      "ability": "intimidate",
+      "nature": "brave",
+      "hp": 35,
+      "shield": [
+        65,
+        60
+      ],
+      "moves": [
+        "flare-blitz",
+        "darkest-lariat",
+        "bulk-up",
+        "iron-head"
+      ],
+      "extra": [
+        "snarl",
+        "taunt",
+        "earthquake"
+      ],
+      "timeline": "T99大声咆哮；T95挑衅；T90玩家清除；H70扣能量；T55首领清除；H50地震",
+      "periods": [
+        [
+          "2024-09-06",
+          "2024-09-08"
+        ],
+        [
+          "2024-09-13",
+          "2024-09-15"
+        ],
+        [
+          "2026-05-22",
+          "2026-05-28"
+        ]
+      ],
+      "advice": "威吓与健美，使用不服输或纯朴等有条件路线；妖精怕铁头，格斗回复更稳健。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyincineroar.shtml",
+      "version": "both"
+    },
+    {
+      "id": "serperior",
+      "zh": "君主蛇",
+      "types": [
+        "grass"
+      ],
+      "tera": "grass",
+      "ability": "contrary",
+      "nature": "modest",
+      "hp": 30,
+      "shield": [
+        75,
+        75
+      ],
+      "moves": [
+        "leaf-storm",
+        "gastro-acid",
+        "dragon-pulse",
+        "iron-tail"
+      ],
+      "extra": [
+        "sweet-scent",
+        "breaking-swipe",
+        "glare"
+      ],
+      "timeline": "T99甜甜香气；T85玩家清除；T84广域破坏；T75扣能量；H60首领清除；H40大蛇瞪眼",
+      "periods": [
+        [
+          "2024-09-20",
+          "2024-09-22"
+        ],
+        [
+          "2024-09-27",
+          "2024-09-29"
+        ],
+        [
+          "2026-04-03",
+          "2026-04-09"
+        ]
+      ],
+      "advice": "唱反调令飞叶风暴反向强化特攻，不要用降能力战术；考虑纯朴，胃液可能压制特性。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyserperior.shtml",
+      "version": "both"
+    },
+    {
+      "id": "infernape",
+      "zh": "烈焰猴",
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "tera": "rock",
+      "ability": "iron-fist",
+      "nature": "naughty",
+      "hp": 35,
+      "shield": [
+        80,
+        80
+      ],
+      "moves": [
+        "flare-blitz",
+        "aura-sphere",
+        "tera-blast",
+        "grass-knot"
+      ],
+      "extra": [
+        "nasty-plot",
+        "swords-dance",
+        "focus-energy"
+      ],
+      "timeline": "T95扣能量；T90玩家清除；T80首领清除；T79诡计；H50剑舞；H35聚气",
+      "periods": [
+        [
+          "2024-10-04",
+          "2024-10-06"
+        ],
+        [
+          "2024-10-11",
+          "2024-10-13"
+        ],
+        [
+          "2026-03-20",
+          "2026-03-26"
+        ]
+      ],
+      "advice": "混攻首领，水地面怕打草结；格斗吸取拳路线需能承受火和岩攻击，钢怕火格斗。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyinfernape.shtml",
+      "version": "both"
+    },
+    {
+      "id": "feraligatr",
+      "zh": "大力鳄",
+      "types": [
+        "water"
+      ],
+      "tera": "dark",
+      "ability": "sheer-force",
+      "nature": "adamant",
+      "hp": 35,
+      "shield": [
+        75,
+        75
+      ],
+      "moves": [
+        "crunch",
+        "liquidation",
+        "psychic-fangs",
+        "ice-punch"
+      ],
+      "extra": [
+        "swords-dance",
+        "earthquake",
+        "dragon-dance"
+      ],
+      "timeline": "T99剑舞；T95扣能量；H80玩家清除；H65首领清除；T70地震；H50龙舞",
+      "periods": [
+        [
+          "2024-11-01",
+          "2024-11-03"
+        ],
+        [
+          "2024-11-08",
+          "2024-11-10"
+        ],
+        [
+          "2026-02-13",
+          "2026-02-19"
+        ]
+      ],
+      "advice": "强行增强部分招式；妖精可攻恶，注意冰冻拳、精神之牙会破墙，优先纯朴及耐久。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyferaligatr.shtml",
+      "version": "both"
+    },
+    {
+      "id": "torterra",
+      "zh": "土台龟",
+      "types": [
+        "grass",
+        "ground"
+      ],
+      "tera": "ground",
+      "ability": "shell-armor",
+      "nature": "brave",
+      "hp": 35,
+      "shield": [
+        75,
+        75
+      ],
+      "moves": [
+        "earthquake",
+        "wood-hammer",
+        "smack-down",
+        "earth-power"
+      ],
+      "extra": [
+        "shell-smash"
+      ],
+      "timeline": "T99及69破壳；T98及70首领清除；T80玩家清除；H35地震",
+      "periods": [
+        [
+          "2024-11-15",
+          "2024-11-17"
+        ],
+        [
+          "2024-11-22",
+          "2024-11-24"
+        ],
+        [
+          "2026-03-13",
+          "2026-03-19"
+        ]
+      ],
+      "advice": "击落让飞行或漂浮失去地面免疫；水冰草攻击均需看木槌和地震，纯朴可考虑。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightytorterra.shtml",
+      "version": "both"
+    },
+    {
+      "id": "meowscarada",
+      "zh": "魔幻假面喵",
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "tera": "grass",
+      "ability": "protean",
+      "nature": "adamant",
+      "hp": 35,
+      "shield": [
+        75,
+        80
+      ],
+      "moves": [
+        "flower-trick",
+        "night-slash",
+        "acrobatics",
+        "play-rough"
+      ],
+      "extra": [
+        "hone-claws",
+        "petal-blizzard",
+        "grassy-terrain"
+      ],
+      "timeline": "T99磨爪；T85玩家清除；T84落英缤纷；T50青草场地；H75、40首领清除",
+      "periods": [
+        [
+          "2025-02-28",
+          "2025-03-06"
+        ],
+        [
+          "2026-09-04",
+          "2026-09-10"
+        ]
+      ],
+      "advice": "千变万花必定要害，铁壁不可完全依赖；火钢候选需核对恶、飞行招式。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightymeowscarada.shtml",
+      "version": "both"
+    },
+    {
+      "id": "skeledirge",
+      "zh": "骨纹巨声鳄",
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "tera": "fire",
+      "ability": "unaware",
+      "nature": "rash",
+      "hp": 35,
+      "shield": [
+        75,
+        75
+      ],
+      "moves": [
+        "torch-song",
+        "shadow-ball",
+        "stomping-tantrum",
+        "hyper-voice"
+      ],
+      "extra": [
+        "disarming-voice",
+        "flame-charge"
+      ],
+      "timeline": "T99魅惑之声；T98及H40蓄能焰袭；T80玩家清除；T79巨声；H50首领清除",
+      "periods": [
+        [
+          "2025-03-07",
+          "2025-03-13"
+        ],
+        [
+          "2026-09-11",
+          "2026-09-17"
+        ]
+      ],
+      "advice": "纯朴无视玩家进攻强化，闪焰高歌持续提升特攻；优先降低首领特防或特攻、耐久水系。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyskeledirge.shtml",
+      "version": "both"
+    },
+    {
+      "id": "quaquaval",
+      "zh": "狂欢浪舞鸭",
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "tera": "water",
+      "ability": "moxie",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        75,
+        80
+      ],
+      "moves": [
+        "aqua-step",
+        "brick-break",
+        "brave-bird",
+        "ice-spinner"
+      ],
+      "extra": [
+        "bulk-up",
+        "rain-dance"
+      ],
+      "timeline": "T99健美；T85玩家清除；T75首领清除；T74求雨；H45首领清除；H40健美",
+      "periods": [
+        [
+          "2025-03-14",
+          "2025-03-20"
+        ],
+        [
+          "2026-09-18",
+          "2026-09-24"
+        ]
+      ],
+      "advice": "电系耐久输出，草系怕勇鸟和冰旋；自信过度在击倒玩家后提高攻击，优先生存。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyquaquaval.shtml",
+      "version": "both"
+    },
+    {
+      "id": "tyranitar",
+      "zh": "班基拉斯",
+      "types": [
+        "rock",
+        "dark"
+      ],
+      "tera": "ghost",
+      "ability": "sand-stream",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        80,
+        80
+      ],
+      "moves": [
+        "stone-edge",
+        "crunch",
+        "earthquake",
+        "shadow-claw"
+      ],
+      "extra": [
+        "focus-energy",
+        "dragon-dance"
+      ],
+      "timeline": "T99聚气；T85玩家清除；T79首领清除；T75、65龙舞；H40首领清除",
+      "periods": [
+        [
+          "2025-03-28",
+          "2025-03-30"
+        ],
+        [
+          "2025-04-04",
+          "2025-04-06"
+        ],
+        [
+          "2026-10-02",
+          "2026-10-08"
+        ]
+      ],
+      "advice": "恶系克幽灵但须承受岩、地面，聚气要害与龙舞危险；避免脆弱幽灵。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightytyranitar.shtml",
+      "version": "both"
+    },
+    {
+      "id": "salamence",
+      "zh": "暴飞龙",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "tera": "flying",
+      "ability": "moxie",
+      "nature": "quiet",
+      "hp": 30,
+      "shield": [
+        85,
+        85
+      ],
+      "moves": [
+        "tera-blast",
+        "dragon-pulse",
+        "earthquake",
+        "flamethrower"
+      ],
+      "extra": [
+        "heat-wave",
+        "breaking-swipe",
+        "dragon-dance"
+      ],
+      "timeline": "T99热风；T86、65玩家清除；T50广域破坏；H44首领清除；H40龙舞",
+      "periods": [
+        [
+          "2025-04-18",
+          "2025-04-20"
+        ],
+        [
+          "2025-04-25",
+          "2025-04-27"
+        ],
+        [
+          "2026-10-09",
+          "2026-10-15"
+        ]
+      ],
+      "advice": "电系漂浮候选可绕开地震；冰岩系怕火或地，避免倒下触发自信过度。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightysalamence.shtml",
+      "version": "both"
+    },
+    {
+      "id": "metagross",
+      "zh": "巨金怪",
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "tera": "steel",
+      "ability": "clear-body",
+      "nature": "adamant",
+      "hp": 25,
+      "shield": [
+        99,
+        99
+      ],
+      "moves": [
+        "meteor-mash",
+        "zen-headbutt",
+        "earthquake",
+        "thunder-punch"
+      ],
+      "extra": [
+        "hone-claws",
+        "iron-defense",
+        "light-screen"
+      ],
+      "timeline": "T99磨爪；T89、79铁壁；H70玩家清除；H60首领清除；H40光墙",
+      "periods": [
+        [
+          "2025-05-09",
+          "2025-05-11"
+        ],
+        [
+          "2025-05-16",
+          "2025-05-18"
+        ],
+        [
+          "2026-10-16",
+          "2026-10-22"
+        ]
+      ],
+      "advice": "恒净之躯免疫通常降能力，铁壁开局；优先特攻火地格斗，但火怕地震，格斗怕意念头锤。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightymetagross.shtml",
+      "version": "both"
+    },
+    {
+      "id": "garchomp",
+      "zh": "烈咬陆鲨",
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "tera": "ground",
+      "ability": "rough-skin",
+      "nature": "jolly",
+      "hp": 25,
+      "shield": [
+        95,
+        90
+      ],
+      "moves": [
+        "earthquake",
+        "poison-jab",
+        "liquidation",
+        "fire-fang"
+      ],
+      "extra": [
+        "breaking-swipe",
+        "swords-dance"
+      ],
+      "timeline": "T99广域破坏；T76首领清除；T75、55剑舞；H60玩家清除；H40首领清除",
+      "periods": [
+        [
+          "2025-05-23",
+          "2025-05-25"
+        ],
+        [
+          "2025-05-30",
+          "2025-06-01"
+        ],
+        [
+          "2026-10-23",
+          "2026-10-29"
+        ]
+      ],
+      "advice": "粗糙皮肤惩罚接触，优先特攻水冰草；草怕火牙毒击，选耐久水系或漂浮候选。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightygarchomp.shtml",
+      "version": "both"
+    },
+    {
+      "id": "porygon2",
+      "zh": "多边兽Ⅱ",
+      "types": [
+        "normal"
+      ],
+      "tera": "normal",
+      "ability": "analytic",
+      "nature": "quiet",
+      "hp": 30,
+      "shield": [
+        85,
+        85
+      ],
+      "moves": [
+        "tri-attack",
+        "psychic",
+        "thunderbolt",
+        "ice-beam"
+      ],
+      "extra": [
+        "trick-room",
+        "discharge"
+      ],
+      "timeline": "T99戏法空间；T90扣能量；T80及H40首领清除；T70玩家清除；H65放电",
+      "periods": [
+        [
+          "2025-06-05",
+          "2025-06-15"
+        ]
+      ],
+      "advice": "混合覆盖以特攻为主，格斗候选怕精神强念；慢速特耐输出适合空间，留意分析特性。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyporygon2.shtml",
+      "version": "both"
+    },
+    {
+      "id": "baxcalibur",
+      "zh": "戟脊龙",
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "tera": "ice",
+      "ability": "thermal-exchange",
+      "nature": "adamant",
+      "hp": 55,
+      "shield": [
+        95,
+        95
+      ],
+      "moves": [
+        "glaive-rush",
+        "icicle-crash",
+        "crunch",
+        "earthquake"
+      ],
+      "extra": [
+        "swords-dance"
+      ],
+      "timeline": "T99剑舞；T80及H60、40玩家清除；T50首领清除；H45剑舞",
+      "periods": [
+        [
+          "2025-06-20",
+          "2025-06-22"
+        ],
+        [
+          "2025-06-27",
+          "2025-06-29"
+        ],
+        [
+          "2026-11-27",
+          "2026-12-03"
+        ]
+      ],
+      "advice": "热交换遇火提高攻击且免灼伤，避免火系输出；纯朴吃吼霸物耐及扑击路线可考虑，注意清除特性期间和咬碎降防。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightybaxcalibur.shtml",
+      "version": "both"
+    },
+    {
+      "id": "kommo-o",
+      "zh": "杖尾鳞甲龙",
+      "types": [
+        "dragon",
+        "fighting"
+      ],
+      "tera": "fighting",
+      "ability": "soundproof",
+      "nature": "naughty",
+      "hp": 60,
+      "shield": [
+        93,
+        93
+      ],
+      "moves": [
+        "close-combat",
+        "dragon-claw",
+        "iron-head",
+        "boomburst"
+      ],
+      "extra": [
+        "clangorous-soul",
+        "clanging-scales"
+      ],
+      "timeline": "T99魂舞烈音爆；T75及H40首领清除；T60玩家清除；H80、55鳞片噪音",
+      "periods": [
+        [
+          "2025-07-11",
+          "2025-07-13"
+        ],
+        [
+          "2025-07-18",
+          "2025-07-20"
+        ],
+        [
+          "2026-11-13",
+          "2026-11-19"
+        ]
+      ],
+      "advice": "隔音免疫巨声等声音招式；妖精免龙但怕铁头，选非声音妖精攻击，注意全能力强化。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightykommoo.shtml",
+      "version": "both"
+    },
+    {
+      "id": "roaring-moon",
+      "zh": "轰鸣月",
+      "types": [
+        "dragon",
+        "dark"
+      ],
+      "tera": "dragon",
+      "ability": "protosynthesis",
+      "nature": "adamant",
+      "hp": 30,
+      "shield": [
+        92,
+        92
+      ],
+      "moves": [
+        "dragon-claw",
+        "crunch",
+        "iron-head",
+        "earthquake"
+      ],
+      "extra": [
+        "sunny-day",
+        "dragon-dance"
+      ],
+      "timeline": "T99及H40大晴天；T80及H55玩家清除；T60首领清除；T58龙舞",
+      "periods": [
+        [
+          "2025-10-03",
+          "2025-10-12"
+        ]
+      ],
+      "advice": "朱版活动原生；晴天古代活性提高能力，妖精怕铁头，选耐久特攻并看地震。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyroaringmoonandmightyironvaliant.shtml",
+      "version": "scarlet"
+    },
+    {
+      "id": "iron-valiant",
+      "zh": "铁武者",
+      "types": [
+        "fairy",
+        "fighting"
+      ],
+      "tera": "fairy",
+      "ability": "quark-drive",
+      "nature": "naive",
+      "hp": 30,
+      "shield": [
+        90,
+        90
+      ],
+      "moves": [
+        "spirit-break",
+        "aura-sphere",
+        "zen-headbutt",
+        "shadow-ball"
+      ],
+      "extra": [
+        "electric-terrain",
+        "swords-dance"
+      ],
+      "timeline": "T99、55电气场地；T85及H45首领清除；H65玩家清除；H40剑舞",
+      "periods": [
+        [
+          "2025-10-03",
+          "2025-10-12"
+        ]
+      ],
+      "advice": "紫版活动原生；钢怕波导弹，毒怕意念头锤，选择混合耐久与回复，灵魂冲击降低特攻。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyroaringmoonandmightyironvaliant.shtml",
+      "version": "violet"
+    },
+    {
+      "id": "hydreigon",
+      "zh": "三首恶龙",
+      "types": [
+        "dark",
+        "dragon"
+      ],
+      "tera": "poison",
+      "ability": "levitate",
+      "nature": "modest",
+      "hp": 25,
+      "shield": [
+        85,
+        85
+      ],
+      "moves": [
+        "tera-blast",
+        "dark-pulse",
+        "dragon-pulse",
+        "earth-power"
+      ],
+      "extra": [
+        "snarl",
+        "nasty-plot",
+        "dragon-dance"
+      ],
+      "timeline": "T99大声咆哮；T82首领清除；T70、55诡计；H55玩家清除；H40龙舞",
+      "periods": [
+        [
+          "2025-11-07",
+          "2025-11-09"
+        ],
+        [
+          "2025-11-14",
+          "2025-11-16"
+        ],
+        [
+          "2026-10-30",
+          "2026-11-05"
+        ]
+      ],
+      "advice": "毒太晶弱地面但漂浮免疫，除非明确绕过特性；超能力怕恶之波动，考虑破格地面输出并留意特耐。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyhydreigon.shtml",
+      "version": "both"
+    },
+    {
+      "id": "goodra",
+      "zh": "黏美龙",
+      "types": [
+        "dragon"
+      ],
+      "tera": "water",
+      "ability": "sap-sipper",
+      "nature": "modest",
+      "hp": 35,
+      "shield": [
+        90,
+        90
+      ],
+      "moves": [
+        "scald",
+        "dragon-pulse",
+        "sludge-bomb",
+        "earthquake"
+      ],
+      "extra": [
+        "sludge-wave",
+        "surf"
+      ],
+      "timeline": "T99污泥波；T87及H60玩家清除；T84冲浪；T55首领清除；T52地震",
+      "periods": [
+        [
+          "2025-11-21",
+          "2025-11-23"
+        ],
+        [
+          "2025-11-28",
+          "2025-11-30"
+        ],
+        [
+          "2026-11-06",
+          "2026-11-12"
+        ]
+      ],
+      "advice": "食草免疫草；电系怕地震，漂浮麻麻鳗鱼王可考虑；注意特性暂时失效和热水灼伤。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightygoodra.shtml",
+      "version": "both"
+    },
+    {
+      "id": "dragapult",
+      "zh": "多龙巴鲁托",
+      "types": [
+        "dragon",
+        "ghost"
+      ],
+      "tera": "dragon",
+      "ability": "cursed-body",
+      "nature": "naive",
+      "hp": 35,
+      "shield": [
+        92,
+        92
+      ],
+      "moves": [
+        "dragon-darts",
+        "shadow-ball",
+        "acrobatics",
+        "flamethrower"
+      ],
+      "extra": [
+        "dragon-dance",
+        "breaking-swipe"
+      ],
+      "timeline": "T99龙舞；T86玩家清除；T83广域破坏；H55玩家清除；H43首领清除；H40龙舞",
+      "periods": [
+        [
+          "2025-12-05",
+          "2025-12-07"
+        ],
+        [
+          "2025-12-12",
+          "2025-12-14"
+        ],
+        [
+          "2026-11-20",
+          "2026-11-26"
+        ]
+      ],
+      "advice": "仙子伊布、皮可西等妖精特攻免龙且不怕降攻击；诅咒之躯可能封招，准备备用输出，留意杂技与龙舞。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightydragapult.shtml",
+      "version": "both"
+    },
+    {
+      "id": "magikarp",
+      "zh": "鲤鱼王",
+      "types": [
+        "water"
+      ],
+      "tera": "dragon",
+      "ability": "rattled",
+      "nature": "adamant",
+      "hp": 60,
+      "shield": [
+        99,
+        99
+      ],
+      "moves": [
+        "splash",
+        "tackle",
+        "flail"
+      ],
+      "extra": [
+        "splash"
+      ],
+      "timeline": "T98、96、90跃起；H60、40、35跃起",
+      "periods": [
+        [
+          "2026-07-17",
+          "2026-08-06"
+        ]
+      ],
+      "advice": "幽灵免撞击及抓狂；太晶成妖精、冰或龙之后失去免疫，注意低血量抓狂；尽快破盾。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightymagikarp.shtml",
+      "version": "both"
+    },
+    {
+      "id": "glimmora",
+      "zh": "晶光花",
+      "types": [
+        "rock",
+        "poison"
+      ],
+      "tera": "grass",
+      "ability": "toxic-debris",
+      "nature": "modest",
+      "hp": 35,
+      "shield": [
+        80,
+        80
+      ],
+      "moves": [
+        "mortal-spin",
+        "sludge-bomb",
+        "power-gem",
+        "energy-ball"
+      ],
+      "extra": [
+        "rock-polish",
+        "dazzling-gleam",
+        "sludge-wave"
+      ],
+      "timeline": "H90晶光转转；T75玩家清除；T40首领清除；H50岩石打磨；H40魔法闪耀；H30污泥波",
+      "periods": [
+        [
+          "2026-08-07",
+          "2026-08-13"
+        ]
+      ],
+      "advice": "钢免毒，火钢席多蓝恩候选优先特攻避免触发毒满地；岩石攻击对火飞危险。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyglimmora.shtml",
+      "version": "both"
+    },
+    {
+      "id": "annihilape",
+      "zh": "弃世猴",
+      "types": [
+        "fighting",
+        "ghost"
+      ],
+      "tera": "ghost",
+      "ability": "defiant",
+      "nature": "adamant",
+      "hp": 40,
+      "shield": [
+        90,
+        90
+      ],
+      "moves": [
+        "rage-fist",
+        "close-combat",
+        "ice-punch",
+        "thunder-punch"
+      ],
+      "extra": [
+        "earthquake",
+        "rock-slide",
+        "bulldoze"
+      ],
+      "timeline": "T80地震；T60岩崩；T45及H50首领清除；H40重踏",
+      "periods": [
+        [
+          "2026-08-14",
+          "2026-08-20"
+        ]
+      ],
+      "advice": "不服输被降能力会提高攻击，避免威吓；愤怒之拳受击次数累加威力，普通免幽灵但怕格斗；洗翠索罗亚克免两者却耐久偏低。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyannihilape.shtml",
+      "version": "both"
+    },
+    {
+      "id": "farigiraf",
+      "zh": "奇麒麟",
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "tera": "fairy",
+      "ability": "armor-tail",
+      "nature": "modest",
+      "hp": 45,
+      "shield": [
+        90,
+        90
+      ],
+      "moves": [
+        "twin-beam",
+        "dazzling-gleam",
+        "shadow-ball",
+        "thunderbolt"
+      ],
+      "extra": [
+        "nasty-plot",
+        "trick-room"
+      ],
+      "timeline": "T90诡计；T70玩家清除；T60首领清除；H50戏法空间；H45魔法闪耀；H30首领清除",
+      "periods": [
+        [
+          "2026-08-21",
+          "2026-08-27"
+        ]
+      ],
+      "advice": "钢系特耐特攻可考虑，注意暗影球、十万伏特；尾甲限制先制招式，空间后慢速更有利。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightyfarigiraf.shtml",
+      "version": "both"
+    },
+    {
+      "id": "kingambit",
+      "zh": "仆刀将军",
+      "types": [
+        "dark",
+        "steel"
+      ],
+      "tera": "dark",
+      "ability": "supreme-overlord",
+      "nature": "adamant",
+      "hp": 35,
+      "shield": [
+        90,
+        90
+      ],
+      "moves": [
+        "kowtow-cleave",
+        "iron-head",
+        "brick-break",
+        "stone-edge"
+      ],
+      "extra": [
+        "snarl",
+        "swords-dance"
+      ],
+      "timeline": "T90及H40大声咆哮；T70、45玩家清除；H50首领清除；H35剑舞",
+      "periods": [
+        [
+          "2026-08-28",
+          "2026-09-03"
+        ]
+      ],
+      "advice": "格斗吸取拳持续恢复较实用；铁头克妖精，劈瓦破墙，大声咆哮压特攻，注意后期剑舞。",
+      "source": "https://www.serebii.net/scarletviolet/teraraidbattles/event-mightykingambit.shtml",
+      "version": "both"
+    }
+  ]
+}
