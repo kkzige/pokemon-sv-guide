@@ -1,4 +1,4 @@
-name: Build Pokemon SV v1.2.7 PRODUCTION (enhanced offline snapshot)
+name: Build Pokemon SV v1.2.8 PRODUCTION (enhanced offline snapshot)
 
 on:
   push:
@@ -99,7 +99,7 @@ jobs:
           marker='<script id="sv-offline-snapshot" type="application/json">'+safe+'</script>'
           html=Path('index.html').read_text(encoding='utf-8')
           assert '</head>' in html and 'initSVSnapshot' in html
-          assert "const APP_VERSION='1.2.7'" in html
+          assert "const APP_VERSION='1.2.8'" in html
           raid=json.loads(Path('sv_seven_raids.json').read_text('utf-8'))
           rr=raid['records']
           assert raid['schema']==1 and len(rr)>=53 and len({x['id'] for x in rr})==len(rr)
@@ -107,8 +107,8 @@ jobs:
           match=re.search(r'const SEVEN_RAIDS=(.*?);\nconst raid7Windows',html,re.S)
           assert match and json.loads(match.group(1))==raid, 'Seven-star offline data mismatch'
           assert 'renderSevenRaid' in html and 'raid7Candidates' in html
-          assert json.loads(Path('version.json').read_text('utf-8'))['version']=='1.2.7'
-          assert 'pokemon-sv-guide-v1.2.7' in Path('sw.js').read_text('utf-8')
+          assert json.loads(Path('version.json').read_text('utf-8'))['version']=='1.2.8'
+          assert 'pokemon-sv-guide-v1.2.8' in Path('sw.js').read_text('utf-8')
           assert all(x in html for x in ['natureMatrix','mintPanel','moveClassGuide','MINT_NATURES','renderExpertEvolutionHint','renderTactics','tacticScore','tacticBuilds','TACTIC_IRON_SETS'])
           evo=Path('sv_special_evolutions.json').read_text(encoding='utf-8')
           evo_obj=json.loads(evo)
@@ -119,7 +119,7 @@ jobs:
           Path('site/index.html').write_text(html,encoding='utf-8')
           coverage_file=Path('site/coverage.json')
           coverage=json.loads(coverage_file.read_text(encoding='utf-8'))
-          coverage['version']='1.2.7'
+          coverage['version']='1.2.8'
           coverage['sevenStarEventProfiles']=len(rr)
           coverage['sevenStarAsOf']=raid['asOf']
           coverage_file.write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf-8')
